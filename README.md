@@ -1,4 +1,4 @@
-### Realistic Damage System | Realistisches Schadenssystem
+### Realistic Damage System
 
 - [Hier findest du die deutsche Bescheibung](#Deutsch)
 
