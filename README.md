@@ -2,10 +2,10 @@
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
-- ⤵️ [Hier findest du die deutsche Bescheibung](#Deutsche-Beschreibung)
+- ⤵️ [Hier findest du die deutsche Bescheibung](#deutsch)
 
 
-## English description :
+## English description 📄
 
 The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
 
@@ -81,10 +81,10 @@ If the maintenance/inspection has to be paused with the current selection, this 
 ![menu_paused_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/d8ccafb7-56fb-4b67-ac84-9edce6a47f74)
 
 
-### Have fun with the mod! 😀
+### Have fun with the mod! 😃
 
 
-## Deutsche Beschreibung
+## Deutsche Beschreibung 📄 <!--deutsch-->
 
 Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
 
@@ -160,7 +160,7 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ![menu_paused_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/7ffec625-98bd-45c2-98c4-ca5f711603dc)
 
 
-### Viel Spaß mit dem Mod! 😀
+### Viel Spaß mit dem Mod! 😃
 
 
 [⤴ Go to top / ⤴ Nach oben springen](#top)
