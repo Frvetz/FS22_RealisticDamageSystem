@@ -82,7 +82,7 @@ If the maintenance/inspection has to be paused with the current selection, this 
 
 ### Have fun with the mod! 😃
 
-# <!--german-->
+#<!--german-->
 ## Deutsche Beschreibung 📄
 Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
 
