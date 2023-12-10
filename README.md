@@ -8,7 +8,7 @@
 -
 -
 -
-#Real Cool Heading
+[deutsch](#deutsch)
 hallo2
 
 -
@@ -42,36 +42,4 @@ hallo2
 -
 -
 
-#real-cool-heading
-hallo
-
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
-[Go to Real Cool Heading section](#real-cool-heading)
+#deutsch
