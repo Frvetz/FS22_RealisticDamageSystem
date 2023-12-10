@@ -83,8 +83,8 @@ If the maintenance/inspection has to be paused with the current selection, this 
 ### Have fun with the mod! 😃
 
 
-## Deutsche Beschreibung
-
+## Deutsche Beschreibung 📄 
+<!--german-->
 Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
 
 Mit diesem Script machen Sie die Wartung Ihres Fahrzeugs um einiges komplexer und müssen sich tatsächlich überlegen, wann Sie Schäden an Ihrem Fahrzeug reparieren wollen.
