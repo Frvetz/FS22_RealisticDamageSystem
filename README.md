@@ -2,8 +2,6 @@
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
-[⤵️ Hier findest du die deutsche Bescheibung](#german)
-
 ## English description 📄
 
 The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
@@ -17,7 +15,7 @@ Once a maintenance or inspection has been started, it will only be carried out d
 The first time you start the game with this mod, the script looks at the current vehicle damage and adds the number of damages that would have caused this vehicle damage. These damages are already known, so they do not have to be found by an inspection and can be repaired straight away via the maintenance menu.
 
 If you are playing with the latest version of the CVT_Addon mod, improper vehicle operation increases wear on the gearbox. Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (maximum 11hrs) - above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours)
-
+[⤵️ Hier findest du die deutsche Bescheibung](#top)
 - #### If you have any questions, requests or problems, please feel free to contact the following email: RealisticDamageSystem@gmail.com
 - #### You can also join the following discord: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
 - #### Full local multiplayer and dedicated server compatibility.
