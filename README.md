@@ -32,7 +32,6 @@ When you operate a vehicle, the help window informs you about the current condit
 This allows you to see the number of currently known damages and when the vehicle should be inspected for further hidden damages at the latest.
 After an inspection, the damages found are added to the number of current damages.
 ![gameplay_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/1aa4307b-d2bc-463e-b6ce-e5efc6b34050)
-
 Any damage, whether known or not, leads to a loss of engine power.
 If the inspection is not carried out, consequences of the unknown damages must be expected. For example, the vehicle will stall if the engine load is too high and will not start properly if the automatic engine start is deactivated in the game settings.
 ![stalled_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/4b893deb-c7e9-4146-abf2-981d39f1f8af)
