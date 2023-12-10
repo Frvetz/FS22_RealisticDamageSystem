@@ -1,5 +1,5 @@
 # Realistic Damage System | Realistisches Schadenssystem
-          ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/a1c7d307-8433-4fd1-8644-a58d1bfadbd3)
+![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/a1c7d307-8433-4fd1-8644-a58d1bfadbd3)
 
 - [Hier findest du die deutsche Bescheibung](#Deutsch)
 
