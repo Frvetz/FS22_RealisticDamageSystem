@@ -1,4 +1,4 @@
-# 🛠️ Realistic Damage System - Realistisches Schadenssystem 🛠️ <!--top-->
+# 🛠️ Realistic Damage System - Realistisches Schadenssystem 🛠️
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
