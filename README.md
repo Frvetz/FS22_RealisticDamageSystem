@@ -2,7 +2,7 @@
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
-- ⤵️ [Hier findest du die deutsche Bescheibung](#deutsch)
+- ⤵️ [Hier findest du die deutsche Bescheibung](#german)
 
 
 ## English description 📄
@@ -83,8 +83,8 @@ If the maintenance/inspection has to be paused with the current selection, this 
 
 ### Have fun with the mod! 😃
 
-<!--deutsch-->
-## Deutsche Beschreibung 📄
+
+## Deutsche Beschreibung 📄 <!--german-->
 
 Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
 
