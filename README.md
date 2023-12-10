@@ -1,10 +1,10 @@
-# Realistic Damage System - Realistisches Schadenssystem
+# Realistic Damage System - Realistisches Schadenssystem 🛠
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
-- [Hier findest du die deutsche Bescheibung](#Deutsche-Beschreibung)
+- ⤵ [Hier findest du die deutsche Bescheibung](#Deutsche-Beschreibung)
 
-## English description
+## English description 📄
 
 The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
 
@@ -25,7 +25,7 @@ If you are playing with the latest version of the CVT_Addon mod, improper vehicl
 - #### Help available in the ESC menu
 - ### !When activating the automatic engine start, the engine stall function is deactivated!
 
-## English tutorial
+## English tutorial 📷
 ### HUD
 #### Information
 When you operate a vehicle, the help window informs you about the current condition of the vehicle.
@@ -80,10 +80,10 @@ If the maintenance/inspection has to be paused with the current selection, this 
 ![menu_paused_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/d8ccafb7-56fb-4b67-ac84-9edce6a47f74)
 
 
-### Have fun with the mod!
+### Have fun with the mod! 😀
 
 
-## Deutsche Beschreibung
+## Deutsche Beschreibung 📄
 
 Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
 
@@ -104,7 +104,7 @@ Sollten Sie mit der neusten Version des Mods CVT_Addon spielen, so nimmt Ihr Get
 - #### Hilfe im ESC-Menü verfügbar
 - ### !Bei Aktivierung des automatischen Motorstarts, wird die Funktion des Motorabsterbens deaktiviert!
 
-## Deutsches Tutorial
+## Deutsches Tutorial 📷
 ### HUD
 #### Information
 Wenn Sie ein Fahrzeug fahren, informiert Sie das Hilfefenster über den aktuellen Zustand des Fahrzeugs.
@@ -138,28 +138,28 @@ Option auswählen -> Reparatur starten -> Geld wird vom Konto abgezogen -> Fahrz
 
 Außerdem kann eine Inspektion gestartet werden, welche eine Stunde dauern würde. Nach Abschluss wird die Anzahl der gefundenen Schäden angezeigt.
 
-![menu_normal_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/9c40a219-12b4-49a7-9016-e55a9c01092f)
+![menu_normal_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/b91368fe-0225-4d6b-8332-7ee5622497f1)
 
 #### CVT_Addon Unterstützung
 Durch das Script 'CVT_Addon' nimmt bei Fahrzeugen mit stufenlosem Getriebe durch unsachgemäße Bedienung der Verschleiß des Getriebes zu. 
 Unter 90% Schaden, kann das Getriebe für Geld (maximal 10.769,-) und viel Zeit (maximal 11h) repariert werden.
 Ab einer Höhe von 90%, muss das Getriebe vollständig getauscht werden. Dies kostet deutlich mehr (15.000,-), dauert allerdings weniger lang (7h).
 
-![menu_cvt_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/bd5b5e2d-6070-43b3-8261-e8678bcfd116)
+![menu_cvt_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/5c1339ac-ec3f-48f0-84f9-2578f5e80823)
 
 Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalber noch angezeigt wie viel sie kosten und wie lange sie dauern würde.
 
-![menu_cvt2_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/31ae0f1a-b209-4d48-842a-2e0e4a1cdfa4)
+![menu_cvt2_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/ea06735c-3913-4b5c-8c19-fdf15bc931ef)
 
 #### Wartung pausiert - Arbeitszeiten
 Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt.
 Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert.
 Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wird dies in einer weiteren Zeile Text in diesem Fenster angezeigt.
 
-![menu_paused_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/75a73dd6-3952-4ee5-b079-344133cbcb23)
+![menu_paused_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/7ffec625-98bd-45c2-98c4-ca5f711603dc)
 
 
-### Viel Spaß mit dem Mod!
+### Viel Spaß mit dem Mod! 😀
 
 
-[⤴ Go to top / ⤴ Nach oben springen](#Realistic-Damage-System---Realistisches-Schadenssystem)
+[⤴ Go to top / ⤴ Nach oben springen](#Realistic-Damage-System---Realistisches-Schadenssystem-🛠)
