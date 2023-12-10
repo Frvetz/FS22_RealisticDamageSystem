@@ -2,9 +2,9 @@
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
-- ⤵ [Hier findest du die deutsche Bescheibung](#Deutsche-Beschreibung)
+- ⤵ [Hier findest du die deutsche Bescheibung](#deutsche-beschreibung-📄)
 
-## English description 📄
+## English description
 
 The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
 
