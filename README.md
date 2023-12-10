@@ -19,14 +19,14 @@ The first time you start the game with this mod, the script looks at the current
 If you are playing with the latest version of the CVT_Addon mod, improper vehicle operation increases wear on the gearbox. Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (maximum 11hrs) - above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours)
 
 - #### If you have any questions, requests or problems, please feel free to contact the following email: RealisticDamageSystem@gmail.com
-- #### You can also join the following Discord: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
+- #### You can also join the following discord: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
 - #### Full local multiplayer and dedicated server compatibility.
 - #### In-game tutorial available (Console command "rdsResetTutorial" available to restart the in-game tutorial for yourself)
 - #### Help available in the ESC menu
 - ### !When activating the automatic engine start, the engine stall function is deactivated!
 
 ## English tutorial
-### Gameplay
+### HUD
 #### Information
 When you operate a vehicle, the help window informs you about the current condition of the vehicle.
 This allows you to see the number of currently known damages and when the vehicle should be inspected for further hidden damages at the latest.
@@ -79,4 +79,87 @@ If the maintenance/inspection has to be paused with the current selection, this 
 
 ![menu_paused_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/d8ccafb7-56fb-4b67-ac84-9edce6a47f74)
 
+
+### Have fun with the mod!
+
+
 ## Deutsche Beschreibung
+
+Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
+
+Mit diesem Script machen Sie die Wartung Ihres Fahrzeugs um einiges komplexer und müssen sich tatsächlich überlegen, wann Sie Schäden an Ihrem Fahrzeug reparieren wollen.
+An jedem Fahrzeug treten mit der Zeit Schäden auf. Manche von ihnen bekommen Sie im Hilfefenster mitgeteilt, manche müssen Sie erst durch eine einstündige Inspektion finden. 
+Um eine Inspektion zu starten oder die Schäden zu reparieren, müssen Sie eine Palette im Shop kaufen, nah an diese heranfahren und anschließend das Wartungsmenü aufrufen. In diesem Menü können Sie auswählen wie viele Schäden repariert werden sollen. Desweiteren bekommen Sie angezeigt wie viel eine Reparatur mit der aktuellen Auswahl kosten und wie lange sie dauern würde. 
+
+Sobald eine Wartung oder Inspektion gestartet wurde, wird sie nur während den Arbeitszeiten von 7:00 - 21:00 Uhr durchgeführt. Sollte sie dennoch in ein Zeitfenster fallen, wo nicht gearbeitet wird, wird sie bis zum Morgen pausiert.
+
+Beim ersten Spielstart mit diesem Mod, schaut das Script den aktuellen Fahrzeugschaden an und fügt so viele Schäden hinzu, die diesen Fahrzeugschaden verursacht hätten. Diese sind bereits bekannte, müssen also nicht erst durch eine Inspektion aufgedeckt werden und können direkt über das Wartungsmenü repariert werden.
+
+Sollten Sie mit der neusten Version des Mods CVT_Addon spielen, so nimmt Ihr Getriebe durch unsachgemäße Bedienung an Schaden zu. Unter 90% Schaden, kann das Getriebe für Geld und viel Zeit repariert werden - ab 90%, muss dieses ausgetauscht werden. Dies kostet deutlich mehr Geld, geht aber schneller.
+
+- #### Wenn Sie Fragen, Wünsche oder Probleme haben, wenden Sie sich bitte an die folgende E-Mail-Adresse: RealisticDamageSystem@gmail.com
+- #### Außerdem können Sie folgenden Discord beitreten: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
+- #### Vollständige lokaler Multiplayer und Dedicated Server Unterstützung
+- #### Ingame Tutorial verfügbar (Konsolenbefehl "rdsResetTutorial", um das ingame Tutorial für sich selbst neu zu starten)
+- #### Hilfe im ESC-Menü verfügbar
+- ### !Bei Aktivierung des automatischen Motorstarts, wird die Funktion des Motorabsterbens deaktiviert!
+
+## Deutsches Tutorial
+### HUD
+#### Information
+Wenn Sie ein Fahrzeug fahren, informiert Sie das Hilfefenster über den aktuellen Zustand des Fahrzeugs.
+So können Sie die Anzahl der aktuell bekannten Schäden und wann das Fahrzeug spätestens auf weitere versteckte Schäden inspiziert werden sollte, ablesen.
+Nach einer Inspektion werden die gefundenen Schäden zu der Anzahl der aktuellen Schäden hinzugefügt.
+
+![gameplay_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/07b07d46-4439-483b-865a-e5442936f8f0)
+
+Jeder Schaden, ob bekannt oder nicht, führt zu Leistungsverlust.
+Sollte die Inspektion nicht durchgeführt werden, muss mit Folgen der unbekannten Schäden zu rechnen sein. So stirbt das Fahrzeug bei zu hoher Motorlast ab und startet nicht ordnungsgemäß, wenn der automatische Motorstart in den Spieleinstellungen deaktiviert ist.
+
+![stalled_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/89dbb792-fa33-4411-8a3f-7b59569f3950)
+
+#### Wartungsmenü aufrufen
+Standardgemäß kann das Menü für die Fahrzeugwartung mit STRG + M aufgerufen werden, wenn Sie in der Nähe einer Farzeugwartungs-Palette (im Shop erhältlich) sind.
+
+![menu_open_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/9bd40d8b-5e06-43b9-a1d0-a5e08130f95a)
+
+#### Wartung gestartet
+Sobald eine Wartung oder ähnliches gestartet wurde, wird ihnen im Hilfefenster angezeigt, wann sie abgeschlossen sein wird.
+
+![repairing_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/4f7a3dd8-9eff-4820-bfce-5be0604a9688)
+
+### Wartungsmenü
+In diesem Fenster (STRG + M) kann man einen Text sehen, der anzeigt, wie viele Schäden insgesamt repariert werden können, wie viel die Reparatur mit der aktuellen Auswahl kosten wird und wann sie abgeschlossen sein wird. 
+Während der Wartung kann das Fahrzeug nicht benutzt werden!
+
+Unter dem Text können Sie auswählen, wie viele Schäden repariert werden sollen...
+
+Option auswählen -> Reparatur starten -> Geld wird vom Konto abgezogen -> Fahrzeug ist erst wieder einsatzbereit, wenn die angezeigte Zeit erreicht ist.
+
+Außerdem kann eine Inspektion gestartet werden, welche eine Stunde dauern würde. Nach Abschluss wird die Anzahl der gefundenen Schäden angezeigt.
+
+![menu_normal_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/9c40a219-12b4-49a7-9016-e55a9c01092f)
+
+#### CVT_Addon Unterstützung
+Durch das Script 'CVT_Addon' nimmt bei Fahrzeugen mit stufenlosem Getriebe durch unsachgemäße Bedienung der Verschleiß des Getriebes zu. 
+Unter 90% Schaden, kann das Getriebe für Geld (maximal 10.769,-) und viel Zeit (maximal 11h) repariert werden.
+Ab einer Höhe von 90%, muss das Getriebe vollständig getauscht werden. Dies kostet deutlich mehr (15.000,-), dauert allerdings weniger lang (7h).
+
+![menu_cvt_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/bd5b5e2d-6070-43b3-8261-e8678bcfd116)
+
+Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalber noch angezeigt wie viel sie kosten und wie lange sie dauern würde.
+
+![menu_cvt2_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/31ae0f1a-b209-4d48-842a-2e0e4a1cdfa4)
+
+#### Wartung pausiert - Arbeitszeiten
+Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt.
+Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert.
+Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wird dies in einer weiteren Zeile Text in diesem Fenster angezeigt.
+
+![menu_paused_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/75a73dd6-3952-4ee5-b079-344133cbcb23)
+
+
+### Viel Spaß mit dem Mod!
+
+
+[Go to top / Nach oben springen](#Realistic-Damage-System-|-Realistisches-Schadenssystem)
