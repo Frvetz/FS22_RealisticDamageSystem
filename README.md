@@ -2,9 +2,9 @@
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/e6cfd06d-f366-4c1b-a571-3a6d7462e59f)
 
-- [Hier findest du die deutsche Bescheibung](#Deutsch)
+- [Hier findest du die deutsche Bescheibung](##Deutsche)
 
-## English descriptipn
+## English description
 
 The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
 
@@ -61,7 +61,7 @@ An inspection can also be started, which would take one hour. After completion, 
 
 ![menu_normal_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/8734903e-7482-4fc4-a0b6-f2957f6d9710)
 
-### CVT_Addon support
+#### CVT_Addon support
 Due to the 'CVT_Addon' script, improper vehicle operation increases wear on the gearbox in vehicles with a variable (CVT) gearbox.
 Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (5-11hrs).
 Above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours).
@@ -72,9 +72,11 @@ Before the gearbox repair is actually started, you will be shown how much it wil
 
 ![menu_cvt2_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/dc8e3a76-6837-4716-a508-8899c8776172)
 
-### Maintenance paused - working hours
+#### Maintenance paused - working hours
 Once the maintenance/inspection has started, it will only be carried out during working hours (7:00 to 21:00).
 However, if the maintenance/inspection falls within a time window in which no work is being carried out, it will be paused.
 If the maintenance/inspection has to be paused with the current selection, this is displayed in an additional line of text in this window.
 
 ![menu_paused_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/d8ccafb7-56fb-4b67-ac84-9edce6a47f74)
+
+## Deutsche Beschreibung
