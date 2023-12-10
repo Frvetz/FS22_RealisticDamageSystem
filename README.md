@@ -2,7 +2,7 @@
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
-- ⤵️ [Hier findest du die deutsche Bescheibung](#german)
+- [⤴️ Hier findest du die deutsche Bescheibung](#german)
 
 
 ## English description 📄
@@ -163,4 +163,4 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ### Viel Spaß mit dem Mod! 😃
 
 
-[⤴ Go to top / ⤴ Nach oben springen](#top)
+[⤴️ Go to top / ⤴️ Nach oben springen](#top)
