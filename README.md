@@ -161,4 +161,4 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ### Viel Spaß mit dem Mod! 😃
 
 
-[⤴️ Go to top / ⤴️ Nach oben springen](#top)
+[⤴️ Go to top / ⤴️ Nach oben springen](#german)
