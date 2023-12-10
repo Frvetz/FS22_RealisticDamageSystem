@@ -4,7 +4,7 @@
 
 [⤵️ Hier findest du die deutsche Bescheibung](#)
 
-📄 ## English description
+## English description 📄
 
 The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
 
