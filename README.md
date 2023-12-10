@@ -1,4 +1,4 @@
-# 🛠️ Realistic Damage System - Realistisches Schadenssystem 🛠️ <!---->
+# 🛠️ Realistic Damage System - Realistisches Schadenssystem 🛠️
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
@@ -83,7 +83,7 @@ If the maintenance/inspection has to be paused with the current selection, this 
 ### Have fun with the mod! 😃
 
 
-## Deutsche Beschreibung 📄 <!--top-->
+## Deutsche Beschreibung 📄
 Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
 
 Mit diesem Script machen Sie die Wartung Ihres Fahrzeugs um einiges komplexer und müssen sich tatsächlich überlegen, wann Sie Schäden an Ihrem Fahrzeug reparieren wollen.
