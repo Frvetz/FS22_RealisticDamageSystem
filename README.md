@@ -24,4 +24,4 @@ If you are playing with the latest version of the CVT_Addon mod, improper vehicl
 - In-game tutorial available
 (Console command "rdsResetTutorial" available to restart the in-game tutorial for yourself)
 - Help available in the ESC menu
-- # When activating the automatic engine start, the engine stall function is deactivated
+- #### When activating the automatic engine start, the engine stall function is deactivated
