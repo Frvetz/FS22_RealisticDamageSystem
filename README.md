@@ -1,9 +1,11 @@
-# 🛠 Realistic Damage System - Realistisches Schadenssystem 🛠
+# Realistic Damage System - Realistisches Schadenssystem
+🛠
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
-- ⤵ [Hier findest du die deutsche Bescheibung](#deutsche-beschreibung-📄)
+- ⤵ [Hier findest du die deutsche Bescheibung](#Deutsche-Beschreibung)
 
+📄
 ## English description
 
 The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
@@ -82,8 +84,8 @@ If the maintenance/inspection has to be paused with the current selection, this 
 
 ### Have fun with the mod! 😀
 
-
-## Deutsche Beschreibung 📄
+📄
+## Deutsche Beschreibung
 
 Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
 
@@ -162,4 +164,4 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ### Viel Spaß mit dem Mod! 😀
 
 
-[⤴ Go to top / ⤴ Nach oben springen](#🛠-Realistic-Damage-System---Realistisches-Schadenssystem-🛠)
+[⤴ Go to top / ⤴ Nach oben springen](#Realistic-Damage-System---Realistisches-Schadenssystem)
