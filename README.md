@@ -42,7 +42,7 @@ If the inspection is not carried out, consequences of the unknown damages must b
 #### Open maintenance menu
 By default, the vehicle maintenance menu can be called up with CTRL + M when you are near a vehicle maintenance palette (available in the shop).
 
-![menu_open_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/e330cbc5-8aab-4ac3-9c39-b18069027509)
+![menu_open_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/1fb42b9b-6982-47f4-a786-f2325857bb13)
 
 #### Maintenance started
 As soon as maintenance or similar has been started, you will be shown in the help window when it will be completed.
@@ -121,7 +121,7 @@ Sollte die Inspektion nicht durchgeführt werden, muss mit Folgen der unbekannte
 #### Wartungsmenü aufrufen
 Standardgemäß kann das Menü für die Fahrzeugwartung mit STRG + M aufgerufen werden, wenn Sie in der Nähe einer Farzeugwartungs-Palette (im Shop erhältlich) sind.
 
-![menu_open_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/5c0175e1-6bba-4785-96da-adf92c4ce865)
+![menu_open_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/84624ce8-c893-46bd-acab-80e2331cef5c)
 
 #### Wartung gestartet
 Sobald eine Wartung oder ähnliches gestartet wurde, wird ihnen im Hilfefenster angezeigt, wann sie abgeschlossen sein wird.
