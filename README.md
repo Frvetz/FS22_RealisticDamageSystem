@@ -40,7 +40,7 @@ If the inspection is not carried out, consequences of the unknown damages must b
 ![stalled_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/4b893deb-c7e9-4146-abf2-981d39f1f8af)
 
 #### Open maintenance menu
-By default, the vehicle maintenance menu can be called up with CTRL + M when you are near a vehicle maintenance palette (available in the shop).
+By default, the vehicle maintenance menu can be called up with CTRL + J when you are near a vehicle maintenance palette (available in the shop).
 
 ![menu_open_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/1fb42b9b-6982-47f4-a786-f2325857bb13)
 
@@ -50,7 +50,7 @@ As soon as maintenance or similar has been started, you will be shown in the hel
 ![repairing_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/ecc0363c-392b-4c5e-8e43-f77d041a0d45)
 
 ### Maintenance menu
-In this window (CTRL + M) you can see a text that shows how many damages can be repaired in total, how much the repair will cost with the current selection and when it will be completed. 
+In this window (CTRL + J) you can see a text that shows how many damages can be repaired in total, how much the repair will cost with the current selection and when it will be completed. 
 The vehicle cannot be used during maintenance!
 
 Below the text you can select how many damages should be repaired...
@@ -119,7 +119,7 @@ Sollte die Inspektion nicht durchgeführt werden, muss mit Folgen der unbekannte
 ![stalled_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/89dbb792-fa33-4411-8a3f-7b59569f3950)
 
 #### Wartungsmenü aufrufen
-Standardgemäß kann das Menü für die Fahrzeugwartung mit STRG + M aufgerufen werden, wenn Sie in der Nähe einer Farzeugwartungs-Palette (im Shop erhältlich) sind.
+Standardgemäß kann das Menü für die Fahrzeugwartung mit STRG + J aufgerufen werden, wenn Sie in der Nähe einer Farzeugwartungs-Palette (im Shop erhältlich) sind.
 
 ![menu_open_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/84624ce8-c893-46bd-acab-80e2331cef5c)
 
@@ -129,7 +129,7 @@ Sobald eine Wartung oder ähnliches gestartet wurde, wird ihnen im Hilfefenster 
 ![repairing_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/4f7a3dd8-9eff-4820-bfce-5be0604a9688)
 
 ### Wartungsmenü
-In diesem Fenster (STRG + M) kann man einen Text sehen, der anzeigt, wie viele Schäden insgesamt repariert werden können, wie viel die Reparatur mit der aktuellen Auswahl kosten wird und wann sie abgeschlossen sein wird. 
+In diesem Fenster (STRG + J) kann man einen Text sehen, der anzeigt, wie viele Schäden insgesamt repariert werden können, wie viel die Reparatur mit der aktuellen Auswahl kosten wird und wann sie abgeschlossen sein wird. 
 Während der Wartung kann das Fahrzeug nicht benutzt werden!
 
 Unter dem Text können Sie auswählen, wie viele Schäden repariert werden sollen...
