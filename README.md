@@ -88,7 +88,7 @@ If the maintenance/inspection has to be paused with the current selection, this 
 ![menu_paused_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/d8ccafb7-56fb-4b67-ac84-9edce6a47f74)
 
 
-### Have fun with the mod! 😃
+### Have fun! 😃
 
 
 
@@ -173,7 +173,7 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ![menu_paused_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/7ffec625-98bd-45c2-98c4-ca5f711603dc)
 
 
-### Viel Spaß mit dem Mod! 😃
+### Viel Spaß! 😃
 
 
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
