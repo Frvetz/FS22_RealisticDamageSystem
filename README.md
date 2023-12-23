@@ -38,7 +38,7 @@ If you are playing with the latest version of the CVT_Addon mod, improper vehicl
 
 ## 📷 English tutorial 📷
 ### 1️⃣ HUD
-#### 1️⃣*️⃣1️⃣ Information
+#### Information
 When you operate a vehicle, the help window informs you about the current condition of the vehicle.
 This allows you to see the number of currently known damages and when the vehicle should be inspected for further hidden damages at the latest.
 After an inspection, the damages found are added to the number of current damages.
@@ -50,12 +50,12 @@ If the inspection is not carried out, consequences of the unknown damages must b
 
 ![stalled_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/4b893deb-c7e9-4146-abf2-981d39f1f8af)
 
-#### 1️⃣*️⃣2️⃣ Open maintenance menu
+#### Open maintenance menu
 By default, the vehicle maintenance menu can be called up with CTRL + J when you are near a vehicle maintenance palette (available in the shop).
 
 ![menu_open_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/1fb42b9b-6982-47f4-a786-f2325857bb13)
 
-#### 1️⃣*️⃣3️⃣ Maintenance started
+#### Maintenance started
 As soon as maintenance or similar has been started, you will be shown in the help window when it will be completed.
 
 ![repairing_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/ecc0363c-392b-4c5e-8e43-f77d041a0d45)
@@ -72,7 +72,7 @@ An inspection can also be started, which would take one hour. After completion, 
 
 ![menu_normal_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/8734903e-7482-4fc4-a0b6-f2957f6d9710)
 
-#### 2️⃣*️⃣1️⃣ CVT_Addon support
+#### CVT_Addon support
 Due to the 'CVT_Addon' script, improper vehicle operation increases wear on the gearbox in vehicles with a variable (CVT) gearbox.
 Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (5-11hrs).
 Above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours).
@@ -83,7 +83,7 @@ Before the gearbox repair is actually started, you will be shown how much it wil
 
 ![menu_cvt2_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/dc8e3a76-6837-4716-a508-8899c8776172)
 
-#### 2️⃣*️⃣2️⃣ Maintenance paused - working hours
+#### Maintenance paused - working hours
 Once the maintenance/inspection has started, it will only be carried out during working hours (7:00 to 21:00).
 However, if the maintenance/inspection falls within a time window in which no work is being carried out, it will be paused.
 If the maintenance/inspection has to be paused with the current selection, this is displayed in an additional line of text in this window.
