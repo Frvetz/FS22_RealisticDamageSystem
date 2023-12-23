@@ -22,15 +22,16 @@ The first time you start the game with this mod, the script looks at the current
 
 If you are playing with the latest version of the CVT_Addon mod, improper vehicle operation increases wear on the gearbox. Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (maximum 11hrs) - above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours)
 
-- #### If you have any questions, requests or problems, please feel free to contact the following email: RealisticDamageSystem@gmail.com
-- #### You can also join the following discord: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
-- #### Full local multiplayer and dedicated server compatibility.
-- #### Integration of CVT_Addon
-- #### Integration of Repair and paint settings (Configure Maintenance) (coming soon)
-- #### Compatible with Advanced Maintenance
-- #### Compatible with Advanced Farm Manager
-- #### Compatible with Auto Repair
-- #### Compatible with Mobile Workshop
+#### If you have any questions, requests or problems, please feel free to contact the following email: RealisticDamageSystem@gmail.com
+#### You can also join the following discord: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
+  
+- #### Full local multiplayer and dedicated server compatibility
+- #### Integration of the mod "CVT_Addon"
+- #### Integration of the mod "Repair and paint settings (Configure Maintenance)" (coming soon)
+- #### Compatible with the mod "Advanced Maintenance"
+- #### Compatible with the mod "Advanced Farm Manager"
+- #### Compatible with the mod "Auto Repair"
+- #### Compatible with the mod "Mobile Workshop"
 - #### In-game tutorial available (Console command "rdsResetTutorial" available to restart the in-game tutorial for yourself)
 - #### Help available in the ESC menu
 - ### !When activating the automatic engine start, the engine stall function is deactivated!
@@ -109,16 +110,17 @@ Beim ersten Spielstart mit diesem Mod, schaut das Script den aktuellen Fahrzeugs
 
 Sollten Sie mit der neusten Version des Mods CVT_Addon spielen, so nimmt Ihr Getriebe durch unsachgemäße Bedienung an Schaden zu. Unter 90% Schaden, kann das Getriebe für Geld und viel Zeit repariert werden - ab 90%, muss dieses ausgetauscht werden. Dies kostet deutlich mehr Geld, geht aber schneller.
 
-- #### Wenn Sie Fragen, Wünsche oder Probleme haben, wenden Sie sich bitte an die folgende E-Mail-Adresse: RealisticDamageSystem@gmail.com
-- #### Außerdem können Sie folgenden Discord beitreten: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
+#### Wenn Sie Fragen, Wünsche oder Probleme haben, wenden Sie sich bitte an die folgende E-Mail-Adresse: RealisticDamageSystem@gmail.com
+#### Außerdem können Sie folgendem Discord beitreten: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
+
 - #### Vollständige lokaler Multiplayer und Dedicated Server Unterstützung
 - #### Ingame Tutorial verfügbar (Konsolenbefehl "rdsResetTutorial", um das ingame Tutorial für sich selbst neu zu starten)
-- #### Integration von CVT_Addon
-- #### Integration von Reparatur Und Lackierungseinstellungen (Configure Maintenance) (kommt bald)
-- #### Kompatibel mit Erweiterte Wartung (Advanced Maintenance)
-- #### Kompatibel mit Fortgeschrittener Farm Manager (Advanced Farm Manager)
-- #### Kompatibel mit Auto Repair
-- #### Kompatibel mit Mobile Werkstatt
+- #### Integration des Mods "CVT_Addon"
+- #### Integration des Mods "Reparatur Und Lackierungseinstellungen (Configure Maintenance)" (kommt bald)
+- #### Kompatibel mit dem Mod "Erweiterte Wartung (Advanced Maintenance)"
+- #### Kompatibel mit dem Mod "Fortgeschrittener Farm Manager (Advanced Farm Manager)"
+- #### Kompatibel mit dem Mod "Auto Repair"
+- #### Kompatibel mit dem Mod "Mobile Werkstatt"
 - #### Hilfe im ESC-Menü verfügbar
 - ### !Bei Aktivierung des automatischen Motorstarts, wird die Funktion des Motorabsterbens deaktiviert!
 
