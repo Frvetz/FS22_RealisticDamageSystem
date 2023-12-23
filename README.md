@@ -25,7 +25,7 @@ If you are playing with the latest version of the CVT_Addon mod, improper vehicl
 - #### Integration of Repair and paint settings (Configure Maintenance) (coming soon)
 - #### Compatible with Advanced Maintenance
 - #### Compatible with Advanced Farm Manager
-- #### Auto Repair mod will be automatically deactivated
+- #### Compatible with Auto Repair mod
 - #### In-game tutorial available (Console command "rdsResetTutorial" available to restart the in-game tutorial for yourself)
 - #### Help available in the ESC menu
 - ### !When activating the automatic engine start, the engine stall function is deactivated!
