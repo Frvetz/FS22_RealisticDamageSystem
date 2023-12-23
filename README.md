@@ -21,6 +21,11 @@ If you are playing with the latest version of the CVT_Addon mod, improper vehicl
 - #### If you have any questions, requests or problems, please feel free to contact the following email: RealisticDamageSystem@gmail.com
 - #### You can also join the following discord: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
 - #### Full local multiplayer and dedicated server compatibility.
+- #### Integration of CVT_Addon
+- #### Integration of Repair and paint settings (Configure Maintenance) (coming soon)
+- #### Compatible with Advanced Maintenance
+- #### Compatible with Advanced Farm Manager
+- #### Auto Repair mod will be automatically deactivated
 - #### In-game tutorial available (Console command "rdsResetTutorial" available to restart the in-game tutorial for yourself)
 - #### Help available in the ESC menu
 - ### !When activating the automatic engine start, the engine stall function is deactivated!
@@ -101,6 +106,11 @@ Sollten Sie mit der neusten Version des Mods CVT_Addon spielen, so nimmt Ihr Get
 - #### Außerdem können Sie folgenden Discord beitreten: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
 - #### Vollständige lokaler Multiplayer und Dedicated Server Unterstützung
 - #### Ingame Tutorial verfügbar (Konsolenbefehl "rdsResetTutorial", um das ingame Tutorial für sich selbst neu zu starten)
+- #### Integration von CVT_Addon
+- #### Integration von Reparatur Und Lackierungseinstellungen (Configure Maintenance) (kommt bald)
+- #### Kompatibel mit Erweiterte Wartung (Advanced Maintenance)
+- #### Kompatibel mit Fortgeschrittener Farm Manager (Advanced Farm Manager)
+- #### Auto Repair Mod wird automatisch deaktiviert
 - #### Hilfe im ESC-Menü verfügbar
 - ### !Bei Aktivierung des automatischen Motorstarts, wird die Funktion des Motorabsterbens deaktiviert!
 
