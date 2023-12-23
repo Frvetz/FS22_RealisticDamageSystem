@@ -36,9 +36,9 @@ If you are playing with the latest version of the CVT_Addon mod, improper vehicl
 - #### Help available in the ESC menu
 - ### !When activating the automatic engine start, the engine stall function is deactivated!
 
-## English tutorial 📷
-### HUD
-#### Information
+## 📷 English tutorial 📷
+### 1️⃣ HUD
+#### 1️⃣*️⃣1️⃣ Information
 When you operate a vehicle, the help window informs you about the current condition of the vehicle.
 This allows you to see the number of currently known damages and when the vehicle should be inspected for further hidden damages at the latest.
 After an inspection, the damages found are added to the number of current damages.
@@ -50,17 +50,17 @@ If the inspection is not carried out, consequences of the unknown damages must b
 
 ![stalled_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/4b893deb-c7e9-4146-abf2-981d39f1f8af)
 
-#### Open maintenance menu
+#### 1️⃣*️⃣2️⃣ Open maintenance menu
 By default, the vehicle maintenance menu can be called up with CTRL + J when you are near a vehicle maintenance palette (available in the shop).
 
 ![menu_open_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/1fb42b9b-6982-47f4-a786-f2325857bb13)
 
-#### Maintenance started
+#### 1️⃣*️⃣3️⃣ Maintenance started
 As soon as maintenance or similar has been started, you will be shown in the help window when it will be completed.
 
 ![repairing_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/ecc0363c-392b-4c5e-8e43-f77d041a0d45)
 
-### Maintenance menu
+### 2️⃣ Maintenance menu
 In this window (CTRL + J) you can see a text that shows how many damages can be repaired in total, how much the repair will cost with the current selection and when it will be completed. 
 The vehicle cannot be used during maintenance!
 
@@ -72,7 +72,7 @@ An inspection can also be started, which would take one hour. After completion, 
 
 ![menu_normal_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/8734903e-7482-4fc4-a0b6-f2957f6d9710)
 
-#### CVT_Addon support
+#### 2️⃣*️⃣1️⃣ CVT_Addon support
 Due to the 'CVT_Addon' script, improper vehicle operation increases wear on the gearbox in vehicles with a variable (CVT) gearbox.
 Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (5-11hrs).
 Above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours).
@@ -83,7 +83,7 @@ Before the gearbox repair is actually started, you will be shown how much it wil
 
 ![menu_cvt2_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/dc8e3a76-6837-4716-a508-8899c8776172)
 
-#### Maintenance paused - working hours
+#### 2️⃣*️⃣2️⃣ Maintenance paused - working hours
 Once the maintenance/inspection has started, it will only be carried out during working hours (7:00 to 21:00).
 However, if the maintenance/inspection falls within a time window in which no work is being carried out, it will be paused.
 If the maintenance/inspection has to be paused with the current selection, this is displayed in an additional line of text in this window.
@@ -91,7 +91,7 @@ If the maintenance/inspection has to be paused with the current selection, this 
 ![menu_paused_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/d8ccafb7-56fb-4b67-ac84-9edce6a47f74)
 
 
-### Have fun! 😃
+### 😃 Have fun! 😃
 
 
 
@@ -124,9 +124,9 @@ Sollten Sie mit der neusten Version des Mods CVT_Addon spielen, so nimmt Ihr Get
 - #### Hilfe im ESC-Menü verfügbar
 - ### !Bei Aktivierung des automatischen Motorstarts, wird die Funktion des Motorabsterbens deaktiviert!
 
-## Deutsches Tutorial 📷
-### HUD
-#### Information
+## 📷 Deutsches Tutorial 📷
+### 1️⃣ HUD
+#### 1️⃣*️⃣1️⃣ Information
 Wenn Sie ein Fahrzeug fahren, informiert Sie das Hilfefenster über den aktuellen Zustand des Fahrzeugs.
 So können Sie die Anzahl der aktuell bekannten Schäden und wann das Fahrzeug spätestens auf weitere versteckte Schäden inspiziert werden sollte, ablesen.
 Nach einer Inspektion werden die gefundenen Schäden zu der Anzahl der aktuellen Schäden hinzugefügt.
@@ -138,17 +138,17 @@ Sollte die Inspektion nicht durchgeführt werden, muss mit Folgen der unbekannte
 
 ![stalled_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/89dbb792-fa33-4411-8a3f-7b59569f3950)
 
-#### Wartungsmenü aufrufen
+#### 1️⃣*️⃣2️⃣ Wartungsmenü aufrufen
 Standardgemäß kann das Menü für die Fahrzeugwartung mit STRG + J aufgerufen werden, wenn Sie in der Nähe einer Farzeugwartungs-Palette (im Shop erhältlich) sind.
 
 ![menu_open_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/84624ce8-c893-46bd-acab-80e2331cef5c)
 
-#### Wartung gestartet
+#### 1️⃣*️⃣3️⃣ Wartung gestartet
 Sobald eine Wartung oder ähnliches gestartet wurde, wird ihnen im Hilfefenster angezeigt, wann sie abgeschlossen sein wird.
 
 ![repairing_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/4f7a3dd8-9eff-4820-bfce-5be0604a9688)
 
-### Wartungsmenü
+### 2️⃣ Wartungsmenü
 In diesem Fenster (STRG + J) kann man einen Text sehen, der anzeigt, wie viele Schäden insgesamt repariert werden können, wie viel die Reparatur mit der aktuellen Auswahl kosten wird und wann sie abgeschlossen sein wird. 
 Während der Wartung kann das Fahrzeug nicht benutzt werden!
 
@@ -160,7 +160,7 @@ Außerdem kann eine Inspektion gestartet werden, welche eine Stunde dauern würd
 
 ![menu_normal_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/b91368fe-0225-4d6b-8332-7ee5622497f1)
 
-#### CVT_Addon Unterstützung
+#### 2️⃣*️⃣1️⃣ CVT_Addon Unterstützung
 Durch das Script 'CVT_Addon' nimmt bei Fahrzeugen mit stufenlosem Getriebe durch unsachgemäße Bedienung der Verschleiß des Getriebes zu. 
 Unter 90% Schaden, kann das Getriebe für Geld (maximal 10.769,-) und viel Zeit (maximal 11h) repariert werden.
 Ab einer Höhe von 90%, muss das Getriebe vollständig getauscht werden. Dies kostet deutlich mehr (15.000,-), dauert allerdings weniger lang (7h).
@@ -171,7 +171,7 @@ Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalb
 
 ![menu_cvt2_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/ea06735c-3913-4b5c-8c19-fdf15bc931ef)
 
-#### Wartung pausiert - Arbeitszeiten
+#### 2️⃣*️⃣2️⃣ Wartung pausiert - Arbeitszeiten
 Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt.
 Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert.
 Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wird dies in einer weiteren Zeile Text in diesem Fenster angezeigt.
@@ -179,7 +179,7 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ![menu_paused_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/7ffec625-98bd-45c2-98c4-ca5f711603dc)
 
 
-### Viel Spaß! 😃
+### 😃 Viel Spaß! 😃
 
 
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
