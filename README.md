@@ -16,6 +16,8 @@ To start an inspection or repair the damages, you need to buy a pallet in the sh
 
 Once a maintenance or inspection has been started, it will only be carried out during the working hours from 7:00 - 21:00 o'clock. However, if it falls within a time window when no work is being carried out, it will be paused until the morning.
 
+If you don't repair the damages your vehicle has suffered over time, it will take longer to start, risk false starts and stall if the engine is under excessive load.
+
 The first time you start the game with this mod, the script looks at the current vehicle damage and adds the number of damages that would have caused this vehicle damage. These damages are already known, so they do not have to be found by an inspection and can be repaired straight away via the maintenance menu.
 
 If you are playing with the latest version of the CVT_Addon mod, improper vehicle operation increases wear on the gearbox. Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (maximum 11hrs) - above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours)
@@ -100,6 +102,8 @@ An jedem Fahrzeug treten mit der Zeit Schäden auf. Manche von ihnen bekommen Si
 Um eine Inspektion zu starten oder die Schäden zu reparieren, müssen Sie eine Palette im Shop kaufen, nah an diese heranfahren und anschließend das Wartungsmenü aufrufen. In diesem Menü können Sie auswählen wie viele Schäden repariert werden sollen. Desweiteren bekommen Sie angezeigt wie viel eine Reparatur mit der aktuellen Auswahl kosten und wie lange sie dauern würde. 
 
 Sobald eine Wartung oder Inspektion gestartet wurde, wird sie nur während den Arbeitszeiten von 7:00 - 21:00 Uhr durchgeführt. Sollte sie dennoch in ein Zeitfenster fallen, wo nicht gearbeitet wird, wird sie bis zum Morgen pausiert.
+
+Falls Sie die Schäden an Ihrem Fahrzeug nicht reparieren sollten und dieses mit der Zeit zu viele Schäden bekommen hat, so braucht ihr Fahrzeug länger, um zu starten und kann beim Anlassen sowie unter zu hoher Motorlast absterben.
 
 Beim ersten Spielstart mit diesem Mod, schaut das Script den aktuellen Fahrzeugschaden an und fügt so viele Schäden hinzu, die diesen Fahrzeugschaden verursacht hätten. Diese sind bereits bekannte, müssen also nicht erst durch eine Inspektion aufgedeckt werden und können direkt über das Wartungsmenü repariert werden.
 
