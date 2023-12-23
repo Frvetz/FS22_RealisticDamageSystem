@@ -126,7 +126,7 @@ Sollten Sie mit der neusten Version des Mods CVT_Addon spielen, so nimmt Ihr Get
 
 ## 📷 Deutsches Tutorial 📷
 ### 1️⃣ HUD
-#### 1️⃣*️⃣1️⃣ Information
+#### Information
 Wenn Sie ein Fahrzeug fahren, informiert Sie das Hilfefenster über den aktuellen Zustand des Fahrzeugs.
 So können Sie die Anzahl der aktuell bekannten Schäden und wann das Fahrzeug spätestens auf weitere versteckte Schäden inspiziert werden sollte, ablesen.
 Nach einer Inspektion werden die gefundenen Schäden zu der Anzahl der aktuellen Schäden hinzugefügt.
@@ -138,12 +138,12 @@ Sollte die Inspektion nicht durchgeführt werden, muss mit Folgen der unbekannte
 
 ![stalled_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/89dbb792-fa33-4411-8a3f-7b59569f3950)
 
-#### 1️⃣*️⃣2️⃣ Wartungsmenü aufrufen
+#### Wartungsmenü aufrufen
 Standardgemäß kann das Menü für die Fahrzeugwartung mit STRG + J aufgerufen werden, wenn Sie in der Nähe einer Farzeugwartungs-Palette (im Shop erhältlich) sind.
 
 ![menu_open_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/84624ce8-c893-46bd-acab-80e2331cef5c)
 
-#### 1️⃣*️⃣3️⃣ Wartung gestartet
+#### Wartung gestartet
 Sobald eine Wartung oder ähnliches gestartet wurde, wird ihnen im Hilfefenster angezeigt, wann sie abgeschlossen sein wird.
 
 ![repairing_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/4f7a3dd8-9eff-4820-bfce-5be0604a9688)
@@ -160,7 +160,7 @@ Außerdem kann eine Inspektion gestartet werden, welche eine Stunde dauern würd
 
 ![menu_normal_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/b91368fe-0225-4d6b-8332-7ee5622497f1)
 
-#### 2️⃣*️⃣1️⃣ CVT_Addon Unterstützung
+#### CVT_Addon Unterstützung
 Durch das Script 'CVT_Addon' nimmt bei Fahrzeugen mit stufenlosem Getriebe durch unsachgemäße Bedienung der Verschleiß des Getriebes zu. 
 Unter 90% Schaden, kann das Getriebe für Geld (maximal 10.769,-) und viel Zeit (maximal 11h) repariert werden.
 Ab einer Höhe von 90%, muss das Getriebe vollständig getauscht werden. Dies kostet deutlich mehr (15.000,-), dauert allerdings weniger lang (7h).
@@ -171,7 +171,7 @@ Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalb
 
 ![menu_cvt2_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/ea06735c-3913-4b5c-8c19-fdf15bc931ef)
 
-#### 2️⃣*️⃣2️⃣ Wartung pausiert - Arbeitszeiten
+#### Wartung pausiert - Arbeitszeiten
 Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt.
 Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert.
 Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wird dies in einer weiteren Zeile Text in diesem Fenster angezeigt.
