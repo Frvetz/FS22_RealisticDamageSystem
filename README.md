@@ -103,7 +103,7 @@ Um eine Inspektion zu starten oder die Schäden zu reparieren, müssen Sie eine 
 
 Sobald eine Wartung oder Inspektion gestartet wurde, wird sie nur während den Arbeitszeiten von 7:00 - 21:00 Uhr durchgeführt. Sollte sie dennoch in ein Zeitfenster fallen, wo nicht gearbeitet wird, wird sie bis zum Morgen pausiert.
 
-Falls Sie die Schäden an Ihrem Fahrzeug nicht reparieren sollten und dieses mit der Zeit zu viele Schäden bekommen hat, so braucht ihr Fahrzeug länger, um zu starten und kann beim Anlassen sowie unter zu hoher Motorlast absterben.
+Wenn Sie die Schäden, die Ihr Fahrzeug im Laufe der Zeit erlitten hat, nicht reparieren, braucht es länger, um anzuspringen, könnte fehlstarten und wird absterben, wenn der Motor übermäßig belastet wird.
 
 Beim ersten Spielstart mit diesem Mod, schaut das Script den aktuellen Fahrzeugschaden an und fügt so viele Schäden hinzu, die diesen Fahrzeugschaden verursacht hätten. Diese sind bereits bekannte, müssen also nicht erst durch eine Inspektion aufgedeckt werden und können direkt über das Wartungsmenü repariert werden.
 
