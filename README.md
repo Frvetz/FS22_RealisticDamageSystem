@@ -3,6 +3,7 @@
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
 ▶ ![YouTube Video: Introduction](https://youtu.be/gEYtF931LA0)
+
 [![Preview](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/7b4589a5-2b12-4eb1-8a21-eb0f277ac17f)](https://youtu.be/gEYtF931LA0)
 
 [⤵️ Hier findest du die deutsche Bescheibung](#Deutsche-Beschreibung)
