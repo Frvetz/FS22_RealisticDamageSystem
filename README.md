@@ -72,6 +72,8 @@ Select option -> Start repair -> Money is deducted from the account -> Vehicle i
 
 An inspection can also be started, which would take one hour. After completion, the number of damages found is displayed.
 
+The costs for the repair and the amount of damages can be set in the ESC menu with the 'Repair and paint settings (Configure Maintenance)' mod.
+
 ![menu_normal_en](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/8734903e-7482-4fc4-a0b6-f2957f6d9710)
 
 #### CVT_Addon support
@@ -161,6 +163,8 @@ Unter dem Text können Sie auswählen, wie viele Schäden repariert werden solle
 Option auswählen -> Reparatur starten -> Geld wird vom Konto abgezogen -> Fahrzeug ist erst wieder einsatzbereit, wenn die angezeigte Zeit erreicht ist.
 
 Außerdem kann eine Inspektion gestartet werden, welche eine Stunde dauern würde. Nach Abschluss wird die Anzahl der gefundenen Schäden angezeigt.
+
+Die Kosten für die Reparatur und die Menge der Schäden können im ESC-Menü mit dem Mod 'Reparatur und Lackiereinstellungen (Configure Maintenance)' eingestellt werden.
 
 ![menu_normal_de](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/b91368fe-0225-4d6b-8332-7ee5622497f1)
 
