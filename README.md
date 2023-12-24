@@ -22,6 +22,8 @@ The first time you start the game with this mod, the script looks at the current
 
 If you are playing with the latest version of the CVT_Addon mod, improper vehicle operation increases wear on the gearbox. Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (maximum 11hrs) - above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours)
 
+In addition, the costs for the repair and the amount of damages can be set in the ESC menu with the "Repair and paint settings (Configure Maintenance)" mod.
+
 #### If you have any questions, requests or problems, please feel free to contact the following email: RealisticDamageSystem@gmail.com
 #### You can also join the following discord: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
   
@@ -109,6 +111,8 @@ Wenn Sie die Schäden, die Ihr Fahrzeug im Laufe der Zeit erlitten hat, nicht re
 Beim ersten Spielstart mit diesem Mod, schaut das Script den aktuellen Fahrzeugschaden an und fügt so viele Schäden hinzu, die diesen Fahrzeugschaden verursacht hätten. Diese sind bereits bekannte, müssen also nicht erst durch eine Inspektion aufgedeckt werden und können direkt über das Wartungsmenü repariert werden.
 
 Sollten Sie mit der neusten Version des Mods CVT_Addon spielen, so nimmt Ihr Getriebe durch unsachgemäße Bedienung an Schaden zu. Unter 90% Schaden, kann das Getriebe für Geld und viel Zeit repariert werden - ab 90%, muss dieses ausgetauscht werden. Dies kostet deutlich mehr Geld, geht aber schneller.
+
+Zusätzlich können die Kosten für die Reparatur und die Menge der Schäden im ESC-Menü mit dem Mod "Reparatur und Lackiereinstellungen (Configure Maintenance)" eingestellt werden.
 
 #### Wenn Sie Fragen, Wünsche oder Probleme haben, wenden Sie sich bitte an die folgende E-Mail-Adresse: RealisticDamageSystem@gmail.com
 #### Außerdem können Sie folgendem Discord beitreten: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
