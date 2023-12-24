@@ -29,7 +29,7 @@ In addition, the costs for the repair and the amount of damages can be set in th
   
 - #### Full local multiplayer and dedicated server compatibility
 - #### Supports the mod "CVT_Addon"
-- #### Supports the mod "Repair and paint settings (Configure Maintenance)" (coming soon)
+- #### Supports the mod "Repair and paint settings (Configure Maintenance)"
 - #### Compatible with the mod "Advanced Maintenance"
 - #### Compatible with the mod "Advanced Farm Manager"
 - #### Compatible with the mod "Auto Repair"
@@ -122,7 +122,7 @@ Zusätzlich können die Kosten für die Reparatur und die Menge der Schäden im 
 - #### Vollständige lokaler Multiplayer und Dedicated Server Unterstützung
 - #### Ingame Tutorial verfügbar (Konsolenbefehl "rdsResetTutorial", um das ingame Tutorial für sich selbst neu zu starten)
 - #### Unterstützung des Mods "CVT_Addon"
-- #### Unterstützung des Mods "Reparatur Und Lackierungseinstellungen (Configure Maintenance)" (kommt bald)
+- #### Unterstützung des Mods "Reparatur Und Lackierungseinstellungen (Configure Maintenance)"
 - #### Kompatibel mit dem Mod "Erweiterte Wartung (Advanced Maintenance)"
 - #### Kompatibel mit dem Mod "Fortgeschrittener Farm Manager (Advanced Farm Manager)"
 - #### Kompatibel mit dem Mod "Auto Repair"
