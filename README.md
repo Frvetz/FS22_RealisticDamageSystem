@@ -4,7 +4,7 @@
 
 ## ▶ YouTube Video: Introduction
 
-[![Preview](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/7b4589a5-2b12-4eb1-8a21-eb0f277ac17f)](https://youtu.be/S_JTyifItHI)
+[![Preview](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/7b4589a5-2b12-4eb1-8a21-eb0f277ac17f)](https://youtu.be/RVxSv0zQq84)
 
 ## English description [⤵️ Hier findest du die deutsche Bescheibung](#Deutsche-Beschreibung)
 
