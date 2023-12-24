@@ -33,7 +33,7 @@ In addition, the costs for the repair and the amount of damages can be set in th
 - #### Compatible with the mod "Advanced Maintenance"
 - #### Compatible with the mod "Advanced Farm Manager"
 - #### Compatible with the mod "Auto Repair"
-- #### Compatible with the mod "Mobile Workshop"
+- #### Compatible with the mod "Mobile Workshop" (does not replace the maintenance pallet!)
 - #### In-game tutorial available (Console command "rdsResetTutorial" available to restart the in-game tutorial for yourself)
 - #### Help available in the ESC menu
 - ### !When activating the automatic engine start, the engine stall function is deactivated!
@@ -126,7 +126,7 @@ Zusätzlich können die Kosten für die Reparatur und die Menge der Schäden im 
 - #### Kompatibel mit dem Mod "Erweiterte Wartung (Advanced Maintenance)"
 - #### Kompatibel mit dem Mod "Fortgeschrittener Farm Manager (Advanced Farm Manager)"
 - #### Kompatibel mit dem Mod "Auto Repair"
-- #### Kompatibel mit dem Mod "Mobile Werkstatt"
+- #### Kompatibel mit dem Mod "Mobile Werkstatt" (ersetzt nicht die Wartungspallete!)
 - #### Hilfe im ESC-Menü verfügbar
 - ### !Bei Aktivierung des automatischen Motorstarts, wird die Funktion des Motorabsterbens deaktiviert!
 
