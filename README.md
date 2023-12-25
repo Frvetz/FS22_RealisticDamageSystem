@@ -2,6 +2,8 @@
 
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
+[⤵️ Changelog](#Changelog)
+
 ## ▶ YouTube Video: Introduction
 
 [![Preview](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/7b4589a5-2b12-4eb1-8a21-eb0f277ac17f)](https://youtu.be/RVxSv0zQq84)
@@ -189,5 +191,16 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 
 ### 😃 Viel Spaß! 😃
 
+
+## Changelog
+### Changelog Version 0.9.0.2:
+-bug with FS22 normal-damage-system fixed (too much normal-damage)
+-bug with FS22_A-ProductionRevamp fixed (text did not show correctly)
+-but with FS22_PowerTools fixed (text did not show correctly)
+-but with silos fixed (text did not show correctly)
+-bug with every other mod that shows a optionDialog fixed(text did not show correctly)
+
+### Changelog Version 0.9.0.3:
+-fixed helpMenu localization error when playing with a language that is not de/en/fr
 
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
