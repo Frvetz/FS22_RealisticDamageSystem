@@ -195,9 +195,9 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ## Changelog
 ### Changelog Version 0.9.0.2:
 - bug with FS22 normal-damage-system fixed (too much normal-damage)
-- bug with FS22_A-ProductionRevamp fixed (text did not show correctly)
-- bug with FS22_PowerTools fixed (text did not show correctly)
-- bug with every other mod that shows a optionDialog fixed(text did not show correctly)
+- bug with mod FS22_A-ProductionRevamp fixed (text did not show correctly)
+- bug with mod FS22_PowerTools fixed (text did not show correctly)
+- general fix for every other mod that shows a optionDialog (text did not show correctly)
 
 ### Changelog Version 0.9.0.3:
 - fixed helpMenu localization error when playing with a language that is not de/en/fr
