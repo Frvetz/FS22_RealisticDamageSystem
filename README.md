@@ -202,4 +202,7 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ### Changelog Version 0.9.0.3:
 - fixed helpMenu localization error when playing with a language that is not de/en/fr
 
+### Changelog Version 0.9.0.4:
+- FS22 normal-damage-system bug at first savegame load with mod fixed (vehicle damage did not represent the damages in the hud)
+
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
