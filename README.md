@@ -205,4 +205,8 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ### Changelog Version 0.9.0.4:
 - FS22 normal-damage-system bug at first savegame load with mod fixed (vehicle damage did not represent the damages in the hud)
 
+### Changelog Version 0.9.0.5:
+- Russian translation added
+- fixed where not enough FS22 normal-damage was repaired (still FS22 normal-damage left when repairing all damages)
+
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
