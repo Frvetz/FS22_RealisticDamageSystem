@@ -217,5 +217,6 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - fixed missing repair needs to be paused text when clicking on "start repair"
 - added displayed finish time for the question if you want to start an inspection
 - added displayed finish time for the question if you want to start a CVT-Gearbox-Change
+- fixed Russian translation problems with CVT-Addon
 
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
