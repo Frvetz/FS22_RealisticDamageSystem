@@ -209,4 +209,13 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - Russian translation added
 - fixed where not enough FS22 normal-damage was repaired (still FS22 normal-damage left when repairing all damages)
 
+### Changelog Version 0.9.0.6:
+- fixed multiplayer problem where the tutorial question got asked again
+- another bug with mod FS22_A-ProductionRevamp fixed (another text did not show correctly)
+- fixed wrong text for CVT-Gearbox-Change (takes 7h not 15 hours to complete)
+- added text for when the CVT-Gearbox-Change needs to be paused
+- fixed missing repair needs to be paused text when clicking on "start repair"
+- added displayed finish time for the question if you want to start an inspection
+- added displayed finish time for the question if you want to start a CVT-Gearbox-Change
+
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
