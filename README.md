@@ -219,7 +219,7 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - added displayed finish time for the question if you want to start a CVT-Gearbox-Change
 - fixed Russian translation problems with CVT-Addon
 
-### Changelog Version 0.9.0.8:
+### Changelog Version 0.9.0.7:
 - fixed problem where the time was not paused for a second night (finishHour > 21 o'clock)
 
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
