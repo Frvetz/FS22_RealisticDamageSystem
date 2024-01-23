@@ -222,4 +222,10 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 ### Changelog Version 0.9.0.7:
 - fixed problem where the time was not paused for a second night (finishHour > 21 o'clock)
 
+### Changelog Version 0.9.0.8:
+- added console command to reset all damages (rdsResetDamages)
+- added console command to reset time until next inspection (rdsResetInspection)
+- added console command to stop any active repair or inspection (rdsStopActiveRepair)
+- added console command to show debug in log (rdsDebug)
+
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
