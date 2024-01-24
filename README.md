@@ -14,7 +14,7 @@ The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new featur
 
 With this script you will make the maintenance of your vehicle a lot more complex and actually have to think about when you want to repair damages of your vehicle.
 Damages occur on every vehicle over time. Some of them you will be notified of in the help window, some you will have to find through a one-hour inspection. 
-To start an inspection or repair the damages, you need to buy a pallet in the shop, drive close to it and then call up the maintenance menu. In this menu you can select how many damages you want to repair. You will also be shown how much a repair would cost with the current selection and how long it would take. 
+To start an inspection or repair the damages, you need to buy a pallet in the shop, drive close to it and then call up the maintenance menu. In this menu you can select how many damages you want to repair. In addition, you will receive a detailed cost overview and a time estimate for the expected duration of the repair based on your current selection.
 
 Once a maintenance or inspection has been started, it will only be carried out during the working hours from 7:00 - 21:00 o'clock. However, if it falls within a time window when no work is being carried out, it will be paused until the morning.
 
@@ -106,7 +106,7 @@ Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zu
 
 Mit diesem Script machen Sie die Wartung Ihres Fahrzeugs um einiges komplexer und müssen sich tatsächlich überlegen, wann Sie Schäden an Ihrem Fahrzeug reparieren wollen.
 An jedem Fahrzeug treten mit der Zeit Schäden auf. Manche von ihnen bekommen Sie im Hilfefenster mitgeteilt, manche müssen Sie erst durch eine einstündige Inspektion finden. 
-Um eine Inspektion zu starten oder die Schäden zu reparieren, müssen Sie eine Palette im Shop kaufen, nah an diese heranfahren und anschließend das Wartungsmenü aufrufen. In diesem Menü können Sie auswählen wie viele Schäden repariert werden sollen. Desweiteren bekommen Sie angezeigt wie viel eine Reparatur mit der aktuellen Auswahl kosten und wie lange sie dauern würde. 
+Um eine Inspektion zu starten oder die Schäden zu reparieren, müssen Sie eine Palette im Shop kaufen, nah an diese heranfahren und anschließend das Wartungsmenü aufrufen. In diesem Menü können Sie auswählen wie viele Schäden repariert werden sollen. Außerdem erhalten Sie eine detaillierte Kostenübersicht und eine Zeitangabe für die voraussichtliche Dauer der Reparatur basierend auf Ihrer aktuellen Auswahl.
 
 Sobald eine Wartung oder Inspektion gestartet wurde, wird sie nur während den Arbeitszeiten von 7:00 - 21:00 Uhr durchgeführt. Sollte sie dennoch in ein Zeitfenster fallen, wo nicht gearbeitet wird, wird sie bis zum Morgen pausiert.
 
