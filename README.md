@@ -227,5 +227,7 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - added console command to reset the time until next inspection (rdsResetInspection)
 - added console command to complete an active inspection or maintenance immediately (rdsStopActiveRepair)
 - added console command to show debug in log (rdsDebug)
+- added console command to remove a number of damages you want (rdsRemoveDamages [number])
+- added console command to find all hidden damages (rdsFindDamages)
 
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
