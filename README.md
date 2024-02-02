@@ -249,6 +249,6 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 (had to reset the time until the next inspect - had to make all currently unknown damages known)
 - added console command to reset the time until a next damage occurs (rdsResetTimeUntilNextDamage) (needed when the operating time a vehicle was changed manually)
 - added console command to reset everything (rdsResetEverything)
-- changed repair/inspection text so it displays how many days it take
+- changed repair/inspection text so it displays how many days it takes
 
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
