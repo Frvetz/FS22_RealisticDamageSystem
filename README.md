@@ -1,5 +1,6 @@
 # 🛠️ Realistic Damage System - Realistisches Schadenssystem 🛠️
 
+## !AT THE MOMENT THIS SCRIPT ONLY AFFECTS MOTORISED VEHICLES. IMPLEMENTS STILL HAVE TO BE REPAIRED LIKE NORMAL!
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
 [⤵️ Changelog](#Changelog)
@@ -9,6 +10,8 @@
 [![Preview](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/7b4589a5-2b12-4eb1-8a21-eb0f277ac17f)](https://youtu.be/RVxSv0zQq84)
 
 ## English description [⤵️ Hier findest du die deutsche Bescheibung](#Deutsche-Beschreibung)
+
+#### At the moment this script only affects motorised vehicles. Implements still have to be repaired like normal.
 
 The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
 
@@ -103,6 +106,9 @@ If the maintenance/inspection has to be paused with the current selection, this 
 
 
 ## Deutsche Beschreibung
+
+#### Im Moment betrifft dieses Skript nur motorisierte Fahrzeuge. Anbaugeräte müssen weiterhin wie gewohnt repariert werden.
+
 Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
 
 Mit diesem Script machen Sie die Wartung Ihres Fahrzeugs um einiges komplexer und müssen sich tatsächlich überlegen, wann Sie Schäden an Ihrem Fahrzeug reparieren wollen.
