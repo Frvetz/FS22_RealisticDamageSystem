@@ -238,4 +238,17 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - added DBL (dashboard live - mod) support
 - adapted description
 
+### Changelog Version 0.9.1.0:
+- fixed problem where vehicle gained damages during repair
+- added Brazilian translation
+- fixed problem where buttons from other optionDialog windows where disabled
+- fixed problem where a maintenance/inspection/cvt-repair did not finish even though the current time is greater than the displayed end time
+- fixed problem where the months until the next inspection were not reset to 12 again after an inspection
+- fixed problem where the vehicle no longer got damages because of its age
+- remade the whole damage calculation. Now it is random how many damages your vehicle gets
+(had to reset the time until the next inspect - had to make all currently unknown damages known)
+- added console command to reset the time until a next damage occurs (rdsResetTimeUntilNextDamage) (needed when the operating time a vehicle was changed manually)
+- added console command to reset everything (rdsResetEverything)
+- changed repair/inspection text so it displays how many days it takes
+
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
