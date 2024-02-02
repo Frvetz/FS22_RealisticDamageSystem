@@ -239,7 +239,7 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - adapted description
 
 ### Changelog Version 0.9.1.0:
-- fixed problem where vehicle gained damages during repair
+- fixed problem where vehicles gained damages during repair
 - added Brazilian translation
 - fixed problem where buttons from other optionDialog windows where disabled
 - fixed problem where a maintenance/inspection/cvt-repair did not finish even though the current time is greater than the displayed end time
