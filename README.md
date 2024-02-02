@@ -1,6 +1,6 @@
 # 🛠️ Realistic Damage System - Realistisches Schadenssystem 🛠️
 
-## !AT THE MOMENT THIS SCRIPT ONLY AFFECTS MOTORISED VEHICLES. IMPLEMENTS STILL HAVE TO BE REPAIRED LIKE NORMAL!
+## AT THE MOMENT THIS SCRIPT ONLY AFFECTS MOTORISED VEHICLES. IMPLEMENTS STILL HAVE TO BE REPAIRED LIKE NORMAL
 ![icon_RealisticDamageSystem](https://github.com/Frvetz/FS22_RealisticDamageSystem/assets/76913845/01e8ec66-2aad-4fc1-86f9-97d58da1e836)
 
 [⤵️ Changelog](#Changelog)
