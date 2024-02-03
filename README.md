@@ -14,7 +14,7 @@
 ## English description [⤵️ Hier findest du die deutsche Bescheibung](#Deutsche-Beschreibung)
 
 #### * At the moment this script only affects motorised vehicles. Implements still have to be repaired like normal *
-#### * This script is an early-access version. It may and will contain bugs!
+#### * This script is an early-access version. It may and will contain bugs! *
 
 The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
 
@@ -111,7 +111,7 @@ If the maintenance/inspection has to be paused with the current selection, this 
 ## Deutsche Beschreibung
 
 #### * Im Moment betrifft dieses Skript nur motorisierte Fahrzeuge. Anbaugeräte müssen weiterhin wie gewohnt repariert werden *
-#### * Dieses Script ist eine Early-Access Version. Es kann und wird Bugs enthalten!
+#### * Dieses Script ist eine Early-Access Version. Es kann und wird Bugs enthalten! *
 
 Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
 
