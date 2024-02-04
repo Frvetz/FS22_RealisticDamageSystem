@@ -262,6 +262,7 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - changed repair/inspection text so it displays how many days it takes
 
 ### Changelog Version 0.9.1.1:
+- fixed multiplayer sync problem
 - fixed problem where the vehicle could no longer be moved after a repair / inspection
 - removed text "finished in x days" for inspection
 
