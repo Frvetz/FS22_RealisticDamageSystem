@@ -266,4 +266,12 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - fixed problem where the vehicle could no longer be moved after a repair / inspection
 - removed text "finished in x days" for inspection
 
+### Changelog Version 0.9.1.2:
+- added variable to multiplayer sync for CVT_addon
+- added console command to manually set the months until next inspection (rdsSetTimeUntilInspection [number])
+- renamed console command "rdsResetInspection" to "rdsResetTimeUntilInspection"
+- Czech translation added
+- fixed that console command "rdsRemoveDamages" with a negative number didn't add FS22 normal-damage
+- fixed error with console command "rdsRemoveDamages" and "rdsSetTimeUntilInspection" if something other than a number was entered
+
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
