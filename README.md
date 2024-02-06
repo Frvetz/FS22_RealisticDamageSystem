@@ -30,7 +30,7 @@ The first time you start the game with this mod, the script looks at the current
 
 If you are playing with the latest version of the CVT_Addon mod, improper vehicle operation increases wear on the gearbox. Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (maximum 11hrs) - above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours)
 
-In addition, the costs for the repair and the amount of damages can be set in the ESC menu with the "Repair and paint settings (Configure Maintenance)" mod
+In addition, the costs for the repair and the amount of damages can be set in the ESC menu with the "Repair and paint settings (Configure Maintenance)" mod.
 
 #### If you have any questions, requests or problems, please feel free to contact the following email: RealisticDamageSystem@gmail.com
 #### You can also join the following discord: [SbSh-Pool Discord](https://discord.com/invite/mfergkwhDu)
