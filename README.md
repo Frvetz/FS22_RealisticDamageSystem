@@ -45,6 +45,7 @@ In addition, the costs for the repair and the amount of damages can be set in th
 - #### Console command "rdsFindDamages" available to uncover all hidden damage
 - #### Console command "rdsResetTimeUntilNextDamage" available to reset the time until the next damage occurs (required if the vehicle's operating hours are changed manually)
 - #### Console command "rdsResetEverything" available to reset everything
+- #### Console command "rdsSetTimeUntilInspection [number]" available to manually set the months until the next inspection
 
 ### Information
 - #### Full local multiplayer and dedicated server compatibility
@@ -154,6 +155,7 @@ Zusätzlich können die Kosten für die Reparatur und die Menge der Schäden im 
 - #### Konsolenbefehl "rdsFindDamages" verfügbar, um alle versteckten Schäden aufzudecken
 - #### Konsolenbefehl "rdsResetTimeUntilNextDamage" verfügbar, um die Zeit, bis der nächste Schaden auftritt, zurückzusetzen (wird benötigt, wenn die Betriebsstunden des Fahrzeugs manuell geändert werden)
 - #### Konsolenbefehl "rdsResetEverything" verfügbar, um alles zurückzusetzen
+- #### Konsolenbefehl "rdsSetTimeUntilInspection [nummer]" verfügbar, um die Monate bis zur nächsten Inspektion manuell zu setzten
 
 ### Information
 - #### Vollständige lokaler Multiplayer und Dedicated Server Unterstützung
