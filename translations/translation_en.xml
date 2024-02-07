@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>frvetz</translationContributors>
+
+    <texts>
+		<!--general texts-->
+		<text name="dialog_AutoMotorStart" text="Automatic engine start activated! This deactivates the engine false start function! (Function of the mod: Realistic Damage System)"/>
+		
+		<text name="input_VEHICLE_MAINTENANCE" text="Open maintenance menu"/>
+
+		<text name="function_Pallet" text="This pallet is used for the maintenance of vehicles."/>
+
+		<text name="warning_MotorFailed" text="Engine stalled! Please start it again"/>
+
+		<text name="dialog_maintenance_text" text="Total damages to be repaired: %1.0f
+Maintenance expected to be completed at: %02d:%02d o'clock
+Cost: %1.0f,-
+
+
+
+"/>
+
+		<text name="dialog_maintenance_MustBePaused_text" text="Total damages to be repaired: %1.0f
+Maintenance expected to be completed at: %02d:%02d o'clock
+Cost: %1.0f,-
+Maintenance must be paused in between! (21:00-7:00 o'clock)
+
+
+"/>
+		<text name="dialog_maintenance_MustBePaused2x_text" text="Total damages to be repaired: %1.0f
+Maintenance expected to be completed at: %02d:%02d o'clock
+Cost: %1.0f,-
+Maintenance must be paused in between! (21:00-7:00 o'clock) (2x)
+
+
+"/>
+
+		<text name="dialog_maintenance_title" text="How many damages are to be repaired?"/>
+		
+		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="There is currently no known damage that needs to be repaired.
+
+
+
+"/>
+		
+		<text name="dialog_maintenance_NumberDamages1" text="1 Damage"/>
+		<text name="dialog_maintenance_NumberDamages2" text="2 Damages"/>
+		<text name="dialog_maintenance_NumberDamages3" text="3 Damages"/>alright
+		
+		<text name="dialog_maintenance_NumberDamages4" text="4 Damages"/>
+		<text name="dialog_maintenance_NumberDamages5" text="5 Damages"/>
+		<text name="dialog_maintenance_NumberDamages6" text="6 Damages"/>
+		<text name="dialog_maintenance_NumberDamages7" text="7 Damages"/>
+		<text name="dialog_maintenance_NumberDamages8" text="8 Damages"/>
+		<text name="dialog_maintenance_NumberDamages9" text="9 Damages"/>
+		<text name="dialog_maintenance_NumberDamages10" text="10 Damages"/>
+		<text name="dialog_maintenance_NumberDamages11" text="11 Damages"/>
+		<text name="dialog_maintenance_NumberDamages12" text="12 Damages"/>
+
+
+        <text name="information_Motor" text="Inspection required in: %1.0f months... Current damages: %1.0f"/>
+		<text name="warning_wartung" text="Inspection required!... Current damages: %1.0f"/>
+
+
+
+
+		<!--maintenance texts-->
+		<text name="information_wartung" text="Maintenance completed in 1 day at: %02d:%02d o'clock"/>
+		<text name="information_wartungMoreDays" text="Maintenance completed in %1.0f days at: %02d:%02d o'clock"/>
+
+		<text name="dialog_RepairInfo_text" text="The vehicle cannot be used during the maintenance!
+The repair would take until %02d:%02d o'clock and cost %1.0f,-
+Start anyway?"/>
+
+		<text name="dialog_RepairInfo_text_withPaused" text="The vehicle cannot be used during the maintenance!
+The repair would take until %02d:%02d o'clock and cost %1.0f,-
+IF THE REPAIR IS STARTED NOW, IT MUST BE PAUSED UNTIL 7:00 O'CLOCK!
+Start anyway?"/>
+		<text name="dialog_RepairInfo_text_withPaused2x" text="The vehicle cannot be used during the maintenance!
+The repair would take until %02d:%02d o'clock and cost %1.0f,-
+IF THE REPAIR IS STARTED NOW, IT MUST BE PAUSED UNTIL 7:00 O'CLOCK! (2x)
+Start anyway?"/>
+
+		<text name="dialog_RepairInfo_title" text="Repair %1.0f damages?"/>
+
+		<text name="dialog_maintenance_finishedInformation" text="Maintenance is now complete... The total number of damages is now: %1.0f"/>
+
+		<text name="dialog_yesButton_text" text="Repair damages"/>
+
+		<text name="warning_AlreadyActiveMaintenance" text="You cannot currently do this because maintenance has already been started"/>
+
+
+
+
+
+		<!--inspections texts-->
+		<text name="information_Inspection" text="Inspection completed at: %02d:%02d o'clock"/>
+
+		<text name="dialog_InspectionInfo_text" text="During an inspection, the vehicle is checked for hidden damage so that they can be repaired... However, this takes 1 hour and would therefore be completed at %02d:%02d.
+Start anyway?"/>
+		<text name="dialog_InspectionInfo_text_withPaused" text="During an inspection, the vehicle is checked for hidden damage so that they can be repaired... However, this takes 1 hour and would therefore be completed at %02d:%02d.
+IF THE INSPECTION IS STARTED NOW, IT MUST BE PAUSED UNTIL 7:00 O'CLOCK!
+Start anyway?"/>
+		
+		<text name="dialog_InspectionInfo_title" text="Start inspection?"/>
+
+		<text name="dialog_inspection_finishedInformation" text="The inspection is now complete... %1.0f damages were found, giving a total of %1.0f damages."/>
+
+		<text name="dialog_inspection_text" text="Start inspection"/>
+
+		<text name="warning_AlreadyActiveInspection" text="You cannot currently do this because an inspection has already been started"/>
+
+
+
+
+		
+
+		<!--CVT texts-->
+		<text name="information_CVTChange" text="Gearbox-change completed in 1 day at: %02d:%02d o'clock"/>
+		
+		<text name="information_CVTRepair" text="Gearbox-repair completed in 1 day at: %02d:%02d o'clock"/>
+		
+		<text name="dialog_cvtInfo_text_ChangeGearbox" text="[CVT Addon] The gearbox has to be completely replaced due to the severity of the damage... This costs 15.000,- and takes 7hrs, so it would be completed at %02d:%02d.
+Start anyway?"/>
+		<text name="dialog_cvtInfo_text_ChangeGearbox_withPaused" text="[CVT Addon] The gearbox has to be completely replaced due to the severity of the damage... This costs 15.000,- and takes 7hrs, so it would be completed at %02d:%02d.
+IF THE REPAIR IS STARTED NOW, IT MUST BE PAUSED UNTIL 7:00 O'CLOCK!
+Start anyway?"/>
+
+		<text name="dialog_cvtInfo_text_RepairGearbox" text="[CVT Addon] The gearbox will be completely repaired... This takes until %02d:%02d and costs %1.0f,-.
+Start anyway?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_Tutorial" text="[CVT Addon] The gearbox will be completely repaired...This takes until X:X and costs X,-.
+Start anyway?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_withPaused" text="[CVT Addon] The gearbox will be completely repaired... This takes until %02d:%02d and costs %1.0f,-.
+IF THE REPAIR IS STARTED NOW, IT MUST BE PAUSED UNTIL 7:00 O'CLOCK!
+Start anyway?"/>
+
+		<text name="dialog_cvtInfo_title" text="Start repair?"/>
+		
+		<text name="dialog_cvt_textExplanation" text="[CVT-Addon] Above 90%% damage, the gearbox must be completely replaced. A replacement costs 15.000,- and takes 7hrs.
+Current gearbox damage: %1.0f%%
+Before starting the repair, the costs and length are displayed."/>
+       
+		<text name="dialog_cvt_finishedInformation" text="[CVT Addon] The gearbox-change is now complete... The gearbox-damage is now 0% again."/>
+		
+		<text name="dialog_cvt_textChangeGearbox" text="[CVT Addon] Change gearbox"/>
+
+		<text name="dialog_cvt_textRepairGearbox" text="[CVT Addon] Repair gearbox"/>
+		
+		
+
+
+
+
+
+		<!--tutorial texts-->
+		<text name="warning_CantStartTutorialCVT" text="The tutorial cannot be started in this vehicle because a CVT-repair has already been started"/>
+		<text name="warning_CantStartTutorialInspection" text="The tutorial cannot be started in this vehicle because an inspection has already been started"/>
+		<text name="warning_CantStartTutorialMaintenance" text="The tutorial cannot be started in this vehicle because a maintenance has already been started"/>
+
+		<text name="tutorial_Question_title" text="Tutorial for Realistic Damage System mod"/>
+		
+		<text name="tutorial_Question_text" text="Would you like a tutorial for the Realistic Damage System mod that shows all the functions and explains the meaning behind them?"/>
+		
+		<text name="tutorial_title" text="Realistic Damage System - Tutorial"/>
+       
+	    <text name="tutorial_text1" text="When you drive a vehicle, the help window informs you about the current condition of the vehicle.
+This allows you to see the number of currently known damages and when the vehicle should be inspected for further hidden damages at the latest.
+After an inspection, the damage found is added to the number of current damages.
+-Inspection required in: X months... Current damages: X-"/>
+
+		<text name="tutorial_text2" text="Any damage, whether known or not, leads to a loss of engine power.
+If the inspection is not carried out, the consequences of the hidden damages are to be expected. For example, the vehicle will stall if the engine load is too high and will not start properly if the automatic engine start is deactivated in the game settings.
+By default, the vehicle maintenance menu can be opened by pressing CTRL + J when you are near a vehicle maintenance palette (available in the shop)."/>
+
+		<text name="tutorial_text3" text="In this window (CTRL + J) you can see a text that shows how many damages can be repaired in total, [next page]"/>
+
+		<text name="tutorial_text3_2" text="how much the repair will cost with the current selection and when it will be completed. 
+The vehicle cannot be used during maintenance!"/>
+	
+		<text name="tutorial_text4" text="Below the text you can select how many damages you want to repair... [next page]"/>
+
+		<text name="tutorial_text4_2" text="Select option -> Start repair -> Money is deducted from the account -> Vehicle is only ready for use again when the displayed time has been reached."/>
+
+		<text name="tutorial_text4_3" text="Furthermore, an inspection can be started, which would take one hour. After completion, the number of damages found is displayed."/>
+
+		<text name="tutorial_text4_4" text="The costs for the repair and the amount of damages can be set in the ESC menu with the 'Repair and paint settings (Configure Maintenance)' mod."/>
+
+		<text name="tutorial_textCVT" text="Due to the 'CVT_Addon' script, improper vehicle operation increases wear on the gearbox in vehicles with a variable (CVT) gearbox. [next page]"/>
+
+		<text name="tutorial_textCVT2" text="Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (maximum 11hrs). [next page]"/>
+
+		<text name="tutorial_textCVT3" text="Above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours). [next page]"/>
+
+		<text name="tutorial_textCVT4" text="Before the gearbox-repair is actually started, you will be shown how much it will cost and how long it will take."/>
+
+		<text name="tutorial_text5" text="If the maintenance/inspection has been started, it will only be carried out during working hours (7:00 to 21:00 o'clock). [next page]"/>
+
+		<text name="tutorial_text5_2" text="However, if the maintenance/inspection falls within a time window in which no work is being carried out, it will be paused. [next page]"/>
+
+		<text name="tutorial_text5_3" text="If the maintenance/inspection must be paused with the current selection, this is displayed in an additional line of text in this window. -Maintenance must be paused in between! (21:00-7:00 o'clock)-"/>
+
+	<text name="tutorial_text6" text="If you have any questions while playing, you will find another tutorial for the mod in the ESC menu.
+You also have the option of restarting the tutorial with the console command 'rdsResetTutorial'.
+
+Have fun!!"/>
+
+	<!-- HELP WINDOW -->
+	<text name="help_page_title" text="Realistic Damage System"/>
+
+	<text name="help_page_Gameplay" text="HUD"/>
+
+	<text name="help_page_gameplay_text_title" text="Information"/>
+
+	<text name="help_page_gameplay_text3_title" text="Open maintenance menu"/>
+
+	<text name="help_page_gameplay_text4_title" text="Maintenance started"/>
+
+	<text name="help_page_MaintenanceMenu" text="Maintenance menu"/>
+
+	<text name="help_page_menu_cvt_title" text="CVT_Addon"/>
+
+	<text name="help_page_menu_text2_title" text="Maintenance paused - working hours"/>
+
+	<text name="help_page_gameplay_text" text="When you operate a vehicle, the help window informs you about the current condition of the vehicle.
+This allows you to see the number of currently known damages and when the vehicle should be inspected for further hidden damages at the latest.
+After an inspection, the damages found are added to the number of current damages."/>
+
+	<text name="help_page_gameplay_text2" text="Any damage, whether known or not, leads to a loss of engine power.
+If the inspection is not carried out, consequences of the unknown damages must be expected. For example, the vehicle will stall if the engine load is too high and will not start properly if the automatic engine start is deactivated in the game settings."/>
+	
+	<text name="help_page_gameplay_text3" text="By default, the vehicle maintenance menu can be called up with CTRL + J when you are near a vehicle maintenance palette (available in the shop)."/>
+	
+	<text name="help_page_gameplay_text4" text="As soon as maintenance or similar has been started, you will be shown in the help window when it will be completed."/>
+
+	<text name="help_page_menu_text" text="In this window (CTRL + J) you can see a text that shows how many damages can be repaired in total, how much the repair will cost with the current selection and when it will be completed. 
+The vehicle cannot be used during maintenance!
+
+Below the text you can select how many damages should be repaired...
+
+Select option -> Start repair -> Money is deducted from the account -> Vehicle is only ready for use again when the displayed time is reached.
+
+An inspection can also be started, which would take one hour. After completion, the number of damages found is displayed.
+
+The costs for the repair and the amount of damages can be set in the ESC menu with the 'Repair and paint settings (Configure Maintenance)' mod."/>
+
+	<text name="help_page_menu_text_cvt" text="Due to the 'CVT_Addon' script, improper vehicle operation increases wear on the gearbox in vehicles with a variable (CVT) gearbox.
+Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (5-11hrs).
+Above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours)."/>
+
+	<text name="help_page_menu_text_cvt2" text="Before the gearbox repair is actually started, you will be shown how much it will cost and how long it will take, just to be on the safe side."/>
+
+	<text name="help_page_menu_text2" text="Once the maintenance/inspection has started, it will only be carried out during working hours (7:00 to 21:00).
+However, if the maintenance/inspection falls within a time window in which no work is being carried out, it will be paused.
+If the maintenance/inspection has to be paused with the current selection, this is displayed in an additional line of text in this window."/>
+    </texts>
+</l10n>

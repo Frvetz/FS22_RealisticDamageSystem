@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpLines>
+    <category title="$l10n_help_page_title">
+        <page title="$l10n_help_page_Gameplay">
+            <paragraph>
+                <title text="$l10n_help_page_gameplay_text_title" />
+                <text text="$l10n_help_page_gameplay_text" />
+            </paragraph>
+            <paragraph>
+                <image filename="helpMenu/images_fr/gameplay_fr.dds" size="2048 1024" uvs="0px 0px 1820px 1024px" aspectRatio="0.5625"/>
+            </paragraph>
+            <paragraph>
+                <text text="$l10n_help_page_gameplay_text2" />
+            </paragraph>
+            <paragraph>
+                <image filename="helpMenu/images_fr/stalled_fr.dds" size="2048 1024" uvs="0px 0px 1820px 1024px" aspectRatio="0.5625"/>
+            </paragraph>
+            <paragraph>
+                <title text="$l10n_help_page_gameplay_text3_title" />
+                <text text="$l10n_help_page_gameplay_text3" />
+            </paragraph>
+             <paragraph>
+                <image filename="helpMenu/images_fr/menu_open_fr.dds" size="2048 1024" uvs="0px 0px 1820px 1024px" aspectRatio="0.5625"/>
+            </paragraph>
+            <paragraph>
+                <title text="$l10n_help_page_gameplay_text4_title" />
+                <text text="$l10n_help_page_gameplay_text4" />
+            </paragraph>
+            <paragraph>
+                <image filename="helpMenu/images_fr/repairing_fr.dds" size="2048 1024" uvs="0px 0px 1820px 1024px" aspectRatio="0.5625"/>
+            </paragraph>
+        </page>
+        <page title="$l10n_help_page_MaintenanceMenu">
+            <paragraph>
+                <title text="$l10n_help_page_MaintenanceMenu" />
+                <text text="$l10n_help_page_menu_text" />
+            </paragraph>
+            <paragraph>
+                <image filename="helpMenu/images_fr/menu_normal_fr.dds" size="2048 1024" uvs="414px 232px 990px 557px" aspectRatio="0.5625"/>
+            </paragraph>
+            <paragraph>
+                <title text="$l10n_help_page_menu_text2_title" />
+                <text text="$l10n_help_page_menu_text2" />
+            </paragraph>
+            <paragraph>
+                <image filename="helpMenu/images_fr/menu_paused_fr.dds" size="2048 1024" uvs="414px 232px 990px 557px" aspectRatio="0.5625"/>
+            </paragraph>
+        </page>
+    </category>
+</helpLines>

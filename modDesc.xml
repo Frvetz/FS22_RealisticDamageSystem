@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="79">
+    <title>
+        <de>Realistisches Schadenssystem</de>
+        <en>Realistic Damage System</en>
+        <fr>Système De Dommages Réaliste</fr>
+        <cz>Realistický systém poškození</cz>
+    </title>
+    <description>
+        <de>
+<![CDATA[Der Mod "Fahrzeugwartung" aus dem LS19 kehrt mit neuen Funktionen in den LS22 zurück!
+
+Mit diesem Script machen Sie die Wartung Ihres Fahrzeugs um einiges komplexer und müssen sich tatsächlich überlegen, wann Sie Schäden an Ihrem Fahrzeug reparieren wollen.
+An jedem Fahrzeug treten mit der Zeit Schäden auf. Manche von ihnen bekommen Sie im Hilfefenster mitgeteilt, manche müssen Sie erst durch eine einstündige Inspektion finden.
+Um eine Inspektion zu starten oder die Schäden zu reparieren, müssen Sie eine Palette im Shop kaufen, nah an diese heranfahren und anschließend das Wartungsmenü aufrufen (standardmäßig STRG + J). In diesem Menü können Sie auswählen wie viele Schäden repariert werden sollen. Außerdem erhalten Sie eine detaillierte Kostenübersicht und eine Zeitangabe für die voraussichtliche Dauer der Reparatur basierend auf Ihrer aktuellen Auswahl.
+
+Sobald eine Wartung oder Inspektion gestartet wurde, wird sie nur während den Arbeitszeiten von 7:00 - 21:00 Uhr durchgeführt. Sollte sie dennoch in ein Zeitfenster fallen, wo nicht gearbeitet wird, wird sie bis zum Morgen pausiert.
+
+Wenn Sie die Schäden, die Ihr Fahrzeug im Laufe der Zeit erlitten hat, nicht reparieren, braucht es länger, um anzuspringen, könnte fehlstarten und wird absterben, wenn der Motor übermäßig belastet wird.
+
+Beim ersten Spielstart mit diesem Mod, schaut das Script den aktuellen Fahrzeugschaden an und fügt so viele Schäden hinzu, die diesen Fahrzeugschaden verursacht hätten. Diese sind bereits bekannte, müssen also nicht erst durch eine Inspektion aufgedeckt werden und können direkt über das Wartungsmenü repariert werden.
+
+Sollten Sie mit der neusten Version des Mods CVT_Addon spielen, so nimmt Ihr Getriebe durch unsachgemäße Bedienung an Schaden zu. Unter 90% Schaden, kann das Getriebe für Geld und viel Zeit repariert werden - ab 90%, muss dieses ausgetauscht werden. Dies kostet deutlich mehr Geld, geht aber schneller.
+
+Zusätzlich können die Kosten für die Reparatur und die Menge der Schäden im ESC-Menü mit dem Mod "Reparatur und Lackiereinstellungen (Configure Maintenance)" eingestellt werden.
+
+- Vollständige lokaler Multiplayer und Dedicated Server Unterstützung
+- Unterstützung des Mods "CVT_Addon"
+- Unterstützung des Mods "Reparatur Und Lackierungseinstellungen (Configure Maintenance)"
+- Unterstützung des Mods "Dashboard Live"
+- Kompatibel mit dem Mod "Erweiterte Wartung (Advanced Maintenance)"
+- Kompatibel mit dem Mod "Fortgeschrittener Farm Manager (Advanced Farm Manager)"
+- Kompatibel mit dem Mod "Auto Repair"
+- Kompatibel mit dem Mod "Mobile Werkstatt" (ersetzt nicht die Wartungspallete!)
+- Ingame Tutorial verfügbar
+(Konsolenbefehl "rdsResetTutorial" verfügbar, um das ingame Tutorial für sich selbst neu zu starten)
+- Hilfe im ESC-Menü verfügbar
+- Bei Aktivierung des automatischen Motorstarts, wird die Funktion des Motorabsterbens deaktiviert
+- Konsolenbefehl "rdsResetDamages" verfügbar, um alle Schäden des Fahrzeugs zurückzusetzen
+- Konsolenbefehl "rdsResetTimeUntilInspection" verfügbar, um die Zeit bis zur nächsten Inspektion zurückzusetzen
+- Konsolenbefehl "rdsStopActiveRepair" verfügbar, um eine aktive Inspektion oder Wartung direkt abzuschließen
+- Konsolenbefehl "rdsDebug" verfügbar, um einen Debug in die Konsole zu schreiben
+- Konsolenbefehl "rdsRemoveDamages [nummer]" verfügbar, um die eingegebene Anzahl an bekannten Schäden zu entfernen
+- Konsolenbefehl "rdsFindDamages" verfügbar, um alle versteckten Schäden aufzudecken
+- Konsolenbefehl "rdsResetTimeUntilNextDamage" verfügbar, um die Zeit, bis der nächste Schaden auftritt, zurückzusetzen (wird benötigt, wenn die Betriebsstunden des Fahrzeugs manuell geändert werden)
+- Konsolenbefehl "rdsResetEverything" verfügbar, um alles zurückzusetzen
+- Konsolenbefehl "rdsSetTimeUntilInspection [nummer]" verfügbar, um die Monate bis zur nächsten Inspektion manuell zu setzten
+
+
+Kontakt:
+- Kontakt und neuste Updates: https://github.com/Frvetz/FS22_RealisticDamageSystem
+- Kontakt E-Mail: RealisticDamageSystem@gmail.com
+- Kontakt Discord: https://discord.com/invite/mfergkwhDu
+    ]]>
+	</de>
+	<en>
+<![CDATA[The mod "Extended Vehicle Maintenance" from FS19 returns to FS22 with new features!
+
+With this script you will make the maintenance of your vehicle a lot more complex and actually have to think about when you want to repair damages of your vehicle.
+Damages occur on every vehicle over time. Some of them you will be notified of in the help window, some you will have to find through a one-hour inspection. 
+To start an inspection or repair the damages, you need to buy a pallet in the shop, drive close to it and then call up the maintenance menu (by default CTRL + J). In this menu you can select how many damages you want to repair. In addition, you will receive a detailed cost overview and a time estimate for the expected duration of the repair based on your current selection.
+
+Once a maintenance or inspection has been started, it will only be carried out during the working hours from 7:00 - 21:00 o'clock. However, if it falls within a time window when no work is being carried out, it will be paused until the morning.
+
+If you don't repair the damages your vehicle has suffered over time, it will take longer to start, risk false starts and stall if the engine is under excessive load.
+
+The first time you start the game with this mod, the script looks at the current vehicle damage and adds the number of damages that would have caused this vehicle damage. These damages are already known, so they do not have to be found by an inspection and can be repaired straight away via the maintenance menu.
+
+If you are playing with the latest version of the CVT_Addon mod, improper vehicle operation increases wear on the gearbox. Below 90% damage, the gearbox can be repaired for money (maximum 10.769,-) and a lot of time (maximum 11hrs) - above 90%, the gearbox must be completely replaced. This costs considerably more (15.000,-), but takes less time (7 hours) 
+
+In addition, the costs for the repair and the amount of damages can be set in the ESC menu with the "Repair and paint settings (Configure Maintenance)" mod.
+
+- Full local multiplayer and dedicated server support
+- Supports the mod "CVT_Addon"
+- Supports the mod "Repair and paint settings (Configure Maintenance)"
+- Supports the mod "Dashboard Live"
+- Compatible with the mod "Advanced Maintenance"
+- Compatible with the mod "Advanced Farm Manager"
+- Compatible with the mod "Auto Repair"
+- Compatible with the mod "Mobile Workshop" (does not replace the maintenance pallet!)
+- In-game tutorial available
+(Console command "rdsResetTutorial" available to restart the in-game tutorial for yourself)
+- Help available in the ESC menu
+- When activating the automatic engine start, the engine stall function is deactivated
+- Console command "rdsResetDamages" available to reset all damages of the vehicle
+- Console command "rdsResetTimeUntilInspection" available to reset the time until the next inspection
+- Console command "rdsStopActiveRepair" available to complete an active inspection or maintenance immediately
+- Console command "rdsDebug" available to write a debug to the console
+- Console command "rdsRemoveDamages [number]" available to remove the entered number of known damages
+- Console command "rdsFindDamages" available to uncover all hidden damage
+- Console command "rdsResetTimeUntilNextDamage" available to reset the time until the next damage occurs (required if the vehicle's operating hours are changed manually)
+- Console command "rdsResetEverything" available to reset everything
+- Console command "rdsSetTimeUntilInspection [number]" available to manually set the months until the next inspection
+
+Contact:
+- Contact and latest updates: https://github.com/Frvetz/FS22_RealisticDamageSystem
+- Contact email: RealisticDamageSystem@gmail.com
+- Contact discord: https://discord.com/invite/mfergkwhDu
+]]>	
+	</en>	
+	<fr>
+<![CDATA[Le mod "Maintenance Du Véhicule" de FS19 revient dans FS22 avec de nouvelles fonctionnalités !
+
+Avec ce script, vous allez rendre l'entretien de votre véhicule beaucoup plus complexe et vous allez devoir réfléchir au moment où vous voulez réparer les dommages de votre véhicule.
+Chaque véhicule subit des dommages au fil du temps. Certains d'entre eux vous seront signalés dans la fenêtre d'aide, d'autres devront être découverts lors d'une inspection d'une heure. 
+Pour lancer une inspection ou réparer les dommages, vous devez acheter une palette dans l'atelier, rouler à proximité et appeler le menu d'entretien (par défaut CTRL + J). Dans ce menu, vous pouvez sélectionner le nombre de dommages que vous souhaitez réparer. Vous verrez également combien coûterait une réparation avec la sélection actuelle et combien de temps elle prendrait. 
+
+Une fois qu'un entretien ou une inspection a été lancé, il ne sera effectué que pendant les heures de travail, de 7h00 à 21h00. Toutefois, s'il tombe dans une fenêtre de temps où aucun travail n'est effectué, il sera mis en pause jusqu'au matin.
+
+Si vous ne réparez pas les dommages que votre véhicule a subis au fil du temps, il mettra plus de temps à démarrer, risque de faire des faux départs au démarrage et de caler en cas de charge excessive du moteur.
+
+La première fois que vous démarrez le jeu avec ce mod, le script examine les dommages actuels du véhicule et ajoute le nombre de dommages qui auraient causé ces dommages au véhicule. Ces dommages sont déjà connus, ils ne doivent donc pas être trouvés par une inspection et peuvent être réparés directement via le menu de maintenance.
+
+Si vous jouez avec la dernière version du mod CVT_Addon, une mauvaise utilisation du véhicule augmente l'usure de la boîte de vitesses. En dessous de 90% de dommages, la boîte de vitesses peut être réparée pour une somme d'argent (maximum 10 769 euros) et beaucoup de temps (maximum 11 heures) - au-delà de 90 %, la boîte de vitesses doit être entièrement remplacée. Cela coûte beaucoup plus cher (15 000 euros), mais prend moins de temps (7 heures). 
+
+En outre, les coûts de réparation et le montant des dommages peuvent être définis dans le menu ESC avec le module "Réparation Et Réglages De La Peinture (Configure Maintenance)".
+
+- Prise en charge complète du multijoueur local et du serveur dédié
+- Prise en charge du mod "CVT_Addon"
+- Prise en charge du mod "Réparation Et Réglages De La Peinture (Configure Maintenance)"
+- Prise en charge du mod "Dashboard Live"
+- Compatible avec le mod "Advanced Maintenance"
+- Compatible avec le mod "Advanced Farm Manager"
+- Compatible avec le mod "Auto Repair"
+- Compatible avec le mod "Atelier Mobile" (ne remplace pas la palette de maintenance !)
+- Tutoriel disponible dans le jeu
+(La commande console "rdsResetTutorial" est disponible pour redémarrer le tutoriel en jeu)
+- Aide disponible dans le menu ESC
+- Lors de l'activation du démarrage automatique du moteur, la fonction de calage du moteur est désactivée
+- Commande de console "rdsResetDamages" disponible pour réinitialiser tous les dommages du véhicule
+- Commande de console "rdsResetTimeUntilInspection" disponible pour réinitialiser le délai jusqu'à la prochaine inspection
+- Commande de console "rdsStopActiveRepair" disponible pour terminer immédiatement une inspection ou une maintenance active
+- Commande de console "rdsDebug" disponible pour d'écrire un message de débogage sur la console
+- Commande de console "rdsRemoveDamages [nombre]" disponible pour supprimer le nombre de dommages connus saisi
+- Commande de console "rdsFindDamages" disponible pour découvrir tous les dommages cachés
+- Commande de console "rdsResetTimeUntilNextDamage" disponible pour réinitialiser le temps jusqu'au prochain dommage (nécessaire si les heures de fonctionnement du véhicule sont modifiées manuellement)
+- Commande de console "rdsResetEverything" disponible pour tout réinitialiser
+- Commande de console "rdsSetTimeUntilInspection [nombre]" disponible pour définir manuellement le nombre de mois jusqu'à la prochaine inspection.
+
+Contact :
+- Contact et dernières mises à jour : https://github.com/Frvetz/FS22_RealisticDamageSystem
+- Courriel du contact : RealisticDamageSystem@gmail.com
+- Contact discord : https://discord.com/invite/mfergkwhDu
+]]>
+	</fr>
+    <ru>
+<![CDATA[Мод "Extended Vehicle Maintenance" из FS19 возвращается в FS22 с новыми функциями!
+
+С помощью этого скрипта вы сделаете обслуживание вашего автомобиля более сложным и фактически необходимо подумать о том, когда вы хотите ремонтировать повреждения вашего автомобиля.
+Повреждения происходят на каждом транспортном средстве с течением времени. О некоторых из них вы будете уведомлены в окне справки, некоторые вы должны найти произведя одночасовую проверку.
+Чтобы начать осмотр или ремонт повреждений, вам нужно купить поддон в магазине, подъехать к нему, а затем вызвать меню обслуживания (по умолчанию CTRL + J). В этом меню вы можете выбрать, сколько повреждений вы хотите восстановить. Вам будет показано, во сколько обойдётся ремонт с текущим выбором и сколько времени это займёт.
+
+Техническое обслуживание или осмотр будет проводиться только в рабочее время с 7:00 до 21:00. Однако, если работы попадают на нерабочее время, тогда они приостанавливаются до утра.
+
+Если вы не отремонтировали повреждения вашего автомобиля с течением времени, запуск двигателя займёт больше времени, появится риск ложных запусков и остановки двигателя, если он находится под большой нагрузкой.
+
+В первый раз, когда вы начинаете игру с этим модом, сценарий смотрит на уровень текущего повреждения автомобиля и добавляет количество повреждений, которые могли бы вызваны на этом автомобиль. Эти повреждения уже известны, поэтому их не нужно искать при осмотре и их можно сразу же устранить через меню обслуживания.
+
+Если вы играете с последней версией мода CVT_Addon, неправильная работа транспортного средства увеличивает износ коробки передач. При повреждении ниже 90%, коробка передач может быть отремонтирована за деньги (максимум 10.769,-) и займёт много времени (максимум 11 часов) - при выше 90%, коробка передач должна быть полностью заменена. Это стоит значительно больше (15000,-), но занимает меньше времени (7 часов).
+
+Кроме того, стоимость ремонта и размер ущерба могут быть отрегулированы в меню ESC мода "Repair and paint settings (Configure Maintenance)".
+
+- Полная поддержка локального мультиплеера и выделенного сервера
+- Поддерживает мод "CVT_Addon"
+- Поддерживает мод "Repair and paint settings (Configure Maintenance)"
+- Поддерживает мод "Dashboard Live"
+- Совместимый с модом "Advanced Maintenance"
+- Совместимый с модом "Advanced Farm Manager"
+- Совместимый с модом "Auto Repair"
+- Совместимый с модом "Mobile Workshop" (не заменяет поддон обслуживания!)
+- Доступно интерактивное руководство
+(Есть консольная команда "rdsResetTutorial" для повторного запуска обучения)
+- Справка, имеющаяся в меню ESC
+- При включении автоматического запуска двигателя функция остановки двигателя отключается
+- Консольная команда "rdsResetDamages" доступна для сброса всех повреждений автомобиля
+- Консольная команда "rdsResetTimeUntilInspection" позволяет сбросить время до следующего осмотра
+- Консольная команда "rdsStopActiveRepair" позволяет немедленно завершить активный осмотр или техническое обслуживание
+- Консольная команда "rdsDebug" позволяет записать отладку на консоль
+- Консольная команда "rdsRemoveDamages [номер]" доступна для удаления введенного количества известных повреждений
+- Консольная команда "rdsFindDamages" позволяет обнаружить все скрытые повреждения
+- Консольная команда "rdsResetTimeUntilNextDamage" позволяет сбросить время до следующего повреждения (требуется, если часы работы автомобиля изменяются вручную)
+- Консольная команда "rdsResetEverything" доступна для сброса всех настроек
+- Консольная команда "rdsSetTimeUntilInspection [номер]" доступна для ручной установки месяцев до следующей инспекции
+
+Связь:
+- Contact and latest updates: https://github.com/Frvetz/FS22_RealisticDamageSystem
+- Contact email: RealisticDamageSystem@gmail.com
+- Contact discord: https://discord.com/invite/mfergkwhDu
+]]>   
+    </ru>
+    <br>
+<![CDATA[O mod "Extended Vehicle Maintenance" do FS19 retorna ao FS22 com novos recursos!
+
+Com este script você tornará a manutenção do seu veículo muito mais complexa e realmente terá que pensar quando quiser reparar os danos do seu veículo.
+Danos ocorrem em todos os veículos ao longo do tempo. Alguns deles você será notificado na janela de ajuda, outros você terá que encontrar através de uma inspeção de uma hora.
+Para iniciar uma inspeção ou reparar os danos, é necessário comprar um palete na loja, aproximar-se dele e depois acessar o menu de manutenção (por padrão CTRL + J). Neste menu você pode selecionar quantos danos deseja reparar. Além disso, você receberá uma visão geral detalhada dos custos e uma estimativa de tempo para o reparo com base na sua seleção atual.
+
+Uma vez iniciada uma manutenção ou inspeção, a mesma só será realizada no horário de trabalho das 7h00 às 21h00. Porém, se cair dentro de um intervalo de tempo em que nenhum trabalho esteja sendo realizado, será pausado até de manhã.
+
+Se você não reparar os danos que seu veículo sofre ao longo do tempo, ele demorará mais para dar partida, correrá o risco de falhas nas partidas e parar se o motor estiver sob carga excessiva.
+
+Na primeira vez que você inicia o jogo com este mod, o script analisa os danos atuais do veículo e adiciona o número de danos ao veículo. Estes danos já são conhecidos, não necessitam de ser detectados por uma inspecção e podem ser reparados imediatamente através do menu de manutenção.
+
+Se você estiver jogando com a versão mais recente do mod CVT_Addon, a operação inadequada do veículo aumenta o desgaste da caixa de câmbio. Abaixo de 90% de danos, a caixa de câmbio pode ser reparada por dinheiro (máximo 10.769,-) e muito tempo (máximo 11 horas) - acima de 90%, a caixa de câmbio deve ser substituída. Isto custa consideravelmente mais (15.000,-), mas leva menos tempo (7 horas)
+
+Além disso, os custos de reparo e o valor dos danos podem ser definidos no menu ESC com o mod "Repair and paint settings (Configure Maintenance)".
+
+- Suporte completo para multijogador local e servidor dedicado
+- Suporta o mod "CVT_Addon"
+- Suporta o mod "Repair and paint settings (Configure Maintenance)"
+- Suporta o mod "Dashboard Live"
+- Compatível com o mod "Advanced Maintenance"
+- Compatível com o mod "Advanced Farm Manager"
+- Compatível com o mod "Auto Repair"
+- Compatível com o mod "Mobile Workshop" (não substitui a palete de manutenção!)
+- Tutorial no jogo disponível
+(Comando do console "rdsResetTutorial" disponível para reiniciar o tutorial do jogo por conta própria)
+- Ajuda disponível no menu ESC
+- Ao ativar a partida automática do motor, a função de falha na partida do motor é desativada
+- Comando do console "rdsResetDamages" disponível para redefinir todos os danos do veículo
+- Comando do console "rdsResetTimeUntilInspection" disponível para redefinir o tempo até a próxima inspeção
+- Comando do console "rdsStopActiveRepair" disponível para concluir imediatamente uma inspeção ou manutenção ativa
+- Comando do console "rdsDebug" disponível para gravar uma depuração no console
+- Comando do console "rdsRemoveDamages [número]" disponível para remover o número inserido de danos conhecidos
+- Comando do console "rdsFindDamages" disponível para descobrir todos os danos ocultos
+- Comando de console "rdsResetTimeUntilNextDamage" disponível para redefinir o tempo até a ocorrência do próximo dano (necessário se as horas de operação do veículo forem alteradas manualmente)
+- Comando de console "rdsResetEverything" disponível para redefinir tudo
+- Comando de console "rdsSetTimeUntilInspection [número]" disponível para definir manualmente os meses até a próxima inspeção
+
+Contato:
+- Contato e últimas atualizações: https://github.com/Frvetz/FS22_RealisticDamageSystem
+- Email de contato: RealisticDamageSystem@gmail.com
+- Contato do discord: https://discord.com/invite/mfergkwhDu
+]]>	
+	</br>
+    <cz>
+<![CDATA[Mód "Rozšířená údržba vozidel" z FS19 se vrací do FS22 s novými funkcemi!
+
+S tímto skriptem bude údržba vašeho vozidla mnohem složitější a budete muset skutečně přemýšlet, kdy chcete opravit poškození vašeho vozidla.
+Poškození se časem objeví na každém vozidle. Na některá z nich budete upozorněni v okně nápovědy, některá budete muset najít pomocí hodinové prohlídky. 
+Chcete-li zahájit prohlídku nebo opravu poškození, musíte si v obchodě koupit paletu, zajet do její blízkosti a poté vyvolat nabídku údržby (standardně CTRL + J). V této nabídce můžete vybrat, kolik poškození chcete opravit. Kromě toho se vám zobrazí podrobný přehled nákladů a časový odhad předpokládané doby trvání opravy na základě vašeho aktuálního výběru.
+
+Po zahájení údržby nebo prohlídky bude tato prováděna pouze v pracovní době od 7:00 do 21:00 hodin. Pokud však spadá do časového okna, kdy se neprovádí žádná práce, bude pozastavena do rána.
+
+Pokud neopravíte poškození, která vaše vozidlo časem utrpělo, bude startování trvat déle, hrozí falešné starty a zastavení motoru při nadměrném zatížení.
+
+Při prvním spuštění hry s tímto modem se skript podívá na aktuální poškození vozidla a přičte počet poškození, která by toto poškození vozidla způsobila. Tato poškození jsou již známa, takže je není třeba zjišťovat kontrolou a lze je rovnou opravit prostřednictvím nabídky údržby.
+
+Pokud hrajete s nejnovější verzí modifikace CVT_Addon, nesprávný provoz vozidla zvyšuje opotřebení převodovky. Pod 90 % poškození lze převodovku opravit za peníze (maximálně 10.769,-) a spoustu času (maximálně 11 hodin) - nad 90 % je nutné převodovku kompletně vyměnit. Ta stojí podstatně více (15.000,-), ale zabere méně času (7 hodin). 
+
+Náklady na opravu a výši poškození lze navíc nastavit v menu ESC pomocí modulu "Nastavení oprav a nátěrů (Konfigurace údržby)".
+
+- Plná podpora místního multiplayeru a vyhrazeného serveru
+- Podporuje mod "CVT_Addon"
+- Podporuje mod "Repair and paint settings (Configure Maintenance)".
+- Podporuje mod "Dashboard Live".
+- Kompatibilní s modem "Advanced Maintenance" (Pokročilá údržba)
+- Kompatibilní s modem "Advanced Farm Manager".
+- Kompatibilní s modem "Auto Repair" (Automatické opravy)
+- Kompatibilní s modem "Mobilní dílna" (nenahrazuje paletu údržby!)
+- K dispozici je herní návod
+(K dispozici je konzolový příkaz "rdsResetTutorial", kterým si můžete sami znovu spustit herní tutoriál)
+- Nápověda dostupná v nabídce ESC
+- Při aktivaci automatického spouštění motoru je deaktivována funkce zastavení motoru
+- K dispozici je konzolový příkaz "rdsResetDamages" pro resetování všech poškození vozidla.
+- Příkaz konzoly "rdsResetTimeUntilInspection" je k dispozici pro vynulování času do příští kontroly
+- Příkaz konzoly "rdsStopActiveRepair" je k dispozici pro okamžité ukončení aktivní prohlídky nebo údržby.
+- Příkaz konzoly "rdsDebug" k dispozici pro zápis ladění do konzoly
+- Příkaz konzoly "rdsRemoveDamages [číslo]" k dispozici pro odstranění zadaného počtu známých poškození
+- Příkaz konzoly "rdsFindDamages" k dispozici pro odhalení všech skrytých poškození
+- Příkaz konzoly "rdsResetTimeUntilNextDamage" k dispozici pro vynulování času do vzniku dalšího poškození (nutné, pokud se provozní hodiny vozidla mění ručně)
+- Příkaz konzoly "rdsResetEverything" je k dispozici pro resetování všeho
+- Příkaz konzoly "rdsSetTimeUntilInspection [číslo]" slouží k ručnímu nastavení měsíců do příští kontroly
+
+Kontakt:
+- Kontakt a poslední aktualizace: https://github.com/Frvetz/FS22_RealisticDamageSystem
+- Kontaktní e-mail: RealisticDamageSystem@gmail.com
+- Kontaktní discord: https://discord.com/invite/mfergkwhDu
+]]>	
+	</cz>
+    </description>
+    <author>Frvetz</author>
+    <version>0.9.1.2</version>
+    <iconFilename>icon_RealisticDamageSystem.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <extraSourceFiles>
+		<sourceFile filename="registerRealisticDamageSystem.lua" />		
+		<sourceFile filename="src/RepairButton/RealisticDamageSystemShopRepair.lua" />
+		<sourceFile filename="src/MotorStart/RealisticDamageSystemMotorStartDialog.lua" />
+    </extraSourceFiles>
+	
+	<l10n filenamePrefix="translations/translation"/>
+	
+	<actions>
+       <action name="VEHICLE_MAINTENANCE"/>
+    </actions>
+	
+	<inputBinding>
+        <actionBinding action="VEHICLE_MAINTENANCE">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_j"/>
+        </actionBinding>
+    </inputBinding>
+	
+    <storeItems>
+        <storeItem rootNode="vehicle" xmlFilename="xml/pallet.xml"/>
+	</storeItems>
+
+	<vehicleTypes>
+        <type name="palletMaintencance" parent="pallet" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="RealisticDamageSystem"/>
+            <specialization name="wearable" />
+        </type>
+    </vehicleTypes>
+</modDesc>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>frvetz</translationContributors>
+
+    <texts>
+		<!--general texts-->
+		<text name="dialog_AutoMotorStart" text="Automatischer Motorstart aktiviert! Die Funktion des Motorfehlstarts wird dadurch deaktiviert! (Funktion des Mods: Realistisches Schadenssystem)"/>
+		
+		<text name="input_VEHICLE_MAINTENANCE" text="Wartungsmenü aufrufen"/>
+
+		<text name="function_Pallet" text="Diese Palette wird für die Wartung der Fahrzeuge verwendet."/>
+
+		<text name="warning_MotorFailed" text="Motor abgestorben! Bitte starten Sie ihn erneut"/>
+
+		<text name="dialog_maintenance_text" text="Insgesamt zu reparierende Schäden: %1.0f
+Wartung vorraussichtlich abgeschlossen um: %02d:%02d Uhr
+Kosten: %1.0f,-
+
+
+"/>
+
+		<text name="dialog_maintenance_MustBePaused_text" text="Insgesamt zu reparierende Schäden: %1.0f
+Wartung vorraussichtlich abgeschlossen um: %02d:%02d Uhr
+Kosten: %1.0f,-
+Wartung muss zwischendurch pausiert werden! (21:00-7:00 Uhr)
+
+
+"/>
+
+	<text name="dialog_maintenance_MustBePaused2x_text" text="Insgesamt zu reparierende Schäden: %1.0f
+Wartung vorraussichtlich abgeschlossen um: %02d:%02d Uhr
+Kosten: %1.0f,-
+Wartung muss zwischendurch pausiert werden! (21:00-7:00 Uhr) (2x)
+
+
+"/>
+
+		<text name="dialog_maintenance_title" text="Wie viele Schäden sollen repariert werden?"/>
+		
+		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="Es gibt aktuell keine bekannten Schäden die repariert werden müssen.
+
+
+
+"/>
+		
+		<text name="dialog_maintenance_NumberDamages1" text="1 Schaden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages2" text="2 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages3" text="3 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages4" text="4 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages5" text="5 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages6" text="6 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages7" text="7 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages8" text="8 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages9" text="9 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages10" text="10 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages11" text="11 Schäden reparieren"/>
+		<text name="dialog_maintenance_NumberDamages12" text="12 Schäden reparieren"/>
+
+
+        <text name="information_Motor" text="Inspektion nötig in: %1.0f Monaten... Aktuelle Schäden: %1.0f"/>
+		<text name="warning_wartung" text="Inspektion benötigt!... Aktuelle Schäden: %1.0f"/>
+
+
+
+
+		<!--maintenance texts-->
+		<text name="information_wartung" text="Wartung abgeschlossen in 1 Tag um: %02d:%02d Uhr"/>
+		<text name="information_wartungMoreDays" text="Wartung abgeschlossen in %1.0f Tagen um: %02d:%02d Uhr"/>
+
+		<text name="dialog_RepairInfo_text" text="Während der Wartung kann das Fahrzeug nicht benutzt werden!
+Die Reparatur würde bis %02d:%02d Uhr dauern und %1.0f,- kosten.
+Trotzdem starten?"/>
+
+	<text name="dialog_RepairInfo_text_withPaused" text="Während der Wartung kann das Fahrzeug nicht benutzt werden!
+Die Reparatur würde bis %02d:%02d Uhr dauern und %1.0f,- kosten.
+WENN DIE REPARATUR JETZT GESTARTET WIRD, MUSS SIE BIS 7:00 UHR PAUSIERT WERDEN!
+Trotzdem starten?"/>
+	<text name="dialog_RepairInfo_text_withPaused2x" text="Während der Wartung kann das Fahrzeug nicht benutzt werden!
+Die Reparatur würde bis %02d:%02d Uhr dauern und %1.0f,- kosten.
+WENN DIE REPARATUR JETZT GESTARTET WIRD, MUSS SIE BIS 7:00 UHR PAUSIERT WERDEN! (2x)
+Trotzdem starten?"/>
+
+		<text name="dialog_RepairInfo_title" text="%1.0f Schäden reparieren?"/>
+
+		<text name="dialog_maintenance_finishedInformation" text="Die Wartung ist nun abgeschlossen... Die insgesamte Anzahl der Schäden beträgt nun: %1.0f"/>
+
+		<text name="dialog_yesButton_text" text="Schäden reparieren"/>
+
+		<text name="warning_AlreadyActiveMaintenance" text="Dies kannst du aktuell nicht ausführen, da bereits eine Wartung gestartet wurde"/>
+
+
+
+
+
+		<!--inspections texts-->
+		<text name="information_Inspection" text="Inspektion abgeschlossen um: %02d:%02d Uhr"/>
+
+		<text name="dialog_InspectionInfo_text" text="Bei einer Inspektion wird das Fahrzeug auf versteckte Schäden überprüft, um diese reparieren zu können... Dies nimmt allerdings 1h in Anspruch und wäre somit um %02d:%02d Uhr abgeschlossen.
+Trotzdem starten?"/>
+		<text name="dialog_InspectionInfo_text_withPaused" text="Bei einer Inspektion wird das Fahrzeug auf versteckte Schäden überprüft, um diese reparieren zu können... Dies nimmt allerdings 1h in Anspruch und wäre somit um %02d:%02d Uhr abgeschlossen.
+WENN DIE INSPEKTION JETZT GESTARTET WIRD, MUSS SIE BIS 7:00 UHR PAUSIERT WERDEN!
+Trotzdem starten?"/>
+		
+		<text name="dialog_InspectionInfo_title" text="Inspektion starten?"/>
+
+		<text name="dialog_inspection_finishedInformation" text="Die Inspektion ist nun abgeschlossen... Es wurden %1.0f Schäden gefunden, was eine insgesamte Anzahl von %1.0f Schäden ergibt."/>
+
+		<text name="dialog_inspection_text" text="Inspektion starten"/>
+
+		<text name="warning_AlreadyActiveInspection" text="Dies kannst du aktuell nicht ausführen, da bereits eine Inspektion gestartet wurde."/>
+
+
+
+
+		
+
+		<!--CVT texts-->
+		<text name="information_CVTChange" text="Getriebe-Wechsel abgeschlossen in 1 Tag um: %02d:%02d Uhr"/>
+		
+		<text name="information_CVTRepair" text="Getriebe-Reparatur abgeschlossen in 1 Tag um: %02d:%02d Uhr"/>
+		
+		<text name="dialog_cvtInfo_text_ChangeGearbox" text="[CVT Addon] Das Getriebe wird aufgrund der schwere des Schadens komplett getauscht... Dies kostet 15.000,- und nimmt 7h in Anspruch, wäre also um %02d:%02d Uhr abgeschlossen.
+Trotzdem starten?"/>
+		<text name="dialog_cvtInfo_text_ChangeGearbox_withPaused" text="[CVT Addon] Das Getriebe wird aufgrund der schwere des Schadens komplett getauscht... Dies kostet 15.000,- und nimmt 7h in Anspruch, wäre also um %02d:%02d Uhr abgeschlossen.
+WENN DIE REPARATUR JETZT GESTARTET WIRD, MUSS SIE BIS 7:00 UHR PAUSIERT WERDEN!
+Trotzdem starten?"/>
+
+		<text name="dialog_cvtInfo_text_RepairGearbox" text="[CVT Addon] Das Getriebe wird vollständig repariert... Dies dauert bis %02d:%02d Uhr und kostet %1.0f,-.
+Trotzdem starten?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_Tutorial" text="[CVT Addon] Das Getriebe wird vollständig repariert... Dies dauert bis X:X Uhr und kostet X,-.
+Trotzdem starten?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_withPaused" text="[CVT Addon] Das Getriebe wird vollständig repariert... Dies dauert bis %02d:%02d Uhr und kostet %1.0f,-.
+WENN DIE REPARATUR JETZT GESTARTET WIRD, MUSS SIE BIS 7:00 UHR PAUSIERT WERDEN!
+Trotzdem starten?"/>
+
+		<text name="dialog_cvtInfo_title" text="Reparatur starten?"/>
+		
+		<text name="dialog_cvt_textExplanation" text="[CVT-Addon] Ab 90%% Schaden muss das Getriebe vollständig getauscht werden. Ein Tausch kostet 15.000,- und dauert 7h.
+Aktueller Getriebe-Schaden: %1.0f%%
+Vor Start der Reparatur, werden die Kosten und die Länge angezeigt."/>
+       
+		<text name="dialog_cvt_finishedInformation" text="[CVT Addon] Der Getriebe-Wechsel ist nun abgeschlossen... Der Getriebe-Schaden beträgt nun wieder 0%."/>
+		
+		<text name="dialog_cvt_textChangeGearbox" text="[CVT Addon] Getriebe wechseln"/>
+
+		<text name="dialog_cvt_textRepairGearbox" text="[CVT Addon] Getriebe reparieren"/>
+		
+		
+
+
+
+
+
+		<!--tutorial texts-->
+		<text name="warning_CantStartTutorialCVT" text="Das Tutorial kann in diesem Fahrzeug nicht gestartet werden, da bereits eine CVT-Reparatur gestartet wurde"/>
+		<text name="warning_CantStartTutorialInspection" text="Das Tutorial kann in diesem Fahrzeug nicht gestartet werden, da bereits eine Inspektion gestartet wurde"/>
+		<text name="warning_CantStartTutorialMaintenance" text="Das Tutorial kann in diesem Fahrzeug nicht gestartet werden, da bereits eine Wartung gestartet wurde"/>
+		
+		<text name="tutorial_Question_title" text="Tutorial für Realistisches Schadenssystem-Mod"/>
+		
+		<text name="tutorial_Question_text" text="Möchten Sie ein Tutorial für den Realistisches Schadenssystem-Mod starten, welches alle Funktionen zeigt und den Sinn dahinter erklärt?"/>
+		
+		<text name="tutorial_title" text="Realistisches Schadenssystem - Tutorial"/>
+       
+	    <text name="tutorial_text1" text="Wenn Sie ein Fahrzeug fahren, informiert Sie das Hilfefenster über den aktuellen Zustand des Fahrzeugs.
+So können Sie die Anzahl der aktuell bekannten Schäden und wann das Fahrzeug spätestens auf weitere versteckte Schäden inspiziert werden sollte, ablesen.
+Nach einer Inspektion werden die gefundenen Schäden zu der Anzahl der aktuellen Schäden hinzugefügt.
+-Inspektion nötig in: X Monaten... Aktuelle Schäden: X-"/>
+
+		<text name="tutorial_text2" text="Jeder Schaden, ob bekannt oder nicht, führt zu Leistungsverlust.
+Sollte die Inspektion nicht durchgeführt werden, muss mit Folgen der unbekannten Schäden zu rechnen sein. So stirbt das Fahrzeug bei zu hoher Motorlast ab und startet nicht ordnungsgemäß, wenn der automatische Motorstart in den Spieleinstellungen deaktiviert ist.
+Standardgemäß kann das Menü für die Fahrzeugwartung mit STRG + J aufgerufen werden, wenn Sie in der Nähe einer Farzeugwartungs-Palette (im Shop erhältlich) sind."/>
+
+		<text name="tutorial_text3" text="In diesem Fenster (STRG + J) kann man einen Text sehen, der anzeigt, wie viele Schäden insgesamt repariert werden können, [Nächste Seite]"/>
+
+		<text name="tutorial_text3_2" text="wie viel die Reparatur mit der aktuellen Auswahl kosten wird und wann sie abgeschlossen sein wird. 
+Während der Wartung kann das Fahrzeug nicht benutzt werden!"/>
+	
+		<text name="tutorial_text4" text="Unter dem Text können Sie auswählen, wie viele Schäden repariert werden sollen... [Nächste Seite]"/>
+
+		<text name="tutorial_text4_2" text="Option auswählen -> Reparatur starten -> Geld wird vom Konto abgezogen -> Fahrzeug ist erst wieder einsatzbereit, wenn die angezeigte Zeit erreicht ist."/>
+
+		<text name="tutorial_text4_3" text="Außerdem kann eine Inspektion gestartet werden, welche eine Stunde dauern würde. Nach Abschluss wird die Anzahl der gefundenen Schäden angezeigt."/>
+
+		<text name="tutorial_text4_4" text="Die Kosten für die Reparatur und die Menge der Schäden können im ESC-Menü mit dem Mod 'Reparatur und Lackiereinstellungen (Configure Maintenance)' eingestellt werden."/>
+
+		<text name="tutorial_textCVT" text="Durch das Script 'CVT_Addon' nimmt bei Fahrzeugen mit stufenlosem Getriebe durch unsachgemäße Bedienung der Verschleiß des Getriebes zu. [Nächste Seite]"/>
+
+		<text name="tutorial_textCVT2" text="Unter 90% Schaden, kann das Getriebe für Geld (maximal 10.769,-) und viel Zeit (maximal 11h) repariert werden. [Nächste Seite]"/>
+
+		<text name="tutorial_textCVT3" text="Ab einer Höhe von 90%, muss das Getriebe vollständig getauscht werden. Dies kostet deutlich mehr (15.000,-), dauert allerdings weniger lang (7h). [Nächste Seite]"/>
+
+		<text name="tutorial_textCVT4" text="Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalber noch angezeigt wie viel sie kosten und wie lange sie dauern würde."/>
+
+		<text name="tutorial_text5" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt. [Nächste Seite]"/>
+
+		<text name="tutorial_text5_2" text="Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert. [Nächste Seite]"/>
+
+		<text name="tutorial_text5_3" text="Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wird dies in einer weiteren Zeile Text in diesem Fenster angezeigt. -Wartung muss zwischendurch pausiert werden! (21:00-7:00 Uhr)-"/>
+
+		<text name="tutorial_text6" text="Falls während des Spielens Fragen auftauchen sollten, finden Sie im ESC-Menü nochmal ein Tutorial für den Mod.
+Zusätzlich haben Sie die Möglichkeit das Tutorial mit dem Konsolenbefehl 'rdsResetTutorial' neu zu starten.
+
+Viel Spaß!!"/>
+
+		
+
+		<!-- HELP WINDOW -->
+		<text name="help_page_title" text="Realistisches Schadenssystem"/>
+
+		<text name="help_page_Gameplay" text="HUD"/>
+
+		<text name="help_page_gameplay_text_title" text="Information"/>
+
+		<text name="help_page_gameplay_text3_title" text="Wartungsmenü aufrufen"/>
+
+		<text name="help_page_gameplay_text4_title" text="Wartung gestartet"/>
+
+		<text name="help_page_MaintenanceMenu" text="Wartungsmenü"/>
+
+		<text name="help_page_menu_cvt_title" text="CVT_Addon"/>
+
+		<text name="help_page_menu_text2_title" text="Wartung pausiert - Arbeitszeiten"/>
+
+		<text name="help_page_gameplay_text" text="Wenn Sie ein Fahrzeug fahren, informiert Sie das Hilfefenster über den aktuellen Zustand des Fahrzeugs.
+So können Sie die Anzahl der aktuell bekannten Schäden und wann das Fahrzeug spätestens auf weitere versteckte Schäden inspiziert werden sollte, ablesen.
+Nach einer Inspektion werden die gefundenen Schäden zu der Anzahl der aktuellen Schäden hinzugefügt."/>
+
+		<text name="help_page_gameplay_text2" text="Jeder Schaden, ob bekannt oder nicht, führt zu Leistungsverlust.
+Sollte die Inspektion nicht durchgeführt werden, muss mit Folgen der unbekannten Schäden zu rechnen sein. So stirbt das Fahrzeug bei zu hoher Motorlast ab und startet nicht ordnungsgemäß, wenn der automatische Motorstart in den Spieleinstellungen deaktiviert ist."/>
+		
+		<text name="help_page_gameplay_text3" text="Standardgemäß kann das Menü für die Fahrzeugwartung mit STRG + J aufgerufen werden, wenn Sie in der Nähe einer Farzeugwartungs-Palette (im Shop erhältlich) sind."/>
+		
+		<text name="help_page_gameplay_text4" text="Sobald eine Wartung oder ähnliches gestartet wurde, wird ihnen im Hilfefenster angezeigt, wann sie abgeschlossen sein wird."/>
+
+		<text name="help_page_menu_text" text="In diesem Fenster (STRG + J) kann man einen Text sehen, der anzeigt, wie viele Schäden insgesamt repariert werden können, wie viel die Reparatur mit der aktuellen Auswahl kosten wird und wann sie abgeschlossen sein wird. 
+Während der Wartung kann das Fahrzeug nicht benutzt werden!
+
+Unter dem Text können Sie auswählen, wie viele Schäden repariert werden sollen...
+
+Option auswählen -> Reparatur starten -> Geld wird vom Konto abgezogen -> Fahrzeug ist erst wieder einsatzbereit, wenn die angezeigte Zeit erreicht ist.
+
+Außerdem kann eine Inspektion gestartet werden, welche eine Stunde dauern würde. Nach Abschluss wird die Anzahl der gefundenen Schäden angezeigt.
+
+Die Kosten für die Reparatur und die Menge der Schäden können im ESC-Menü mit dem Mod 'Reparatur und Lackiereinstellungen (Configure Maintenance)' eingestellt werden."/>
+
+	<text name="help_page_menu_text_cvt" text="Durch das Script 'CVT_Addon' nimmt bei Fahrzeugen mit stufenlosem Getriebe durch unsachgemäße Bedienung der Verschleiß des Getriebes zu. 
+Unter 90% Schaden, kann das Getriebe für Geld (maximal 10.769,-) und viel Zeit (maximal 11h) repariert werden.
+Ab einer Höhe von 90%, muss das Getriebe vollständig getauscht werden. Dies kostet deutlich mehr (15.000,-), dauert allerdings weniger lang (7h)."/>
+
+	<text name="help_page_menu_text_cvt2" text="Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalber noch angezeigt wie viel sie kosten und wie lange sie dauern würde."/>
+
+	<text name="help_page_menu_text2" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt.
+Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert.
+Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wird dies in einer weiteren Zeile Text in diesem Fenster angezeigt."/>
+    </texts>
+</l10n>

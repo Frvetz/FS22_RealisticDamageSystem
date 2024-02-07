@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>SniperKittenCZ</translationContributors>
+
+    <texts>
+		<!--general texts-->
+		<text name="dialog_AutoMotorStart" text="Aktivováno automatické spouštění motoru! Tím se deaktivuje funkce špatného startu motoru! (Funkce modifikace: Realistický systém poškození)"/>
+		
+		<text name="input_VEHICLE_MAINTENANCE" text="Otevřít nabídku údržby"/>
+
+		<text name="function_Pallet" text="Tato paleta slouží k údržbě vozidel."/>
+
+		<text name="warning_MotorFailed" text="Motor se zastavil! Nastartujte jej znovu"/>
+
+		<text name="dialog_maintenance_text" text="Celkový počet závad: %1.0f
+Očekávané dokončení údržby v %02d:%02d hodin
+Náklady: %1.0f,-
+
+
+
+"/>
+
+		<text name="dialog_maintenance_MustBePaused_text" text="Celkový počet závad: %1.0f
+Očekávané dokončení údržby v %02d:%02d hodin
+Náklady: %1.0f,-
+Údržba musí být mezitím přerušena! (21:00-7:00 hodin)
+
+
+"/>
+		<text name="dialog_maintenance_MustBePaused2x_text" text="Celkový počet závad: %1.0f
+Očekávané dokončení údržby v %02d:%02d hodin
+Náklady: %1.0f,-
+Údržba musí být mezitím přerušena! (21:00-7:00 hodin) (2x)
+
+
+"/>
+
+		<text name="dialog_maintenance_title" text="Kolik závad má být opraveno?"/>
+		
+		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="V současné době nejsou známy žádné závady, které by bylo třeba opravit.
+
+
+
+"/>
+		
+		<text name="dialog_maintenance_NumberDamages1" text="1 závada"/>
+		<text name="dialog_maintenance_NumberDamages2" text="2 závady"/>
+		<text name="dialog_maintenance_NumberDamages3" text="3 závady"/>alright
+		
+		<text name="dialog_maintenance_NumberDamages4" text="4 závady"/>
+		<text name="dialog_maintenance_NumberDamages5" text="5 závad"/>
+		<text name="dialog_maintenance_NumberDamages6" text="6 závad"/>
+		<text name="dialog_maintenance_NumberDamages7" text="7 závad"/>
+		<text name="dialog_maintenance_NumberDamages8" text="8 závad"/>
+		<text name="dialog_maintenance_NumberDamages9" text="9 závad"/>
+		<text name="dialog_maintenance_NumberDamages10" text="10 závad"/>
+		<text name="dialog_maintenance_NumberDamages11" text="11 závad"/>
+		<text name="dialog_maintenance_NumberDamages12" text="12 závad"/>
+
+
+        <text name="information_Motor" text="Požadovaná kontrola za: %1.0f měsíců... Aktuální počet závad: %1.0f"/>
+		<text name="warning_wartung" text="Vyžadovaná kontrola!... Aktuální počet závad: %1.0f"/>
+
+
+
+
+		<!--maintenance texts-->
+		<text name="information_wartung" text="Údržba bude dokončena za 1 den v %02d:%02d hodin"/>
+		<text name="information_wartungMoreDays" text="Údržba bude dokončena za %1.0f dny v %02d:%02d hodin"/>
+
+		<text name="dialog_RepairInfo_text" text="Během údržby nelze vozidlo používat!
+Oprava by trvala do %02d:%02d hodin a stála %1.0f,-
+Přesto začít?"/>
+
+		<text name="dialog_RepairInfo_text_withPaused" text="Během údržby nelze vozidlo používat!
+Oprava by trvala do %02d:%02d hodin a stála %1.0f,-
+POKUD BUDE OPRAVA ZAHÁJENA NYNÍ, MUSÍ BÝT POZASTAVENA DO 7:00 HODIN!
+Přesto začít?"/>
+		<text name="dialog_RepairInfo_text_withPaused2x" text="Během údržby nelze vozidlo používat!
+Oprava by trvala do  %02d:%02d hodin a stála %1.0f,-
+POKUD BUDE OPRAVA ZAHÁJENA NYNÍ, MUSÍ BÝT POZASTAVENA DO 7:00 HODIN!
+Přesto začít?"/>
+
+		<text name="dialog_RepairInfo_title" text="Opravit %1.0f závad?"/>
+
+		<text name="dialog_maintenance_finishedInformation" text="Údržba je nyní dokončena... Celkový počet závad je nyní: %1.0f"/>
+
+		<text name="dialog_yesButton_text" text="Opravit závady"/>
+
+		<text name="warning_AlreadyActiveMaintenance" text="V současné době to nelze provést, protože údržba již byla zahájena."/>
+
+
+
+
+
+		<!--inspections texts-->
+		<text name="information_Inspection" text="Inspekce bude dokončena v %02d:%02d hodin"/>
+
+		<text name="dialog_InspectionInfo_text" text="Při inspekci se kontroluje, zda na vozidle nejsou skryté závady, aby bylo možné je odstranit... Tato činnost však trvá 1 hodinu, a proto bude dokončena v %02d:%02d.
+Přesto začít?"/>
+		<text name="dialog_InspectionInfo_text_withPaused" text="Při inspekci se kontroluje, zda na vozidle nejsou skryté závady, aby bylo možné je odstranit... Tato činnost však trvá 1 hodinu, a proto bude dokončena v %02d:%02d.
+POKUD BUDE OPRAVA ZAHÁJENA NYNÍ, MUSÍ BÝT POZASTAVENA DO 7:00 HODIN!
+Přesto začít?"/>
+		
+		<text name="dialog_InspectionInfo_title" text="Zahájení inspekce?"/>
+
+		<text name="dialog_inspection_finishedInformation" text="Inspekce byla dokončena... Bylo zjištěno %1.0f skrytých závad. Celkový počet závad je %1.0f."/>
+
+		<text name="dialog_inspection_text" text="Zahájit inspekci"/>
+
+		<text name="warning_AlreadyActiveInspection" text="V současné době to nelze provést, protože kontrola již byla zahájena."/>
+
+
+
+
+		
+
+		<!--CVT texts-->
+		<text name="information_CVTChange" text="Výměna převodovky bude dokončena za 1 den v %02d:%02d hodin"/>
+		
+		<text name="information_CVTRepair" text="Oprava převodovky bude dokončena za 1 den v %02d:%02d hodin"/>
+		
+		<text name="dialog_cvtInfo_text_ChangeGearbox" text="[CVT Addon] Vzhledem k závažnosti poškození je nutné převodovku kompletně vyměnit... Stojí to 15.000,- a trvá to 7 hodin, takže by to bylo dokončeno v %02d:%02d.
+Přesto začít?"/>
+		<text name="dialog_cvtInfo_text_ChangeGearbox_withPaused" text="[CVT Addon] Vzhledem k závažnosti poškození je nutné převodovku kompletně vyměnit... Stojí to 15.000,- a trvá to 7 hodin, takže by to bylo dokončeno v %02d:%02d.
+POKUD BUDE OPRAVA ZAHÁJENA NYNÍ, MUSÍ BÝT POZASTAVENA DO 7:00 HODIN!
+Přesto začít?"/>
+
+		<text name="dialog_cvtInfo_text_RepairGearbox" text="[CVT Addon] Převodovka bude kompletně opravena... To potrvá do %02d:%02d s náklady %1.0f,-.
+Přesto začít?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_Tutorial" text="[CVT Addon] Převodovka bude kompletně opravena...To potrvá do X:X s náklady X,-.
+Přesto začít?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_withPaused" text="[CVT Addon] Převodovka bude kompletně opravena... To potrvá do %02d:%02d s náklady %1.0f,-.
+POKUD BUDE OPRAVA ZAHÁJENA NYNÍ, MUSÍ BÝT POZASTAVENA DO 7:00 HODIN!
+Přesto začít?"/>
+
+		<text name="dialog_cvtInfo_title" text="Začít opravy?"/>
+		
+		<text name="dialog_cvt_textExplanation" text="[CVT-Addon] Při poškození nad 90 %% je nutné převodovku kompletně vyměnit. Výměna stojí 15 000,- a trvá 7 hodin.
+Aktuální poškození převodovky: %1.0f %%
+Před zahájením opravy se zobrazí náklady a délka opravy."/>
+       
+		<text name="dialog_cvt_finishedInformation" text="[CVT Addon] Výměna převodovky je dokončena... Poškození převodovky je nyní opět 0 %."/>
+		
+		<text name="dialog_cvt_textChangeGearbox" text="[CVT Addon] Výměna převodovky"/>
+
+		<text name="dialog_cvt_textRepairGearbox" text="[CVT Addon] Oprava převodovky"/>
+		
+		
+
+
+
+
+
+		<!--tutorial texts-->
+		<text name="warning_CantStartTutorialCVT" text="Výukový program nelze u tohoto vozidla spustit, protože již byla zahájena oprava převodovky CVT."/>
+		<text name="warning_CantStartTutorialInspection" text="Výukový program nelze v tomto vozidle spustit, protože již byla zahájena inspekce."/>
+		<text name="warning_CantStartTutorialMaintenance" text="Výukový program nelze v tomto vozidle spustit, protože již byla zahájena údržba."/>
+
+		<text name="tutorial_Question_title" text="Výukový program pro mod Realistický systém poškození"/>
+		
+		<text name="tutorial_Question_text" text="Chtěli byste návod pro mod Realistický systém poškození, který ukazuje všechny funkce a vysvětluje jejich význam?"/>
+		
+		<text name="tutorial_title" text="Realistický systém poškození - výukový program"/>
+       
+	    <text name="tutorial_text1" text="Při řízení vozidla vás okno nápovědy informuje o aktuálním stavu vozidla.
+Můžete tak zjistit počet aktuálně známých závad a kdy nejpozději by mělo být vozidlo zkontrolováno kvůli dalším skrytým závadám.
+Po prohlídce se zjištěné závady přičtou k počtu aktuálních závad.
+Inspekce je nutná za: X měsíců..."/>
+
+		<text name="tutorial_text2" text="Jakékoli známé či neznámé závady vede ke ztrátě výkonu motoru.
+Pokud není kontrola provedena, lze očekávat následky skrytých závad. Například vozidlo se zastaví, pokud je zatížení motoru příliš vysoké, a řádně nenastartuje, pokud je v nastavení hry deaktivováno automatické spouštění motoru.
+Ve výchozím nastavení lze nabídku údržby vozidla otevřít stisknutím klávesové zkratky CTRL + J, když se nacházíte v blízkosti palety údržby vozidla (k dispozici v obchodě)."/>
+
+		<text name="tutorial_text3" text="V tomto okně (CTRL + J) se zobrazí text, který ukazuje, kolik závad lze celkem opravit, [další strana]."/>
+
+		<text name="tutorial_text3_2" text="kolik bude oprava stát při současném výběru a kdy bude dokončena. 
+Během údržby nelze vozidlo používat!"/>
+	
+		<text name="tutorial_text4" text="Pod textem můžete vybrat, kolik závad chcete opravit... [další stránka]"/>
+
+		<text name="tutorial_text4_2" text="Zvolte možnost -> Zahájit opravu -> Peníze se odečtou z účtu -> Vozidlo je opět připraveno k použití až po uplynutí zobrazeného času."/>
+
+		<text name="tutorial_text4_3" text="Dále lze zahájit inspekci, která zabere jednu hodinu. Po dokončení se zobrazí počet nalezených závad."/>
+
+		<text name="tutorial_text4_4" text="Náklady na opravu a výši škody lze nastavit v nabídce ESC v modulu 'Nastavení oprav a nátěrů (Konfigurace údržby)'."/>
+
+		<text name="tutorial_textCVT" text="Kvůli skriptu 'CVT_Addon' se u vozidel s variabilní převodovkou (CVT) zvyšuje opotřebení převodovky nesprávným provozem vozidla. [další strana]"/>
+
+		<text name="tutorial_textCVT2" text="Při poškození pod 90 % lze převodovku opravit za peníze (maximálně 10.769,-) a spoustu času (maximálně 11 hodin). [další strana]"/>
+
+		<text name="tutorial_textCVT3" text="Při překročení 90 % je nutné převodovku kompletně vyměnit. Ta stojí podstatně více (15 000,-), ale zabere méně času (7 hodin). [další strana]"/>
+
+		<text name="tutorial_textCVT4" text="Před zahájením opravy převodovky vám bude sděleno, kolik bude oprava stát a jak dlouho bude trvat."/>
+
+		<text name="tutorial_text5" text="Pokud byla zahájena údržba/inspekce, bude prováděna pouze v pracovní době (od 7:00 do 21:00 hodin). [další strana]"/>
+
+		<text name="tutorial_text5_2" text="Pokud však údržba/inspekce spadá do časového okna, ve kterém se neprovádí žádná práce, bude pozastavena. [další strana]"/>
+
+		<text name="tutorial_text5_3" text="Pokud je třeba údržbu/kontrolu pozastavit při aktuálním výběru, zobrazí se tato skutečnost v dalším řádku textu v tomto okně. Údržba musí být mezitím pozastavena! (21:00-7:00 hodin)."/>
+
+	<text name="tutorial_text6" text="Pokud budete mít při hraní nějaké dotazy, v nabídce ESC najdete další návod k modifikaci.
+Máte také možnost výukový program znovu spustit konzolovým příkazem 'rdsResetTutorial'.
+
+Bavte se!!"/>
+
+	<!-- HELP WINDOW -->
+	<text name="help_page_title" text="Realistický systém poškození"/>
+
+	<text name="help_page_Gameplay" text="HUD"/>
+
+	<text name="help_page_gameplay_text_title" text="Informace"/>
+
+	<text name="help_page_gameplay_text3_title" text="Otevřít nabídku údržby"/>
+
+	<text name="help_page_gameplay_text4_title" text="Zahájení údržby"/>
+
+	<text name="help_page_MaintenanceMenu" text="Nabídka údržby"/>
+
+	<text name="help_page_menu_cvt_title" text="CVT Addon"/>
+
+	<text name="help_page_menu_text2_title" text="Údržba pozastavena - pracovní doba"/>
+
+	<text name="help_page_gameplay_text" text="Při provozu vozidla vás okno nápovědy informuje o aktuálním stavu vozidla.
+Můžete tak zjistit počet aktuálně známých závad a kdy nejpozději by mělo být vozidlo zkontrolováno, zda nemá další skryté závady.
+Po kontrole se zjištěné závady přičtou k počtu aktuálních závad."/>
+
+	<text name="help_page_gameplay_text2" text="Jakákoliv známá či skrytá závada vede ke ztrátě výkonu motoru.
+Pokud se inspekce neprovede, je třeba počítat s následky skrytých závad. Například při příliš vysokém zatížení motoru dojde k zastavení vozidla a při deaktivaci automatického startování motoru v nastavení hry nedojde k řádnému nastartování."/>
+	
+	<text name="help_page_gameplay_text3" text="Ve výchozím nastavení lze nabídku údržby vozidla vyvolat pomocí klávesové zkratky CTRL + J, když se nacházíte v blízkosti palety údržby vozidla (k dispozici v obchodě)."/>
+	
+	<text name="help_page_gameplay_text4" text="Jakmile byla zahájena údržba nebo podobná činnost, zobrazí se v okně nápovědy informace o jejím dokončení."/>
+
+	<text name="help_page_menu_text" text="V tomto okně (CTRL + J) se zobrazí text, který ukazuje, kolik závad lze celkem opravit, kolik bude oprava stát při aktuálním výběru a kdy bude dokončena. 
+Během údržby nelze vozidlo používat!
+
+Pod textem můžete vybrat, kolik závad má být opraveno...
+
+Zvolte možnost -> Zahájit opravu -> Peníze se odečtou z účtu -> Vozidlo je opět připraveno k použití až po uplynutí zobrazeného času.
+
+Lze také zahájit inspekci, která by trvala jednu hodinu. Po dokončení se zobrazí počet zjištěných závad.
+
+Náklady na opravu a výši závad lze nastavit v nabídce ESC pomocí modulu Nastavení oprav a laku (Konfigurace údržby)."/>
+
+	<text name="help_page_menu_text_cvt" text="Kvůli skriptu CVT_Addon se u vozidel s variabilní převodovkou (CVT) zvyšuje opotřebení převodovky nesprávným provozem vozidla.
+Při poškození pod 90 % lze převodovku opravit za peníze (maximálně 10.769,-) a spoustu času (5-11 hodin).
+Při poškození nad 90 % je nutné převodovku kompletně vyměnit. Ta stojí podstatně více (15.000,-), ale zabere méně času (7 hodin)."/>
+
+	<text name="help_page_menu_text_cvt2" text="Před zahájením opravy převodovky vám bude pro jistotu sděleno, kolik bude oprava stát a jak dlouho bude trvat."/>
+
+	<text name="help_page_menu_text2" text="Po zahájení údržby/kontroly bude tato prováděna pouze v pracovní době (od 7:00 do 21:00).
+Pokud však údržba/kontrola spadá do časového okna, ve kterém se neprovádí žádná práce, bude pozastavena.
+Pokud má být údržba/kontrola pozastavena s aktuálním výběrem, zobrazí se to v tomto okně v dalším řádku textu."/>
+    </texts>
+</l10n>

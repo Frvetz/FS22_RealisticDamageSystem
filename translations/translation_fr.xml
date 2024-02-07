@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>frvetz</translationContributors>
+
+    <texts>
+		<!--general texts-->
+		<text name="dialog_AutoMotorStart" text="Démarrage automatique du moteur activé ! Désactive la fonction de calage du moteur ! (Fonction du mod : Système De Dommages Réaliste)"/>
+		
+		<text name="input_VEHICLE_MAINTENANCE" text="Ouvrir le menu de maintenance"/>
+
+		<text name="function_Pallet" text="Cette palette est utilisée pour l'entretien des véhicules."/>
+
+		<text name="warning_MotorFailed" text="Le moteur a calé ! Veuillez le redémarrer"/>
+
+		<text name="dialog_maintenance_text" text="Total des dommages à réparer : %1.0f
+L'entretien devrait être terminé à : %02d:%02d
+Coût : %1.0f,-
+
+
+
+"/>
+
+		<text name="dialog_maintenance_MustBePaused_text" text="Total des dommages à réparer : %1.0f
+L'entretien devrait être terminé à : %02d:%02d
+Coût : %1.0f,-
+La maintenance doit être interrompue entre 21:00 et 7:00
+
+
+"/>
+		<text name="dialog_maintenance_MustBePaused2x_text" text="Total des dommages à réparer : %1.0f
+L'entretien devrait être terminé à : %02d:%02d
+Coût : %1.0f,-
+La maintenance doit être interrompue entre 21:00 et 7:00 (2x)
+
+
+"/>
+
+		<text name="dialog_maintenance_title" text="Combien de dommages doivent être réparés ?"/>
+		
+		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="Il n'y a actuellement aucun dommage connu à réparer.
+
+
+
+
+
+"/>
+		
+		<text name="dialog_maintenance_NumberDamages1" text="1 Dommage"/>
+		<text name="dialog_maintenance_NumberDamages2" text="2 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages3" text="3 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages4" text="4 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages5" text="5 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages6" text="6 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages7" text="7 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages8" text="8 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages9" text="9 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages10" text="10 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages11" text="11 Dommages"/>
+		<text name="dialog_maintenance_NumberDamages12" text="12 Dommages"/>
+
+
+        <text name="information_Motor" text="Inspection requise dans : %1.0f mois... Dommages actuels : %1.0f"/>
+		<text name="warning_wartung" text="Inspection obligatoire !... Dommages actuels : %1.0f"/>
+
+
+
+
+		<!--maintenance texts-->
+		<text name="information_wartung" text="Maintenance terminée en 1 jour à : %02d:%02d"/>
+		<text name="information_wartungMoreDays" text="Maintenance terminée en %1.0f jours à : %02d:%02d"/>
+
+		<text name="dialog_RepairInfo_text" text="Le véhicule ne peut pas être utilisé pendant l'entretien !
+La réparation devrait durer jusqu'à %02d:%02d et coûter %1.0f,-
+Commencer quand même ?"/>
+
+		<text name="dialog_RepairInfo_text_withPaused" text="Le véhicule ne peut pas être utilisé pendant l'entretien !
+La réparation devrait durer jusqu'à %02d:%02d et coûter %1.0f,-
+SI LA RÉPARATION EST LANCÉE MAINTENANT, ELLE DOIT ÊTRE INTERROMPUE JUSQU'À 7H00 !
+Commencer quand même ?"/>
+		<text name="dialog_RepairInfo_text_withPaused2x" text="Le véhicule ne peut pas être utilisé pendant l'entretien !
+La réparation devrait durer jusqu'à %02d:%02d et coûter %1.0f,-
+SI LA RÉPARATION EST LANCÉE MAINTENANT, ELLE DOIT ÊTRE INTERROMPUE JUSQU'À 7H00 ! (2x)
+Commencer quand même ?"/>
+
+		<text name="dialog_RepairInfo_title" text="Réparer %1.0f dommages ?"/>
+
+		<text name="dialog_maintenance_finishedInformation" text="La maintenance est maintenant terminée... Le nombre total de dommages est maintenant : %1.0f"/>
+
+		<text name="dialog_yesButton_text" text="Réparer les dommages"/>
+
+		<text name="warning_AlreadyActiveMaintenance" text="Vous ne pouvez pas le faire actuellement car la maintenance a déjà commencé"/>
+
+
+
+
+
+		<!--inspections texts-->
+		<text name="information_Inspection" text="Inspection terminée à : %02d:%02d"/>
+
+		<text name="dialog_InspectionInfo_text" text="Lors d'une inspection, le véhicule est contrôlé pour détecter les dommages cachés afin de pouvoir les réparer... Cela prend toutefois 1 heure et se termine donc à %02d:%02d.
+Commencer quand même ?"/>
+		<text name="dialog_InspectionInfo_text_withPaused" text="Lors d'une inspection, le véhicule est contrôlé pour détecter les dommages cachés afin de pouvoir les réparer... Cela prend toutefois 1 heure et se termine donc à %02d:%02d.
+SI L'INSPECTION EST LANCÉE MAINTENANT, ELLE DOIT ÊTRE INTERROMPUE JUSQU'À 7H00 !
+Commencer quand même ?"/>
+		
+		<text name="dialog_InspectionInfo_title" text="Début de l'inspection ?"/>
+
+		<text name="dialog_inspection_finishedInformation" text="L'inspection est maintenant terminée... %1.0f dommages ont été trouvés, ce qui donne un total de %1.0f dommages."/>
+
+		<text name="dialog_inspection_text" text="Début de l'inspection"/>
+
+		<text name="warning_AlreadyActiveInspection" text="Vous ne pouvez pas le faire actuellement parce qu'une inspection a déjà été lancée."/>
+
+
+
+
+		
+
+		<!--CVT texts-->
+		<text name="information_CVTChange" text="Changement de boîte de vitesses effectué en 1 jour à : %02d:%02d"/>
+		
+		<text name="information_CVTRepair" text="Réparation de la boîte de vitesses terminée en 1 jour à : %02d:%02d"/>
+		
+		<text name="dialog_cvtInfo_text_ChangeGearbox" text="[CVT Addon] La boîte de vitesses doit être entièrement remplacée en raison de la gravité des dommages... Cela coûte 15 000 euros et prend 7 heures, ce qui signifie que l'opération sera terminée à %02d:%02d.
+Commencer quand même ?"/>
+		<text name="dialog_cvtInfo_text_ChangeGearbox_withPaused" text="[CVT Addon] La boîte de vitesses doit être entièrement remplacée en raison de la gravité des dommages... Cela coûte 15 000 euros et prend 7 heures, ce qui signifie que l'opération sera terminée à %02d:%02d.
+SI LA RÉPARATION EST COMMENCÉE MAINTENANT, ELLE DOIT ÊTRE INTERROMPUE JUSQU'À 7 HEURES DU MATIN !
+Commencer quand même ?"/>
+
+		<text name="dialog_cvtInfo_text_RepairGearbox" text="[CVT Addon] La boîte de vitesses sera entièrement réparée... Cette opération dure jusqu'à %02d:%02d et coûte %1.0f euros.
+Commencer quand même ?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_Tutorial" text="[CVT Addon] La boîte de vitesses sera entièrement réparée... Cette opération dure jusqu'à X:X et coûte X euros.
+Commencer quand même ?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_withPaused" text="[CVT Addon] La boîte de vitesses sera entièrement réparée... Cette opération dure jusqu'à %02d:%02d et coûte %1.0f euros.
+SI LA RÉPARATION EST COMMENCÉE MAINTENANT, ELLE DOIT ÊTRE INTERROMPUE JUSQU'À 7 HEURES DU MATIN !
+Commencer quand même ?"/>
+
+		<text name="dialog_cvtInfo_title" text="Commencer les réparations ?"/>
+		
+		<text name="dialog_cvt_textExplanation" text="[CVT-Addon] Au-delà de 90%% de dommages, la boîte de vitesses doit être entièrement remplacée. Un remplacement coûte 15 000 euros et prend 7 heures.
+Dommage actuel de la boîte de vitesses : %1.0f%%
+Avant de commencer la réparation, les coûts et la durée sont affichés."/>
+       
+		<text name="dialog_cvt_finishedInformation" text="[CVT Addon] Le remplacement de boîte de vitesses est maintenant terminé... Les dommages causés à la boîte de vitesses sont à nouveau de 0 %."/>
+		
+		<text name="dialog_cvt_textChangeGearbox" text="[CVT Addon] Remplacer la boîte de vitesses"/>
+
+		<text name="dialog_cvt_textRepairGearbox" text="[CVT Addon] Réparer la boîte de vitesses"/>
+		
+		
+
+
+
+
+
+		<!--tutorial texts-->
+		<text name="warning_CantStartTutorialCVT" text="Le tutoriel ne peut pas être lancé dans ce véhicule parce qu'une réparation de la CVT a déjà été lancée"/>
+		<text name="warning_CantStartTutorialInspection" text="Le tutoriel ne peut pas être lancé dans ce véhicule parce qu'une inspection a déjà été lancée"/>
+		<text name="warning_CantStartTutorialMaintenance" text="Le tutoriel ne peut pas être lancé dans ce véhicule parce qu'un entretien a déjà été lancée"/>
+
+		<text name="tutorial_Question_title" text="Tutoriel pour le mod Système De Dommages Réaliste"/>
+		
+		<text name="tutorial_Question_text" text="Souhaitez-vous un tutoriel pour le mod Système De Dommages Réaliste qui montre toutes les fonctions et en explique la signification ?"/>
+		
+		<text name="tutorial_title" text="Système De Dommages Réaliste - Tutoriel"/>
+       
+	    <text name="tutorial_text1" text="Lorsque vous conduisez un véhicule, la fenêtre d'aide vous informe de l'état actuel du véhicule.
+Vous pouvez ainsi connaître le nombre de dommages actuellement connus et savoir quand le véhicule doit être inspecté au plus tard pour détecter d'autres dommages cachés.
+Après une inspection, les dommages constatés sont ajoutés au nombre de dommages actuels.
+-Inspection requise dans : X mois... Dommages actuels : X-"/>
+
+		<text name="tutorial_text2" text="Tout dommage, qu'il soit connu ou non, entraîne une perte de puissance du moteur.
+Si l'inspection n'est pas effectuée, les conséquences des dommages cachés sont à prévoir. Par exemple, le véhicule calera si la charge du moteur est trop élevée et ne démarrera pas correctement si le démarrage automatique du moteur est désactivé dans les paramètres du jeu.
+Par défaut, le menu d'entretien du véhicule peut être ouvert en appuyant sur CTRL + J lorsque vous vous trouvez à proximité d'une palette d'entretien du véhicule (disponible dans le magasin)."/>
+
+		<text name="tutorial_text3" text="Dans cette fenêtre (CTRL + J), vous pouvez voir un texte qui indique combien de dommages peuvent être réparés au total, [page suivante]."/>
+
+		<text name="tutorial_text3_2" text="le coût de la réparation en fonction de la sélection actuelle et la date d'achèvement. 
+Le véhicule ne peut pas être utilisé pendant l'entretien !"/>
+	
+		<text name="tutorial_text4" text="Sous le texte, vous pouvez sélectionner le nombre de dommages que vous souhaitez réparer... [page suivante]"/>
+
+		<text name="tutorial_text4_2" text="Sélectionner l'option -> Commencer la réparation -> L'argent est déduit du compte -> Le véhicule n'est prêt à être réutilisé que lorsque le temps affiché est écoulé."/>
+
+		<text name="tutorial_text4_3" text="En outre, une inspection peut être lancée, ce qui prendrait une heure. Une fois l'inspection terminée, le nombre de dommages trouvés est affiché."/>
+
+		<text name="tutorial_text4_4" text="Les coûts de la réparation et le montant des dommages peuvent être définis dans le menu ESC avec le module 'Réparation Et Réglages De La Peinture (Configure Maintenance)'."/>
+
+		<text name="tutorial_textCVT" text="En raison du script 'CVT_Addon', une utilisation incorrecte du véhicule augmente l'usure de la boîte de vitesses sur les véhicules équipés d'une boîte de vitesses variable (CVT). [page suivante]"/>
+
+		<text name="tutorial_textCVT2" text="En dessous de 90% de dommages, la boîte de vitesses peut être réparée pour une somme d'argent (maximum 10 769 euros) et beaucoup de temps (maximum 11 heures). [page suivante]"/>
+
+		<text name="tutorial_textCVT3" text="Au-delà de 90 %, la boîte de vitesses doit être entièrement remplacée. Cela coûte beaucoup plus cher (15 000 euros), mais prend moins de temps (7 heures). [page suivante]"/>
+
+		<text name="tutorial_textCVT4" text="Avant de commencer la réparation de la boîte de vitesses, on vous indiquera le coût et la durée de la réparation."/>
+
+		<text name="tutorial_text5" text="Si l'entretien/inspection a été entamé, il ne sera effectué que pendant les heures de travail (7h00 à 21h00). [page suivante]"/>
+
+		<text name="tutorial_text5_2" text="Toutefois, si l'entretien/inspection se situe dans une fenêtre temporelle pendant laquelle aucun travail n'est effectué, il sera interrompu. [page suivante]"/>
+
+		<text name="tutorial_text5_3" text="Si l'entretien/l'inspection doit être interrompu(e) avec la sélection en cours, cela s'affiche dans une ligne de texte supplémentaire dans cette fenêtre. -L'entretien doit être interrompu ! (21h00 à 7h00)-"/>
+
+	<text name="tutorial_text6" text="Si vous avez des questions pendant que vous jouez, vous trouverez un autre tutoriel pour le mod dans le menu ESC.
+Vous avez également la possibilité de redémarrer le didacticiel avec la commande de console 'rdsResetTutorial'.
+
+Have fun!!"/>
+
+	<!-- HELP WINDOW -->
+	<text name="help_page_title" text="Système De Dommages Réaliste"/>
+
+	<text name="help_page_Gameplay" text="HUD"/>
+
+	<text name="help_page_gameplay_text_title" text="Informations"/>
+
+	<text name="help_page_gameplay_text3_title" text="Ouvrir le menu de maintenance"/>
+
+	<text name="help_page_gameplay_text4_title" text="Début de la maintenance"/>
+
+	<text name="help_page_MaintenanceMenu" text="Menu de maintenance"/>
+
+	<text name="help_page_menu_cvt_title" text="CVT_Addon"/>
+
+	<text name="help_page_menu_text2_title" text="Maintenance en pause - heures de travail"/>
+
+	<text name="help_page_gameplay_text" text="Lorsque vous conduisez un véhicule, la fenêtre d'aide vous informe de l'état actuel du véhicule.
+Vous pouvez ainsi connaître le nombre de dommages actuellement connus et savoir quand le véhicule doit être inspecté au plus tard pour détecter d'autres dommages cachés.
+Après une inspection, les dommages constatés sont ajoutés au nombre de dommages actuels."/>
+
+	<text name="help_page_gameplay_text2" text="Tout dommage, qu'il soit connu ou non, entraîne une perte de puissance du moteur.
+Si l'inspection n'est pas effectuée, il faut s'attendre en conséquence à des dommages inconnus. Par exemple, le véhicule calera si la charge du moteur est trop élevée et ne démarrera pas correctement si le démarrage automatique du moteur est désactivé dans les paramètres du jeu."/>
+	
+	<text name="help_page_gameplay_text3" text="Par défaut, le menu d'entretien des véhicules peut être appelé avec CTRL + J lorsque vous vous trouvez à proximité d'une palette d'entretien des véhicules (disponible dans l'atelier)."/>
+	
+	<text name="help_page_gameplay_text4" text="Dès qu'une opération de maintenance ou une opération similaire a été lancée, la fenêtre d'aide vous indique quand elle sera terminée."/>
+
+	<text name="help_page_menu_text" text="Dans cette fenêtre (CTRL + J), vous pouvez voir un texte qui indique combien de dommages peuvent être réparés au total, combien la réparation coûtera avec la sélection actuelle et quand elle sera terminée. 
+Le véhicule ne peut pas être utilisé pendant la maintenance !
+
+Sous le texte, vous pouvez sélectionner le nombre de dommages à réparer...
+
+Sélectionner l'option -> Commencer la réparation -> L'argent est déduit du compte -> Le véhicule n'est à nouveau prêt à être utilisé lorsque la durée affichée est atteinte.
+
+Une inspection peut également être lancée, ce qui prend une heure. A la fin de l'inspection, le nombre de dommages trouvés est affiché.
+
+Les coûts de la réparation et le montant des dommages peuvent être définis dans le menu ESC avec le module 'Réparation Et Réglages De La Peinture (Configure Maintenance)'."/>
+
+	<text name="help_page_menu_text_cvt" text="En raison du script 'CVT_Addon', une utilisation incorrecte du véhicule augmente l'usure de la boîte de vitesses sur les véhicules équipés d'une boîte de vitesses variable (CVT).
+En dessous de 90% de dommages, la boîte de vitesses peut être réparée pour une somme d'argent (maximum 10 769 euros) et beaucoup de temps (maximum 11 heures).
+À partir d'un niveau de 90 %, la boîte de vitesses doit être entièrement remplacée. Cela coûte beaucoup plus cher (15 000 euros), mais prend moins de temps (7 heures)."/>
+
+	<text name="help_page_menu_text_cvt2" text="Avant de commencer la réparation de la boîte de vitesses, on vous indiquera le coût et la durée de l'opération, par mesure de précaution."/>
+
+	<text name="help_page_menu_text2" text="Une fois que l'entretien/inspection a commencé, il n'est effectué que pendant les heures de travail (de 7h00 à 21h00).
+Toutefois, si l'entretien/inspection tombe dans une fenêtre de temps pendant laquelle aucun travail n'est effectué, il sera interrompu.
+Si l'entretien/inspection doit être interrompu avec la sélection actuelle, cela est indiqué dans une ligne de texte supplémentaire dans cette fenêtre."/>
+    </texts>
+</l10n>

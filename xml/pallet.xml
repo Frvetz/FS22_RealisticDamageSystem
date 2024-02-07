@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="palletMaintencance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <storeData>
+         <name>
+			<de>Wartungspalette</de>
+            <en>Servicing</en>
+            <fr>Palette pour l'entretien</fr>
+            <pl>Paleta do konserwacji</pl>
+		</name>
+        <image>store/store_pallet.dds</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>true</showInStore>
+        <canBeSold>true</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <price>500</price>
+    </storeData>
+
+    <base>
+        <filename>i3d/Pallet.i3d</filename>
+        <size width="2" length="2"/>
+        <canBeReset>true</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="250"/>
+        </components>
+    </base>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+
+    <dynamicMount triggerNode="dynamicMountTrigger"/>
+
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="tensionBeltNode"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+    <i3dMappings>
+        <i3dMapping id="dynamicMountTrigger" node="0>0"/>
+        <i3dMapping id="tensionBeltNode" node="0>1"/>
+    </i3dMappings>
+</vehicle>
