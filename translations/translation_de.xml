@@ -37,9 +37,9 @@ Wartung muss zwischendurch pausiert werden! (21:00-7:00 Uhr) (2x)
 
 		<text name="dialog_maintenance_title" text="Wie viele Schäden sollen repariert werden?"/>
 		
-		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="Es gibt aktuell keine bekannten Schäden die repariert werden müssen.
-
-
+		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="Es gibt aktuell keine bekannten, Schäden die repariert werden müssen.
+		
+		
 
 "/>
 		
@@ -86,7 +86,7 @@ Trotzdem starten?"/>
 
 		<text name="dialog_yesButton_text" text="Schäden reparieren"/>
 
-		<text name="warning_AlreadyActiveMaintenance" text="Dies kannst du aktuell nicht ausführen, da bereits eine Wartung gestartet wurde"/>
+		<text name="warning_AlreadyActiveMaintenance" text="Dies kannst du aktuell nicht ausführen, da bereits eine Wartung gestartet wurde."/>
 
 
 
@@ -152,9 +152,9 @@ Vor Start der Reparatur, werden die Kosten und die Länge angezeigt."/>
 
 
 		<!--tutorial texts-->
-		<text name="warning_CantStartTutorialCVT" text="Das Tutorial kann in diesem Fahrzeug nicht gestartet werden, da bereits eine CVT-Reparatur gestartet wurde"/>
-		<text name="warning_CantStartTutorialInspection" text="Das Tutorial kann in diesem Fahrzeug nicht gestartet werden, da bereits eine Inspektion gestartet wurde"/>
-		<text name="warning_CantStartTutorialMaintenance" text="Das Tutorial kann in diesem Fahrzeug nicht gestartet werden, da bereits eine Wartung gestartet wurde"/>
+		<text name="warning_CantStartTutorialCVT" text="Das Tutorial kann in diesem Fahrzeug nicht gestartet werden, da bereits eine CVT-Reparatur gestartet wurde."/>
+		<text name="warning_CantStartTutorialInspection" text="Das Tutorial kann in diesem Fahrzeug nicht gestartet werden, da bereits eine Inspektion gestartet wurde."/>
+		<text name="warning_CantStartTutorialMaintenance" text="Das Tutorial kann in diesem Fahrzeug nicht gestartet werden, da bereits eine Wartung gestartet wurde."/>
 		
 		<text name="tutorial_Question_title" text="Tutorial für Realistisches Schadenssystem-Mod"/>
 		
@@ -192,7 +192,7 @@ Während der Wartung kann das Fahrzeug nicht benutzt werden!"/>
 
 		<text name="tutorial_textCVT4" text="Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalber noch angezeigt wie viel sie kosten und wie lange sie dauern würde."/>
 
-		<text name="tutorial_text5" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt. [Nächste Seite]"/>
+		<text name="tutorial_text5" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während der Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt. [Nächste Seite]"/>
 
 		<text name="tutorial_text5_2" text="Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert. [Nächste Seite]"/>
 
@@ -250,7 +250,7 @@ Ab einer Höhe von 90%, muss das Getriebe vollständig getauscht werden. Dies ko
 
 	<text name="help_page_menu_text_cvt2" text="Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalber noch angezeigt wie viel sie kosten und wie lange sie dauern würde."/>
 
-	<text name="help_page_menu_text2" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt.
+	<text name="help_page_menu_text2" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während der Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt.
 Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert.
 Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wird dies in einer weiteren Zeile Text in diesem Fenster angezeigt."/>
     </texts>
