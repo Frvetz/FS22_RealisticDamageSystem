@@ -20,7 +20,7 @@ end
 ---Create new instance of event
 -- @param table vehicle vehicle
 -- @param integer state state
-function SyncClientServerEvent.new(vehicle, NextInspectionAge, DamagesThatAddedWear, FinishDay, FinishHour, FinishMinute, DialogSelectedOptionCallback, NextKnownDamageAge, NextUnknownDamageAge, forDBL_TotalNumberOfDamagesPlayerKnows, TotalNumberOfDamagesPlayerDoesntKnow, NextKnownDamageOperatingHour, NextUnknownDamageOperatingHour, FirstLoadNumbersSet, MaintenanceActive, InspectionActive, CVTRepairActive, EngineDied, LengthForDamages, UsersHadTutorialDialog)
+function SyncClientServerEvent.new(vehicle, NextInspectionAge, DamagesThatAddedWear, FinishDay, FinishHour, FinishMinute, DialogSelectedOptionCallback, NextKnownDamageAge, NextUnknownDamageAge, forDBL_TotalNumberOfDamagesPlayerKnows, TotalNumberOfDamagesPlayerDoesntKnow, NextKnownDamageOperatingHour, NextUnknownDamageOperatingHour, DamagesMultiplier, FirstLoadNumbersSet, MaintenanceActive, InspectionActive, CVTRepairActive, EngineDied, LengthForDamages, UsersHadTutorialDialog)
     local self = SyncClientServerEvent.emptyNew()
    
 	self.NextInspectionAge = NextInspectionAge
@@ -36,6 +36,7 @@ function SyncClientServerEvent.new(vehicle, NextInspectionAge, DamagesThatAddedW
 
 	self.NextKnownDamageOperatingHour = NextKnownDamageOperatingHour
 	self.NextUnknownDamageOperatingHour = NextUnknownDamageOperatingHour
+	self.DamagesMultiplier = DamagesMultiplier
 
 	self.FirstLoadNumbersSet = FirstLoadNumbersSet
 	self.MaintenanceActive = MaintenanceActive
@@ -70,6 +71,7 @@ function SyncClientServerEvent:readStream(streamId, connection)
 
     self.NextKnownDamageOperatingHour = streamReadFloat32(streamId)
     self.NextUnknownDamageOperatingHour = streamReadFloat32(streamId)
+    self.DamagesMultiplier = streamReadFloat32(streamId)
 
 	self.FirstLoadNumbersSet = streamReadBool(streamId)
 	self.MaintenanceActive = streamReadBool(streamId)
@@ -103,6 +105,7 @@ function SyncClientServerEvent:writeStream(streamId, connection)
 	
 	streamWriteFloat32(streamId, self.NextKnownDamageOperatingHour)
 	streamWriteFloat32(streamId, self.NextUnknownDamageOperatingHour)
+	streamWriteFloat32(streamId, self.DamagesMultiplier)
 
 	streamWriteBool(streamId, self.FirstLoadNumbersSet)
 	streamWriteBool(streamId, self.MaintenanceActive)
@@ -119,10 +122,10 @@ end
 -- @param integer connection connection
 function SyncClientServerEvent:run(connection)
     if self.vehicle ~= nil and self.vehicle:getIsSynchronized() then
-        RealisticDamageSystem.SyncClientServer(self.vehicle, self.NextInspectionAge, self.DamagesThatAddedWear, self.FinishDay, self.FinishHour, self.FinishMinute, self.DialogSelectedOptionCallback, self.NextKnownDamageAge, self.NextUnknownDamageAge, self.forDBL_TotalNumberOfDamagesPlayerKnows, self.TotalNumberOfDamagesPlayerDoesntKnow, self.NextKnownDamageOperatingHour, self.NextUnknownDamageOperatingHour, self.FirstLoadNumbersSet, self.MaintenanceActive, self.InspectionActive, self.CVTRepairActive, self.EngineDied, self.LengthForDamages, self.UsersHadTutorialDialog)
+        RealisticDamageSystem.SyncClientServer(self.vehicle, self.NextInspectionAge, self.DamagesThatAddedWear, self.FinishDay, self.FinishHour, self.FinishMinute, self.DialogSelectedOptionCallback, self.NextKnownDamageAge, self.NextUnknownDamageAge, self.forDBL_TotalNumberOfDamagesPlayerKnows, self.TotalNumberOfDamagesPlayerDoesntKnow, self.NextKnownDamageOperatingHour, self.NextUnknownDamageOperatingHour, self.DamagesMultiplier, self.FirstLoadNumbersSet, self.MaintenanceActive, self.InspectionActive, self.CVTRepairActive, self.EngineDied, self.LengthForDamages, self.UsersHadTutorialDialog)
 		
 		if not connection:getIsServer() then
-			g_server:broadcastEvent(SyncClientServerEvent.new(self.vehicle, self.NextInspectionAge, self.DamagesThatAddedWear, self.FinishDay, self.FinishHour, self.FinishMinute, self.DialogSelectedOptionCallback, self.NextKnownDamageAge, self.NextUnknownDamageAge, self.forDBL_TotalNumberOfDamagesPlayerKnows, self.TotalNumberOfDamagesPlayerDoesntKnow, self.NextKnownDamageOperatingHour, self.NextUnknownDamageOperatingHour, self.FirstLoadNumbersSet, self.MaintenanceActive, self.InspectionActive, self.CVTRepairActive, self.EngineDied, self.LengthForDamages, self.UsersHadTutorialDialog), nil, connection, self.vehicle)
+			g_server:broadcastEvent(SyncClientServerEvent.new(self.vehicle, self.NextInspectionAge, self.DamagesThatAddedWear, self.FinishDay, self.FinishHour, self.FinishMinute, self.DialogSelectedOptionCallback, self.NextKnownDamageAge, self.NextUnknownDamageAge, self.forDBL_TotalNumberOfDamagesPlayerKnows, self.TotalNumberOfDamagesPlayerDoesntKnow, self.NextKnownDamageOperatingHour, self.NextUnknownDamageOperatingHour, self.DamagesMultiplier, self.FirstLoadNumbersSet, self.MaintenanceActive, self.InspectionActive, self.CVTRepairActive, self.EngineDied, self.LengthForDamages, self.UsersHadTutorialDialog), nil, connection, self.vehicle)
 		end
     end
 end

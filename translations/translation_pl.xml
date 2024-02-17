@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>krisbe</translationContributors>
+
+    <texts>
+		<!--general texts-->
+		<text name="dialog_AutoMotorStart" text="Aktywny automatyczny rozruch silnika! Wyłączy to funkcję problemów z rozruchem! (Funkcja modyfikacji: System Realnych Uszkodzeń)"/>
+		
+		<text name="input_VEHICLE_MAINTENANCE" text="Otwórz okno napraw"/>
+
+		<text name="function_Pallet" text="Paleta serwisowa dla pojazdów."/>
+
+		<text name="warning_MotorFailed" text="Uruchomienie silnika niemożliwe! Spróbuj ponownie"/>
+
+		<text name="dialog_maintenance_text" text="Liczba usterek do naprawy: %1.0f
+Naprawa zostanie zakończona o godz. %02d:%02d 
+Koszt: %1.0f,-
+
+
+
+"/>
+
+		<text name="dialog_maintenance_MustBePaused_text" text="Liczba usterek do naprawy: %1.0f
+Naprawa zostanie zakończona o godz. %02d:%02d
+Koszt: %1.0f,-
+Wstrzymanie prac w godzinach 21:00-7:00!
+
+
+"/>
+		<text name="dialog_maintenance_MustBePaused2x_text" text="Liczba usterek do naprawy: %1.0f
+Naprawa zostanie zakończona o godz. %02d:%02d
+Cost: %1.0f,-
+Wstrzymanie prac w godzinach 21:00-7:00! (2x)
+
+
+"/>
+
+		<text name="dialog_maintenance_title" text="Ile usterek zostanie usuniętych?"/>
+		
+		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="Brak usterek do naprawy.
+
+
+
+"/>
+		
+		<text name="dialog_maintenance_NumberDamages1" text="1 Usterka"/>
+		<text name="dialog_maintenance_NumberDamages2" text="2 Usterki"/>
+		<text name="dialog_maintenance_NumberDamages3" text="3 Usterki"/>alright
+		
+		<text name="dialog_maintenance_NumberDamages4" text="4 Usterki"/>
+		<text name="dialog_maintenance_NumberDamages5" text="5 Usterek"/>
+		<text name="dialog_maintenance_NumberDamages6" text="6 Usterek"/>
+		<text name="dialog_maintenance_NumberDamages7" text="7 Usterek"/>
+		<text name="dialog_maintenance_NumberDamages8" text="8 Usterek"/>
+		<text name="dialog_maintenance_NumberDamages9" text="9 Usterek"/>
+		<text name="dialog_maintenance_NumberDamages10" text="10 Usterek"/>
+		<text name="dialog_maintenance_NumberDamages11" text="11 Usterek"/>
+		<text name="dialog_maintenance_NumberDamages12" text="12 Usterek"/>
+
+
+        <text name="information_Motor" text="Miesiące do przeglądu: %1.0f ... Bieżące usterki: %1.0f"/>
+		<text name="warning_wartung" text="Wymagany przegląd!... Bieżące usterki: %1.0f"/>
+
+
+
+
+		<!--maintenance texts-->
+		<text name="information_wartung" text="Remont zakończy się o godz. %02d:%02d"/>
+		<text name="information_wartungMoreDays" text="Remont zakończy się za %1.0f d. o godz. %02d:%02d"/>
+
+		<text name="dialog_RepairInfo_text" text="Nie można użytkować pojazdu podczas remontu!
+Remont potrwa do godz. %02d:%02d i będzie kosztować %1.0f,-
+Rozpocząć?"/>
+
+		<text name="dialog_RepairInfo_text_withPaused" text="Nie można użytkować pojazdu podczas remontu!
+Remont potrwa do godz. %02d:%02d i będzie kosztować %1.0f,-
+JEŚLI ROZPOCZNIESZ TERAZ, NASTĄPI PRZERWA W GODZ. 21:00-7:00!
+Rozpocząć?"/>
+		<text name="dialog_RepairInfo_text_withPaused2x" text="Nie można użytkować pojazdu podczas remontu!
+Remont potrwa do godz. %02d:%02d i będzie kosztować %1.0f,-
+JEŚLI ROZPOCZNIESZ TERAZ, NASTĄPI PRZERWA W GODZ. 21:00-7:00! (2x)
+Rozpocząć?"/>
+
+		<text name="dialog_RepairInfo_title" text="Usunąć usterki w liczbie: %1.0f?"/>
+
+		<text name="dialog_maintenance_finishedInformation" text="Remont zakończony... Bieżąca liczba usterek to: %1.0f"/>
+
+		<text name="dialog_yesButton_text" text="Napraw uszkodzenia"/>
+
+		<text name="warning_AlreadyActiveMaintenance" text="Obecnie nie możesz wykonać czynności, gdyż remont został rozpoczęty."/>
+
+
+
+
+
+		<!--inspections texts-->
+		<text name="information_Inspection" text="Przegląd zakończy się o godz. %02d:%02d"/>
+
+		<text name="dialog_InspectionInfo_text" text="W trakcie przeglądu, pojazd sprawdzany jest pod kątem ukrytych usterek, które wymagają usunięcia... Zajmie to 1 godzinę i zakończy się o godz. %02d:%02d.
+Rozpocząć?"/>
+		<text name="dialog_InspectionInfo_text_withPaused" text="W trakcie przeglądu, pojazd sprawdzany jest pod kątem ukrytych usterek, które wymagają usunięcia... Zajmie to 1 godzinę i zakończy się o godz. %02d:%02d.
+JEŚLI ROZPOCZNIESZ TERAZ, NASTĄPI PRZERWA W GODZ. 21:00-7:00!
+Rozpocząć?"/>
+		
+		<text name="dialog_InspectionInfo_title" text="Rozpocząć przegląd?"/>
+
+		<text name="dialog_inspection_finishedInformation" text="Przegląd został zakończony...Znalezione usterki: %1.0f, całkowita liczba usterek: %1.0f."/>
+
+		<text name="dialog_inspection_text" text="Wykonaj przegląd"/>
+
+		<text name="warning_AlreadyActiveInspection" text="Obecnie nie możesz wykonać czynności, gdyż przegląd został rozpoczęty."/>
+
+
+
+
+		
+
+		<!--CVT texts-->
+		<text name="information_CVTChange" text="Wymiana przekładni zakończy się o godz. %02d:%02d"/>
+		
+		<text name="information_CVTRepair" text="Remont przekładni zakończy się o godz. %02d:%02d"/>
+		
+		<text name="dialog_cvtInfo_text_ChangeGearbox" text="[CVT Addon]Ze względu na stopień zużycia konieczna jest całkowita wymiana sprzekładni... Kosztuje to 15 000,- i trwa 7 godzin, zakończy się o godz. %02d:%02d.
+Rozpocząć?"/>
+		<text name="dialog_cvtInfo_text_ChangeGearbox_withPaused" text="[CVT Addon] Ze względu na stopień zużycia konieczna jest całkowita wymiana sprzekładni... Kosztuje to 15 000,- i trwa 7 godzin, zakończy się o godz. %02d:%02d.
+JEŚLI ROZPOCZNIESZ TERAZ, NASTĄPI PRZERWA W GODZ. 21:00-7:00!
+Rozpocząć?"/>
+
+		<text name="dialog_cvtInfo_text_RepairGearbox" text="[CVT Addon] Skrzynia biegów zostanie naprawiona... Zajmie to %02d:%02d i będzie kosztować %1.0f,-.
+Rozpocząć?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_Tutorial" text="[CVT Addon] Skrzynia biegów zostanie naprawiona...Zajmie to X:X i będzie kosztować X,-.
+Rozpocząć?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_withPaused" text="[CVT Addon] Skrzynia biegów zostanie naprawiona... Zajmie to %02d:%02d i będzie kosztować %1.0f,-.
+JEŚLI ROZPOCZNIESZ TERAZ, NASTĄPI PRZERWA W GODZ. 21:00-7:00!
+Rozpocząć?"/>
+
+		<text name="dialog_cvtInfo_title" text="Rozpocząć remont?"/>
+		
+		<text name="dialog_cvt_textExplanation" text="[CVT-Addon] Powyżej 90%% zużycia, przekładnię należy wymienić. Koszt wymiany to 15.000,- czas wymiany to 7 godz.
+Bieżące zużycie przekładni: %1.0f%%
+Zanim rozpoczniesz, poznasz koszty i termin zakończenia prac."/>
+       
+		<text name="dialog_cvt_finishedInformation" text="[CVT Addon] Wymiana przekładni została zakończona... Obecny stopień zużycia to 0%."/>
+		
+		<text name="dialog_cvt_textChangeGearbox" text="[CVT Addon] Wymień przekładnię"/>
+
+		<text name="dialog_cvt_textRepairGearbox" text="[CVT Addon] Napraw przekładnię"/>
+		
+		
+
+
+
+
+
+		<!--tutorial texts-->
+		<text name="warning_CantStartTutorialCVT" text="Nie można rozpocząć samouczka, gdzyż w tym pojeździe rozpoczęta została naprawa skrzyni CVT."/>
+		<text name="warning_CantStartTutorialInspection" text="Nie mmożna rozpocząć samouczka, gdyż w tym pojeździe rozpoczęty został przegląd."/>
+		<text name="warning_CantStartTutorialMaintenance" text="Nie można rozpocząć samouczka, gdyż w tym pojeździe rozpoczęty został remont."/>
+
+		<text name="tutorial_Question_title" text="Samouczek dla modyfikacji System Realnych Uszkodzeń"/>
+		
+		<text name="tutorial_Question_text" text="Uruchomić samouczek dotyczący modyfikacji System Realnych Uszkodzeń, który pokazuje wszystkie funkcje i wyjaśnia ich znaczenie?"/>
+		
+		<text name="tutorial_title" text="System Realnych Uszkodzeń - Samouczek"/>
+       
+	    <text name="tutorial_text1" text="Użytkując pojazd, okno pomocy informuje Cię o bieżącej kondycji pojazdu.
+Dzięki temu możesz sprawdzić, liczbę aktualnie znanych usterek i kiedy najpóźniej należy dokonać przeglądu pojazdu w celu wykrycia dalszych uszkodzeń.
+Po zakończonym przeglądzie, znalezione usterki zostaną dodane do aktualnej liczby uszkodzeń.
+-Przegląd wymagany za: X miesięcy... Bieżące usterki: X-"/>
+
+		<text name="tutorial_text2" text="Wszelkie usterki, znane lub nie, prowadzą do utraty mocy silnika.
+Jeżeli przegląd nie zostanie przeprowadzony, należy spodziewać się konsekwencji ukrytych uszkodzeń. Np. jeśli obciążenie silnika będzie zbyt duże pojazd zgaśnie i nie uruchomi się ponownie, o ile w ustawieniach gry wyłączono automatyczne uruchamianie silnika.
+Domyślnie okno konserwacji pojazdu można otworzyć naciskając CTRL + J, gdy znajdziesz się pojazdem w pobliżu palety konserwacji pojazdu (dostępnej w sklepie)."/>
+
+		<text name="tutorial_text3" text="W tym oknie (CTRL+J) możesz zobaczyć tekst informujący ile uszkodzeń łącznie można naprawić, [następna strona]"/>
+
+		<text name="tutorial_text3_2" text="ile będzie kosztować naprawa przy obecnym wyborze i kiedy zostanie zakończona. 
+		
+Podczas konserwacji nie można używać pojazdu!"/>
+	
+		<text name="tutorial_text4" text="Poniżej tekstu możesz wybrać ile uszkodzeń chcesz naprawić... [następna strona]"/>
+
+		<text name="tutorial_text4_2" text="Wybierz opcję -> Napraw uszkodzenia -> Pieniądze zostaną pobrane z konta -> Pojazd będzie gotowy do ponownego użycia dopiero po przekroczeniu wskazanego czasu."/>
+
+		<text name="tutorial_text4_3" text="Ponadto można wykonać przegląd, który zajmie godzinę. Po jego zakończeniu wyświetlana jest liczba znalezionych uszkodzeń."/>
+
+		<text name="tutorial_text4_4" text="Koszty naprawy i wysokość uszkodzeń można ustawić w menu ESC za pomocą modyfikacji 'Repair and paint settings'."/>
+
+		<text name="tutorial_textCVT" text="Ze względu na skrypt „CVT_Addon” nieprawidłowa eksploatacja pojazdu przyspiesza zużycie skrzyni biegów w pojazdach z przekładnią bestopniową (CVT). [Następna strona]"/>
+
+		<text name="tutorial_textCVT2" text="Poniżej 90% zużycia skrzynię biegów można naprawić za pieniądze (maksymalnie 10.769,-), poświęcając dużo czasu (maksymalnie 11 godzin). [Następna strona]"/>
+
+		<text name="tutorial_textCVT3" text="Powyżej 90% zużycia należy wymienić skrzynię biegów. Kosztuje to znacznie więcej (15.000,-), ale zajmuje mniej czasu (7 godzin). [Następna strona]"/>
+
+		<text name="tutorial_textCVT4" text="Przed rozpoczęciem naprawy przekładni, wyświetlony zostanie koszt i czas trwania naprawy."/>
+
+		<text name="tutorial_text5" text="Jeżeli rozpoczęto remont/przegląd, prace będą przeprowadzane wyłącznie w godzinach od 7:00 do 21:00. [Następna strona]"/>
+
+		<text name="tutorial_text5_2" text="Jeśli jednak remont/przegląd przypada w oknie czasowym, poza godzinami pracy, zostanie on wstrzymany. [Następna strona]"/>
+
+		<text name="tutorial_text5_3" text="Jeżeli remont/przegląd musi zostać wstrzymany, zostanie wyświetlona informacja w dodatkowym wierszu tekstu w tym oknie. -Prace zostaną wstrzymane w godzinach 21:00-7:00"/>
+
+	<text name="tutorial_text6" text="Jeśli w trakcie gry będziesz mieć jakieś pytania, w menu ESC znajdziesz kolejny samouczek dotyczący modyfikacji.
+Jest także opcja ponownego uruchomienia samouczka w konsoli komendą 'rdsResetTutorial'.
+
+Miłej zabawy!!"/>
+
+	<!-- HELP WINDOW -->
+	<text name="help_page_title" text="System Realnych Uszkodzeń"/>
+
+	<text name="help_page_Gameplay" text="HUD"/>
+
+	<text name="help_page_gameplay_text_title" text="Informacje"/>
+
+	<text name="help_page_gameplay_text3_title" text="Otwarcie okna przeglądu"/>
+
+	<text name="help_page_gameplay_text4_title" text="Rozpoczęcie przeglądu"/>
+
+	<text name="help_page_MaintenanceMenu" text="Okno przeglądu"/>
+
+	<text name="help_page_menu_cvt_title" text="CVT_Addon"/>
+
+	<text name="help_page_menu_text2_title" text="Przegląd wstrzymany - godziny pracy"/>
+
+	<text name="help_page_gameplay_text" text="Podczas prowadzenia pojazdu okno pomocy informuje Cię o aktualnym stanie pojazdu.
+Możesz sprawdzić, liczbę aktualnie znanych uszkodzeń i kiedy najpóźniej należy dokonać przeglądu pojazdu w celu wykrycia dalszych uszkodzeń.
+Po zakończonym przeglądzie, znalezione usterki zostaną dodane do aktualnej liczby uszkodzeń."/>
+
+	<text name="help_page_gameplay_text2" text="Wszelkie usterki, znane lub nie, prowadzą do utraty mocy silnika.
+Jeżeli przegląd nie zostanie przeprowadzony, należy spodziewać się konsekwencji ukrytych uszkodzeń. Np. jeśli obciążenie silnika będzie zbyt duże pojazd zgaśnie i nie uruchomi się ponownie, o ile w ustawieniach gry wyłączono automatyczne uruchamianie silnika."/>
+	
+	<text name="help_page_gameplay_text3" text="Domyślnie okno konserwacji pojazdu można otworzyć naciskając CTRL + J, gdy znajdziesz się pojazdem w pobliżu palety konserwacji pojazdu (dostępnej w sklepie)."/>
+	
+	<text name="help_page_gameplay_text4" text="Gdy tylko rozpocznie się konserwacja,remont lub wymiana podzespołów, w oknie pomocy zostanie wyświetlony komunikat o czasie zakończenia prac w zależności od liczby bieżących uszkodzeń."/>
+
+	<text name="help_page_menu_text" text="W tym oknie (CTRL+J) możesz zobaczyć informację o liczbie uszkodzeń, które można naprawić, ile będzie kosztować naprawa przy obecnym wyborze i kiedy zostanie zakończona. 
+Podczas remontu nnie można użytkowac pojazdu!
+
+Poniżej tekstu możesz wybrać, ile uszkodzeń ma zostać naprawionych...
+
+Wybierz opcję -> Napraw uszkodzenia -> Pieniądze zostaną pobrane z konta -> Pojazd będzie gotowy do ponownego użycia dopiero po przekroczeniu wskazanego czasu.
+
+Ponadto można wykonać przegląd, który zajmie godzinę. Po zakończeniu wyświetlana jest liczba znalezionych uszkodzeń.
+
+Koszty naprawy i wysokość uszkodzeń można ustawić w menu ESC za pomocą modyfikacji 'Repair and paint settings'."/>
+
+	<text name="help_page_menu_text_cvt" text="Ze względu na skrypt „CVT_Addon” nieprawidłowa eksploatacja pojazdu przyspiesza zużycie skrzyni biegów w pojazdach z przekładnią bestopniową (CVT). 
+Poniżej 90% zużycia skrzynię biegów można naprawić za pieniądze (maksymalnie 10.769,-) poświęcając od 5 aż do 11 godzin.
+Powyżej 90% zużycia należy wymienić skrzynię biegów. Kosztuje to znacznie więcej (15.000,-), ale zajmuje tylko 7 godzin."/>
+
+	<text name="help_page_menu_text_cvt2" text="Przed rozpoczęciem naprawy przekładni, wyświetlony zostanie koszt i czas trwania naprawy."/>
+
+	<text name="help_page_menu_text2" text="Jeżeli rozpoczęto remont/przegląd, prace będą przeprowadzane wyłącznie w godzinach od 7:00 do 21:00.
+Jeśli jednak remont/przegląd przypada w oknie czasowym, poza godzinami pracy, zostanie on wstrzymany.
+Jeżeli remont/przegląd musi zostać wstrzymany, zostanie wyświetlona informacja w dodatkowym wierszu tekstu w tym oknie."/>
+    </texts>
+</l10n>

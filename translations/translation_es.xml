@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>frvetz</translationContributors>
+
+    <texts>
+		<!--general texts-->
+		<text name="dialog_AutoMotorStart" text="Arranque automático del motor activado Esto desactiva la función de arranque en falso del motor (Función del mod: Sistema de daños realista)"/>
+		
+		<text name="input_VEHICLE_MAINTENANCE" text="Abrir menú de mantenimiento"/>
+
+		<text name="function_Pallet" text="Este palet se utiliza para el mantenimiento de vehículos."/>
+
+		<text name="warning_MotorFailed" text="¡Motor parado! Por favor empieza de nuevo"/>
+
+		<text name="dialog_maintenance_text" text="Daños totales a reparar: %1.0f
+Se espera que el mantenimiento finalice en: %02d:%02d en punto
+Precio: %1.0f,-
+
+
+
+"/>
+
+		<text name="dialog_maintenance_MustBePaused_text" text="Daños totales a reparar: %1.0f
+Se espera que el mantenimiento finalice en: %02d:%02d en punto
+Coste: %1.0f,-
+El mantenimiento debe pausarse entre! (21:00-7:00 en punto)
+
+
+"/>
+
+		<text name="dialog_maintenance_title" text="¿Cuántos daños hay que reparar?"/>
+		
+		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="Actualmente no se conocen daños que deban repararse.
+
+
+
+"/>
+		
+		<text name="dialog_maintenance_NumberDamages1" text="Daño 1"/>
+		<text name="dialog_maintenance_NumberDamages2" text="Daños 2"/>
+		<text name="dialog_maintenance_NumberDamages3" text="Daños 3"/>
+		<text name="dialog_maintenance_NumberDamages4" text="Daños 4"/>
+		<text name="dialog_maintenance_NumberDamages5" text="Daños 5"/>
+		<text name="dialog_maintenance_NumberDamages6" text="Daños 6"/>
+		<text name="dialog_maintenance_NumberDamages7" text="Daños 7"/>
+		<text name="dialog_maintenance_NumberDamages8" text="Daños 8"/>
+		<text name="dialog_maintenance_NumberDamages9" text="Daños 9"/>
+		<text name="dialog_maintenance_NumberDamages10" text="Daños 10"/>
+		<text name="dialog_maintenance_NumberDamages11" text="Daños 11"/>
+		<text name="dialog_maintenance_NumberDamages12" text="Daños 12"/>
+
+
+        <text name="information_Motor" text="Inspección requerida en: %1.0f meses... Daños actuales: %1.0f"/>
+		<text name="warning_wartung" text="Se requiere inspección!... Daños actuales: %1.0f"/>
+
+
+
+
+		<!--maintenance texts-->
+		<text name="information_wartung" text="Mantenimiento completado a las: %02d:%02d en punto"/>
+
+		<text name="dialog_RepairInfo_text" text="¡El vehículo no se puede utilizar durante el mantenimiento!
+La reparación tardaría hasta %02d:%02d en punto y cuesta %1.0f,-
+¿Empezar de todos modos?"/>
+
+		<text name="dialog_RepairInfo_text_withPaused" text="¡El vehículo no se puede utilizar durante el mantenimiento!
+La reparación tardaría hasta %02d:%02d en punto y cuesta %1.0f,-
+SI LA REPARACIÓN SE COMIENZA AHORA, SE DEBE PAUSAR HASTA 7:00 en punto.
+Start anyway?"/>
+
+		<text name="dialog_RepairInfo_title" text="Reparar %1.0f daños?"/>
+
+		<text name="dialog_maintenance_finishedInformation" text="El mantenimiento ya está completo... El número total de daños ahora es: %1.0f"/>
+
+		<text name="dialog_yesButton_text" text="Reparar daños"/>
+
+		<text name="warning_AlreadyActiveMaintenance" text="Actualmente no puedes hacer esto porque el mantenimiento ya ha comenzado."/>
+
+
+
+
+
+		<!--inspections texts-->
+		<text name="information_Inspection" text="La Inspección termina a las: %02d:%02d en punto"/>
+
+		<text name="dialog_InspectionInfo_text" text="Durante una inspección no puedes usar el vehículo, se comprueba que no tenga daños ocultos para poder repararlos... la Inspección dura 1 hora, por lo tanto, se completaría a las %02d:%02d.
+¿Empezar de todos modos?"/>
+		<text name="dialog_InspectionInfo_text_withPaused" text="Durante una inspección no puedes usar el vehículo, se comprueba que el vehículo no tenga daños ocultos para poder repararlos... la Inspección dura 1 hora, por lo tanto, se completaría a las %02d:%02d.
+SI LA INSPECCIÓN SE COMIENZA AHORA, SE DEBE PAUSAR HASTA LAS 7:00 en punto.
+¿Empezar de todos modos?"/>
+		
+		<text name="dialog_InspectionInfo_title" text="¿Iniciar inspección?"/>
+
+		<text name="dialog_inspection_finishedInformation" text="La inspección ya está completa...  Se encontraron %1.0f daños, dando un total de %1.0f daños."/>
+
+		<text name="dialog_inspection_text" text="Iniciar inspección"/>
+
+		<text name="warning_AlreadyActiveInspection" text="Actualmente no puede hacer esto porque ya se ha iniciado una inspección."/>
+
+
+
+
+		
+
+		<!--CVT texts-->
+		<text name="information_CVTChange" text="[CVT] Cambio de caja de cambios completado a las: %02d:%02d en punto"/>
+		
+		<text name="information_CVTRepair" text="[CVT] Reparación de caja de cambios completada a las: %02d:%02d en punto"/>
+		
+		<text name="dialog_cvtInfo_text_ChangeGearbox" text="[CVT Addon] La caja de cambios tiene que ser reemplazada por completo debido a la gravedad del daño... Esto cuesta 15.000,- y tarda 7 horas, por lo que se completaría a las %02d:%02d.
+¿Empezar de todos modos?"/>
+		<text name="dialog_cvtInfo_text_ChangeGearbox_withPaused" text="[CVT Addon] La caja de cambios tiene que ser reemplazada por completo debido a la gravedad del daño... Esto cuesta 15.000,- y tarda 7 horas, por lo que se completaría a las %02d:%02d.
+SI LA REPARACIÓN SE COMIENZA AHORA, SE DEBE PAUSAR HASTA 7:00 en punto!
+¿Empezar de todos modos?"/>
+
+		<text name="dialog_cvtInfo_text_RepairGearbox" text="[CVT Addon] La caja de cambios será completamente reparada... Esto tomará hasta %02d:%02d y cuesta %1.0f,-.
+¿Empezar de todos modos?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_Tutorial" text="[CVT Addon] La caja de cambios será completamente reparada... Esto tomará hasta X:X y cuesta X,-.
+¿Empezar de todos modos?"/>
+		<text name="dialog_cvtInfo_text_RepairGearbox_withPaused" text="[CVT Addon] La caja de cambios será completamente reparada... Esto tomará hasta %02d:%02d y cuesta %1.0f,-.
+SI LA REPARACIÓN SE INICIA AHORA DEBE PAUSARSE HASTA LAS 7:00 en punto!
+¿Empezar de todos modos?"/>
+
+		<text name="dialog_cvtInfo_title" text="¿Iniciar reparación?"/>
+		
+		<text name="dialog_cvt_textExplanation" text="[CVT-Addon] Por encima del 90%% de daño, la caja de cambios debe reemplazarse por completo. Un reemplazo cuesta 15.000 y demora 7 horas.
+Daños actuales en la caja de cambios: %1.0f%%
+Antes de iniciar la reparación, se muestran los costes y la duración."/>
+       
+		<text name="dialog_cvt_finishedInformation" text="[CVT Addon] El cambio de caja de cambios ahora está completo... El daño de la caja de cambios ahora es 0% nuevamente."/>
+		
+		<text name="dialog_cvt_textChangeGearbox" text="[CVT Addon] Cambiar caja de cambios"/>
+
+		<text name="dialog_cvt_textRepairGearbox" text="[CVT Addon] Reparar caja de cambios"/>
+		
+		
+
+
+
+
+
+		<!--tutorial texts-->
+		<text name="warning_CantStartTutorialCVT" text="El tutorial no se puede iniciar en este vehículo porque ya se inició una reparación de CVT"/>
+		<text name="warning_CantStartTutorialInspection" text="No se puede iniciar el tutorial en este vehículo porque ya se ha iniciado una inspección"/>
+		<text name="warning_CantStartTutorialMaintenance" text="El tutorial no se puede iniciar en este vehículo porque ya se ha iniciado un mantenimiento."/>
+
+		<text name="tutorial_Question_title" text="Tutorial para el mod del sistema de daños realistas"/>
+		
+		<text name="tutorial_Question_text" text="¿Quieres ver el tutorial Realistic Damage System que muestra todas las funciones y como usarlas?"/>
+		
+		<text name="tutorial_title" text="Sistema de daños realista - Tutorial"/>
+       
+	    <text name="tutorial_text1" text="Cuando conduce un vehículo, la ventana de ayuda le informa sobre el estado actual del vehículo.
+Esto le permite ver el número de daños conocidos actualmente y cuándo se debe inspeccionar el vehículo para detectar más daños ocultos a más tardar.
+Después de una inspección, los daños encontrados se suman al número de daños actuales.
+-Inspección requerida en: X meses... Daños actuales: X-"/>
+
+		<text name="tutorial_text2" text="Cualquier daño, conocido o no, provoca una pérdida de potencia del motor.
+Si no se realiza la inspección, se esperan las consecuencias de los daños ocultos. Por ejemplo, el vehículo se detendrá si la carga del motor es demasiado alta y no arrancará correctamente si el arranque automático del motor está desactivado en la configuración del juego.
+De forma predeterminada, el menú de mantenimiento del vehículo se puede abrir presionando CTRL + J cuando esté cerca de un palet de mantenimiento del vehículo (disponible en la tienda)."/>
+
+		<text name="tutorial_text3" text="En esta ventana (CTRL+J) puedes ver un texto que muestra cuántos daños se pueden reparar en total, [página siguiente]"/>
+
+		<text name="tutorial_text3_2" text="cuánto costará la reparación con la selección actual y cuándo se completará.
+¡El vehículo no se puede utilizar durante el mantenimiento!"/>
+	
+		<text name="tutorial_text4" text="Debajo del texto puedes seleccionar cuántos daños deseas reparar... [página siguiente]"/>
+
+		<text name="tutorial_text4_2" text="Seleccione la opción -> Iniciar reparación -> El dinero se deduce de la cuenta -> El vehículo solo estará listo para usarse nuevamente cuando se haya alcanzado el tiempo mostrado."/>
+
+		<text name="tutorial_text4_3" text="Además, se puede iniciar una inspección, que duraría una hora. Una vez finalizado, se muestra el número de daños encontrados."/>
+
+		<text name="tutorial_text4_4" text="Los costos de reparación y la cantidad de daños se pueden configurar en el menú ESC con el mod 'Configuración de reparación y pintura (Configurar mantenimiento)'."/>
+
+		<text name="tutorial_textCVT" text="Debido al script 'CVT_Addon', el funcionamiento inadecuado del vehículo aumenta el desgaste de la caja de cambios en vehículos con caja de cambios variable (CVT). [siguiente página]"/>
+
+		<text name="tutorial_textCVT2" text="Por debajo del 90% de daño, la caja de cambios se puede reparar con dinero (máximo 10.769,-) y mucho tiempo (máximo 11 horas). [siguiente página]"/>
+
+		<text name="tutorial_textCVT3" text="Por encima del 90%, es necesario sustituir completamente la caja de cambios. Esto cuesta mucho más (15.000,-), pero lleva menos tiempo (7 horas). [siguiente página]"/>
+
+		<text name="tutorial_textCVT4" text="Antes de que comience la reparación de la caja de cambios, se le mostrará cuánto costará y cuánto tiempo llevará."/>
+
+		<text name="tutorial_text5" text="Si se ha iniciado el mantenimiento/inspección, sólo se realizará en horario laboral (de 7:00 a 21:00 horas). [siguiente página]"/>
+
+		<text name="tutorial_text5_2" text="Sin embargo, si el mantenimiento/inspección cae dentro de un período de tiempo en el que no se está realizando ningún trabajo, se pausará. [siguiente página]"/>
+
+		<text name="tutorial_text5_3" text="Si se debe pausar el mantenimiento/inspección con la selección actual, esto se muestra en una línea adicional de texto en esta ventana. -¡El mantenimiento debe pausarse en el medio! (21:00-7:00 en punto)-"/>
+
+	<text name="tutorial_text6" text="Si tienes alguna pregunta mientras juegas, encontrarás otro tutorial para el mod en el menú ESC.
+También tienes la opción de reiniciar el tutorial con el comando de consola 'rdsResetTutorial'.
+
+Diviertete Usandolo!!"/>
+
+	<!-- HELP WINDOW -->
+	<text name="help_page_title" text="Sistema de daños realista"/>
+
+	<text name="help_page_Gameplay" text="HUD"/>
+
+	<text name="help_page_gameplay_text_title" text="Informacion"/>
+
+	<text name="help_page_gameplay_text3_title" text="Abrir menú de mantenimiento"/>
+
+	<text name="help_page_gameplay_text4_title" text="Mantenimiento iniciado"/>
+
+	<text name="help_page_MaintenanceMenu" text="Menú de mantenimiento"/>
+
+	<text name="help_page_menu_cvt_title" text="CVT_Addon"/>
+
+	<text name="help_page_menu_text2_title" text="Mantenimiento en pausa - horario laboral"/>
+
+	<text name="help_page_gameplay_text" text="Cuando conduce un vehículo, la ventana de ayuda le informa sobre el estado actual del vehículo.
+Esto le permite ver el número de daños conocidos actualmente y cuándo se debe inspeccionar el vehículo a más tardar para detectar más daños ocultos.
+Después de una inspección, los daños encontrados se suman al número de daños actuales."/>
+
+	<text name="help_page_gameplay_text2" text="Cualquier daño, conocido o no, provoca una pérdida de potencia del motor.
+Si no se realiza la inspección, se deben esperar consecuencias de daños desconocidos. Por ejemplo, el vehículo se detendrá si la carga del motor es demasiado alta y no arrancará correctamente si el arranque automático del motor está desactivado en la configuración del juego."/>
+	
+	<text name="help_page_gameplay_text3" text="De forma predeterminada, el menú de mantenimiento del vehículo se puede acceder con CTRL + J cuando estás cerca de un palet de mantenimiento del vehículo (disponible en la tienda)."/>
+	
+	<text name="help_page_gameplay_text4" text="Tan pronto como se haya iniciado el mantenimiento o similar, se le mostrará en la ventana de ayuda cuándo se completará."/>
+
+	<text name="help_page_menu_text" text="En esta ventana (CTRL + J) puedes ver un texto que muestra cuántos daños se pueden reparar en total, cuánto costará la reparación con la selección actual y cuándo se completará.
+¡El vehículo no se puede utilizar durante el mantenimiento!
+
+Debajo del texto puede seleccionar cuántos daños deben repararse...
+
+Seleccione la opción -> Iniciar reparación -> El dinero se deduce de la cuenta -> El vehículo solo estará listo para usarse nuevamente cuando se alcance el tiempo mostrado.
+
+También se puede iniciar una inspección, que tardaría una hora. Una vez finalizado, se muestra el número de daños encontrados.
+
+Los costos de reparación y la cantidad de daños se pueden configurar en el menú ESC con el mod 'Configuración de reparación y pintura (Configurar mantenimiento)'."/>
+
+	<text name="help_page_menu_text_cvt" text="Debido al script 'CVT_Addon', el funcionamiento inadecuado del vehículo aumenta el desgaste de la caja de cambios en vehículos con caja de cambios variable (CVT).
+Por debajo del 90% de daño, la caja de cambios se puede reparar por dinero (máximo 10.769,-) y mucho tiempo (5-11 horas).
+Por encima del 90%, es necesario sustituir completamente la caja de cambios. Esto cuesta considerablemente más (15.000,-), pero lleva menos tiempo (7 horas)."/>
+
+	<text name="help_page_menu_text_cvt2" text="Antes de que comience la reparación de la caja de cambios, se le mostrará cuánto costará y cuánto tiempo llevará, solo para estar seguro."/>
+
+	<text name="help_page_menu_text2" text="Una vez iniciado el mantenimiento/inspección, éste únicamente se realizará en horario laboral (de 7:00 a 21:00 horas).
+Sin embargo, si el mantenimiento/inspección cae dentro de un período de tiempo en el que no se está realizando ningún trabajo, se pausará.
+Si es necesario pausar el mantenimiento/inspección con la selección actual, esto se muestra en una línea de texto adicional en esta ventana."/>
+    </texts>
+</l10n>

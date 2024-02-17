@@ -37,7 +37,7 @@ Wartung muss zwischendurch pausiert werden! (21:00-7:00 Uhr) (2x)
 
 		<text name="dialog_maintenance_title" text="Wie viele Schäden sollen repariert werden?"/>
 		
-		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="Es gibt aktuell keine bekannten Schäden die repariert werden müssen.
+		<text name="dialog_maintenance_NoMoreKnownDamagesToRepair" text="Es gibt aktuell keine bekannten Schäden, die repariert werden müssen.
 
 
 
@@ -192,7 +192,7 @@ Während der Wartung kann das Fahrzeug nicht benutzt werden!"/>
 
 		<text name="tutorial_textCVT4" text="Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalber noch angezeigt wie viel sie kosten und wie lange sie dauern würde."/>
 
-		<text name="tutorial_text5" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt. [Nächste Seite]"/>
+		<text name="tutorial_text5" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während der Arbeitszeit (7:00 bis 21:00 Uhr) durchgeführt. [Nächste Seite]"/>
 
 		<text name="tutorial_text5_2" text="Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert. [Nächste Seite]"/>
 
@@ -220,7 +220,7 @@ Viel Spaß!!"/>
 
 		<text name="help_page_menu_cvt_title" text="CVT_Addon"/>
 
-		<text name="help_page_menu_text2_title" text="Wartung pausiert - Arbeitszeiten"/>
+		<text name="help_page_menu_text2_title" text="Wartung pausiert - Arbeitszeit"/>
 
 		<text name="help_page_gameplay_text" text="Wenn Sie ein Fahrzeug fahren, informiert Sie das Hilfefenster über den aktuellen Zustand des Fahrzeugs.
 So können Sie die Anzahl der aktuell bekannten Schäden und wann das Fahrzeug spätestens auf weitere versteckte Schäden inspiziert werden sollte, ablesen.
@@ -250,7 +250,7 @@ Ab einer Höhe von 90%, muss das Getriebe vollständig getauscht werden. Dies ko
 
 	<text name="help_page_menu_text_cvt2" text="Bevor die Getriebe-Reparatur wirklich gestartet wird, wird Ihnen sicherheitshalber noch angezeigt wie viel sie kosten und wie lange sie dauern würde."/>
 
-	<text name="help_page_menu_text2" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während den Arbeitszeiten (7:00 bis 21:00 Uhr) durchgeführt.
+	<text name="help_page_menu_text2" text="Wenn die Wartung/Inspektion begonnen hat, wird sie nur während der Arbeitszeit (7:00 bis 21:00 Uhr) durchgeführt.
 Sollte die Wartung/Inspektion dennoch in ein Zeitfenster fallen, in dem keine Arbeiten durchgeführt werden, wird diese pausiert.
 Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wird dies in einer weiteren Zeile Text in diesem Fenster angezeigt."/>
     </texts>

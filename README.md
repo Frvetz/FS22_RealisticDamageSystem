@@ -41,6 +41,7 @@ In addition, the costs for the repair and the amount of damages can be set in th
 - #### Console command "rdsResetTimeUntilInspection" available to reset the time until the next inspection
 - #### Console command "rdsStopActiveRepair" available to complete an active inspection or maintenance immediately
 - #### Console command "rdsDebug" available to write a debug to the console
+- #### Console command "rdsDebugOnce" available to write a debug once to the console
 - #### Console command "rdsRemoveDamages [number]" available to remove the entered number of known damages
 - #### Console command "rdsFindDamages" available to uncover all hidden damage
 - #### Console command "rdsResetTimeUntilNextDamage" available to reset the time until the next damage occurs (required if the vehicle's operating hours are changed manually)
@@ -151,6 +152,7 @@ Zusätzlich können die Kosten für die Reparatur und die Menge der Schäden im 
 - #### Konsolenbefehl "rdsResetTimeUntilInspection" verfügbar, um die Zeit bis zur nächsten Inspektion zurückzusetzen
 - #### Konsolenbefehl "rdsStopActiveRepair" verfügbar, um eine aktive Inspektion oder Wartung direkt abzuschließen
 - #### Konsolenbefehl "rdsDebug" verfügbar, um einen Debug in die Konsole zu schreiben
+- #### Konsolenbefehl "rdsDebugOnce" verfügbar, um einen Debug einmal in die Konsole zu schreiben
 - #### Konsolenbefehl "rdsRemoveDamages [nummer]" verfügbar, um die eingegebene Anzahl an bekannten Schäden zu entfernen
 - #### Konsolenbefehl "rdsFindDamages" verfügbar, um alle versteckten Schäden aufzudecken
 - #### Konsolenbefehl "rdsResetTimeUntilNextDamage" verfügbar, um die Zeit, bis der nächste Schaden auftritt, zurückzusetzen (wird benötigt, wenn die Betriebsstunden des Fahrzeugs manuell geändert werden)

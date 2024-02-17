@@ -5,6 +5,9 @@
         <en>Realistic Damage System</en>
         <fr>Système De Dommages Réaliste</fr>
         <cz>Realistický systém poškození</cz>
+	    <ru>Реалистичная система повреждений</ru>
+        <es>Sistema De Daños Realista</es>
+        <pl>System Realnych Uszkodzeń</pl>
     </title>
     <description>
         <de>
@@ -40,6 +43,7 @@ Zusätzlich können die Kosten für die Reparatur und die Menge der Schäden im 
 - Konsolenbefehl "rdsResetTimeUntilInspection" verfügbar, um die Zeit bis zur nächsten Inspektion zurückzusetzen
 - Konsolenbefehl "rdsStopActiveRepair" verfügbar, um eine aktive Inspektion oder Wartung direkt abzuschließen
 - Konsolenbefehl "rdsDebug" verfügbar, um einen Debug in die Konsole zu schreiben
+- Konsolenbefehl "rdsDebugOnce" verfügbar, um einen Debug einmal in die Konsole zu schreiben
 - Konsolenbefehl "rdsRemoveDamages [nummer]" verfügbar, um die eingegebene Anzahl an bekannten Schäden zu entfernen
 - Konsolenbefehl "rdsFindDamages" verfügbar, um alle versteckten Schäden aufzudecken
 - Konsolenbefehl "rdsResetTimeUntilNextDamage" verfügbar, um die Zeit, bis der nächste Schaden auftritt, zurückzusetzen (wird benötigt, wenn die Betriebsstunden des Fahrzeugs manuell geändert werden)
@@ -86,6 +90,7 @@ In addition, the costs for the repair and the amount of damages can be set in th
 - Console command "rdsResetTimeUntilInspection" available to reset the time until the next inspection
 - Console command "rdsStopActiveRepair" available to complete an active inspection or maintenance immediately
 - Console command "rdsDebug" available to write a debug to the console
+- Console command "rdsDebugOnce" available to write a debug once to the console
 - Console command "rdsRemoveDamages [number]" available to remove the entered number of known damages
 - Console command "rdsFindDamages" available to uncover all hidden damage
 - Console command "rdsResetTimeUntilNextDamage" available to reset the time until the next damage occurs (required if the vehicle's operating hours are changed manually)
@@ -131,6 +136,7 @@ En outre, les coûts de réparation et le montant des dommages peuvent être dé
 - Commande de console "rdsResetTimeUntilInspection" disponible pour réinitialiser le délai jusqu'à la prochaine inspection
 - Commande de console "rdsStopActiveRepair" disponible pour terminer immédiatement une inspection ou une maintenance active
 - Commande de console "rdsDebug" disponible pour d'écrire un message de débogage sur la console
+- Commande de console "rdsDebugOnce" disponible pour écrire un débogage une fois sur la console
 - Commande de console "rdsRemoveDamages [nombre]" disponible pour supprimer le nombre de dommages connus saisi
 - Commande de console "rdsFindDamages" disponible pour découvrir tous les dommages cachés
 - Commande de console "rdsResetTimeUntilNextDamage" disponible pour réinitialiser le temps jusqu'au prochain dommage (nécessaire si les heures de fonctionnement du véhicule sont modifiées manuellement)
@@ -176,6 +182,7 @@ Contact :
 - Консольная команда "rdsResetTimeUntilInspection" позволяет сбросить время до следующего осмотра
 - Консольная команда "rdsStopActiveRepair" позволяет немедленно завершить активный осмотр или техническое обслуживание
 - Консольная команда "rdsDebug" позволяет записать отладку на консоль
+- Консольная команда "rdsDebugOnce" доступна для однократной записи отладки в консоль
 - Консольная команда "rdsRemoveDamages [номер]" доступна для удаления введенного количества известных повреждений
 - Консольная команда "rdsFindDamages" позволяет обнаружить все скрытые повреждения
 - Консольная команда "rdsResetTimeUntilNextDamage" позволяет сбросить время до следующего повреждения (требуется, если часы работы автомобиля изменяются вручную)
@@ -221,6 +228,7 @@ Além disso, os custos de reparo e o valor dos danos podem ser definidos no menu
 - Comando do console "rdsResetTimeUntilInspection" disponível para redefinir o tempo até a próxima inspeção
 - Comando do console "rdsStopActiveRepair" disponível para concluir imediatamente uma inspeção ou manutenção ativa
 - Comando do console "rdsDebug" disponível para gravar uma depuração no console
+- Comando de console "rdsDebugOnce" disponível para gravar uma depuração uma vez no console
 - Comando do console "rdsRemoveDamages [número]" disponível para remover o número inserido de danos conhecidos
 - Comando do console "rdsFindDamages" disponível para descobrir todos os danos ocultos
 - Comando de console "rdsResetTimeUntilNextDamage" disponível para redefinir o tempo até a ocorrência do próximo dano (necessário se as horas de operação do veículo forem alteradas manualmente)
@@ -266,6 +274,7 @@ Náklady na opravu a výši poškození lze navíc nastavit v menu ESC pomocí m
 - Příkaz konzoly "rdsResetTimeUntilInspection" je k dispozici pro vynulování času do příští kontroly
 - Příkaz konzoly "rdsStopActiveRepair" je k dispozici pro okamžité ukončení aktivní prohlídky nebo údržby.
 - Příkaz konzoly "rdsDebug" k dispozici pro zápis ladění do konzoly
+- Příkaz konzoly "rdsDebugOnce" k dispozici pro jednorázový zápis ladění do konzoly
 - Příkaz konzoly "rdsRemoveDamages [číslo]" k dispozici pro odstranění zadaného počtu známých poškození
 - Příkaz konzoly "rdsFindDamages" k dispozici pro odhalení všech skrytých poškození
 - Příkaz konzoly "rdsResetTimeUntilNextDamage" k dispozici pro vynulování času do vzniku dalšího poškození (nutné, pokud se provozní hodiny vozidla mění ručně)
@@ -278,9 +287,100 @@ Kontakt:
 - Kontaktní discord: https://discord.com/invite/mfergkwhDu
 ]]>	
 	</cz>
+    <es>
+<![CDATA[¡El mod "Mantenimiento extendido de vehículos" de FS19 regresa a FS22 con nuevas funciones!
+
+Con este script harás que el mantenimiento de tu vehículo sea mucho más complejo y tendrás que pensar cuándo quieres reparar los daños de tu vehículo.
+Los daños ocurren en todos los vehículos con el tiempo. Se le notificará sobre algunos de ellos en la ventana de ayuda, otros tendrá que encontrarlos mediante una inspección de una hora.
+Para iniciar una inspección o reparar los daños, debe comprar un palé en el taller, acercarse a él y luego abrir el menú de mantenimiento (por defecto CTRL + J). En este menú podrás seleccionar cuántos daños quieres reparar. También se le mostrará cuánto costaría una reparación con la selección actual y cuánto tiempo llevaría. 
+
+Una vez iniciado un mantenimiento o inspección, éste únicamente se realizará en el horario laboral de 7:00 a 21:00 horas. Sin embargo, si cae dentro de una ventana horaria en la que no se están realizando trabajos, se pausará hasta la mañana.
+
+Si no repara los daños que su vehículo ha sufrido con el tiempo, tardará más en arrancar, correrá el riesgo de arranques en falso y se detendrá si el motor está bajo una carga excesiva.
+
+La primera vez que inicias el juego con este mod, el script analiza el daño actual del vehículo y agrega la cantidad de daños que habrían causado este daño al vehículo. Estos daños ya son conocidos, por lo que no es necesario detectarlos mediante una inspección y pueden repararse inmediatamente a través del menú de mantenimiento.
+
+Si estás jugando con la última versión del mod CVT_Addon, el funcionamiento inadecuado del vehículo aumenta el desgaste de la caja de cambios. Por debajo del 90% de daño, la caja de cambios se puede reparar por dinero (máximo 10.769,-) y mucho tiempo (máximo 11 horas); por encima del 90%, la caja de cambios debe ser reemplazada por completo. Esto cuesta considerablemente más (15.000,-), pero lleva menos tiempo (7 horas) 
+
+Además, los costos de reparación y la cantidad de daños se pueden configurar en el menú ESC con el mod "Configuración de reparación y pintura (Configurar mantenimiento)"..
+
+- Multijugador local completo y soporte de servidor dedicado.
+- Soporta el mod "CVT_Addon"
+- Soporta el mod "Configuraciones de reparación y pintura (Configurar mantenimiento)"
+- Compatible con el mod "Mantenimiento Avanzado"
+- Compatible con el mod "Advanced Farm Manager"
+- Compatible con el mod "Reparación automática"
+- Compatible con el mod "Taller Móvil" (¡no reemplaza el palet de mantenimiento!)
+- Tutorial en el juego disponible
+(El comando de consola "rdsResetTutorial" está disponible para reiniciar el tutorial del juego por ti mismo)
+- Ayuda disponible en el menú ESC
+- Al activar el arranque automático del motor, se desactiva la función de calado del motor.
+- Comando de consola "rdsResetDamages" disponible para restablecer todos los daños del vehículo.
+- Comando de consola "rdsResetTimeUntilInspection" disponible para restablecer el tiempo hasta la próxima inspección
+- Comando de consola "rdsStopActiveRepair" disponible para finalizar inmediatamente una inspección o mantenimiento activo
+- Comando de consola "rdsDebug" disponible para escribir una depuración en la consola
+- Comando de consola "rdsDebugOnce" disponible para escribir una depuración una vez en la consola
+- Comando de consola "rdsRemoveDamages [number]" disponible para eliminar el número introducido de daños conocidos
+- Comando de consola "rdsFindDamages" disponible para descubrir todos los daños ocultos
+- Comando de consola "rdsResetTimeUntilNextDamage" disponible para restablecer el tiempo hasta que se produzca el siguiente daño (necesario si las horas de funcionamiento del vehículo se cambian manualmente)
+- Comando de consola "rdsResetEverything" disponible para reiniciar todo
+- Comando de consola "rdsSetTimeUntilInspection [number]" disponible para establecer manualmente los meses hasta la próxima inspección
+
+Contacto:
+- Contacto y últimas actualizaciones.: https://github.com/Frvetz/FS22_RealisticDamageSystem
+- Email de contacto: RealisticDamageSystem@gmail.com
+- contacto discord: https://discord.com/invite/mfergkwhDu
+]]>	
+	</es>
+    <pl>
+<![CDATA[Modyfikacja "Extended Vehicle Maintenance" znana z FS19 przechodzi do FS22 z nowymi rozwiązaniami!
+
+Przy wykorzystaniu tego skryptu utrzymanie stanu technicznego Twojego pojazdu stanie się bardziej złożone z uwzględnieniem planowania naprawy uszkodzeń.
+Z biegiem czasu w każdym pojeździe pojawiają się uszkodzenia. O niektórych z nich zostaniesz poinformowany w oknie pomocy, inne będziesz musiał znaleźć w ciągu godzinnego przeglądu.
+Aby rozpocząć przegląd lub naprawy usterek, będziesz musiał kupić paletę w sklepie, podjechać do niej i wywołać okno naprawy (domyślnie CTRL+J). W tym oknie wybierzesz ile usterek, z powstałych na skutek ekspoloatacji, chcesz usunąć. Ponadto na podstawie aktualnego wyboru otrzymasz szczegółowy przegląd kosztów i szacunkowy czas trwania naprawy.
+
+Po rozpoczęciu remontu lub przeglądu będą one przeprowadzane wyłącznie w godzinach pracy od 7:00 do 21:00. Jeśli jednak wypada to w oknie czasowym, w którym nie są prowadzone żadne prace, zostaną one wstrzymane do rana.
+
+Jeśli z biegiem czasu nie naprawisz uszkodzeń pojazdu, uruchomienie zajmie więcej czasu, silnik nie uruchomi się, a jeśli silnik będzie pod nadmiernym obciążeniem istnieje ryzyko jego zgaśnięcia.
+
+Przy pierwszym uruchomieniu gry z tym modem skrypt sprawdza aktualne uszkodzenia pojazdu i dodaje równoważną liczbę uszkodzeń. Uszkodzenia te są już znane, więc nie trzeba ich wykrywać podczas przeglądu i można je od razu naprawić za pomocą opcji remontu.
+
+Jeśli grasz z najnowszą wersją modyfikacji CVT_Addon, niewłaściwa obsługa pojazdu zwiększa zużycie skrzyni biegów. Poniżej 90% zużycia skrzynię biegów można naprawić za pieniądze (maksymalnie 10.769,-) co zajmuje sporo czasu (maksymalnie 11 godzin) - powyżej 90% zużycia skrzynię należy całkowicie wymienić. Kosztuje to znacznie więcej (15.000,-), ale trwa krócej (7 godzin).
+
+Dodatkowo koszty naprawy i wysokość uszkodzeń można ustawić w menu pod klawiszem ESC za pomocą modyfikacji "Repair and paint settings (Configure Maintenance)".
+
+- Pełne wsparcie trybu wieloosobowego i dedykowanych serwerów
+- Wsparcie modyfikacji "CVT_Addon"
+- Wsparcie modyfikacji "Repair and paint settings (Configure Maintenance)"
+- Wsparcie modyfikacji "Dashboard Live"
+- Kompatybilny z modyfikacją "Advanced Maintenance"
+- Kompatybilny z modyfikacją "Advanced Farm Manager"
+- Kompatybilny z modyfikacją "Auto Repair"
+- Kompatybilny z modyfikacją "Mobile Workshop" (nie zastępuje palety potrzebnej do przeprowadzenia konserwacji!)
+- W grze dostępny jest samouczek
+  (Komenda konsoli "rdsResetTutorial" umożliwia ponowne uruchomienie samouczka w grze)
+- Pomoc dostępna w menu pod klawiszem ESC
+- Gdy aktywny jest automatyczny rozruch silnika, funkcja wyłaczenia silnika z powodu awarii zostaje wyłączona
+- Komenda konsoli "rdsResetDamages" umożliwia reset uszkodzenia pojazdu
+- Komenda konsoli "rdsResetTimeUntilInspection" umożliwia zresetowanie czasu do następnego przeglądu pojazdu
+- Komenda konsoli "rdsStopActiveRepair" umożliwia natychmiastowe zakończenie przeglądu lub naprawy
+- Komenda konsoli "rdsDebug" umożliwia zapis danych debugowania do konsoli
+- Komenda konsoli "rdsDebugOnce" umożliwia jednokrotny zapis danych debugowania do konsoli
+- Komenda konsoli "rdsRemoveDamages [liczba]" umożliwia usunięcie wybranej liczby usterek
+- Komenda konsoli "rdsFindDamages" umożliwia odkrycie wszystkich nieznanych usterek
+- Komenda konsoli "rdsResetTimeUntilNextDamage" umożliwia reset czasu do wystąpienia następnej usterki (wymagane w przypadku ręcznej zmiany godzin pracy pojazdu)
+- Komenda konsoli "rdsResetEverything" umożliwia reset wszystkiego
+- Komenda konsoli "rdsSetTimeUntilInspection [liczba]" umożliwia ręczne ustawienie czasu do następnego przeglądu
+
+Kontakt:
+- Kontakt i aktualizacje: https://github.com/Frvetz/FS22_RealisticDamageSystem
+- Adres email: RealisticDamageSystem@gmail.com
+- Discord: https://discord.com/invite/mfergkwhDu
+]]>	
+	</pl>
     </description>
     <author>Frvetz</author>
-    <version>0.9.1.2</version>
+    <version>0.9.1.3</version>
     <iconFilename>icon_RealisticDamageSystem.dds</iconFilename>
     <multiplayer supported="true"/>
     <extraSourceFiles>

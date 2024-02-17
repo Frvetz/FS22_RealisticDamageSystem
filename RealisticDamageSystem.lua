@@ -28,6 +28,7 @@ RealisticDamageSystem.FindDamagesCommand = false; --set to true if hidden damage
 RealisticDamageSystem.ResetTimeUntilInspectionCommand = false; --set to true if console command for resetting the inspection is called
 RealisticDamageSystem.StopActiveRepairCommand = false; --set to true if console command for stoping an active repair is called
 RealisticDamageSystem.DebugCommand = false; --set to true if console command for DebugCommand is called
+RealisticDamageSystem.DebugCommandOnce = false; --set to true if console command for DebugCommandOnce is called
 RealisticDamageSystem.ResetTimeUntilNextDamageCommand = false; --set to true if console command for resetting the time until the next damage occurs is called
 RealisticDamageSystem.ResetEverythingCommand = false; --set to true if console command for resetting everything is called
 RealisticDamageSystem.TimeUntilInspectionCommand = 0; --set the time until the next inspection is needed
@@ -99,11 +100,9 @@ function RealisticDamageSystem:onLoad(savegame)
 		spec.NextKnownDamageAge = 0; --next age when a known damage occurs
 		spec.NextUnknownDamageOperatingHour = 0; --next operating hour when an unknown damage occurs --float --need /10 to get a decimal number
 		spec.NextUnknownDamageAge = 0; --next age when an unknown damage occurs
-
 		spec.TotalNumberOfDamages = 0; --hidden damages + visible damages + found damages by inspection
 		spec.forDBL_TotalNumberOfDamagesPlayerKnows = 0; --visible damages + found damages by inspection
 		spec.TotalNumberOfDamagesPlayerDoesntKnow = 0; --visible damages + found damages by inspection
-
 		spec.AllDamagesTable = {}; --all damages in one table (with length - price - costs)
 		spec.LengthForDamages = {}; --length for every damage in one table
 		spec.forDBL_NextInspectionMonths = 12; --number of months until the next inspection is needed
@@ -111,6 +110,8 @@ function RealisticDamageSystem:onLoad(savegame)
 		spec.VehiclePrice = self:getPrice(); --vehicle price needed for damage price calculation in file RealisticDamageSystemGUI
 		spec.DamagesThatAddedWear = 0; --needed to check if a new damaged was created and the vanilla damage amount of the vehicle needs to be updated
 		spec.DialogSelectedOptionCallback = 0; --set when starting a repair how many damages will be repaired to remove the vehicle damage afterwards
+		spec.DamagesMultiplier = 1; --need to compare to global damages multiplier to reset the next damage time if changed
+		spec.forDBL_EngineLight = false; --set to true if engine is in critial condition
 
 		-- Variables for maintenance and inspection active
 		
@@ -214,6 +215,7 @@ function RealisticDamageSystem.initSpecialization()
 	
 	schemaSavegame:register(XMLValueType.FLOAT, "vehicles.vehicle(?).RealisticDamageSystem#NextKnownDamageOperatingHour")
 	schemaSavegame:register(XMLValueType.FLOAT, "vehicles.vehicle(?).RealisticDamageSystem#NextUnknownDamageOperatingHour")
+	schemaSavegame:register(XMLValueType.FLOAT, "vehicles.vehicle(?).RealisticDamageSystem#DamagesMultiplier")
 
 	schemaSavegame:register(XMLValueType.BOOL, "vehicles.vehicle(?).RealisticDamageSystem#FirstLoadNumbersSet")
 	schemaSavegame:register(XMLValueType.BOOL, "vehicles.vehicle(?).RealisticDamageSystem#MaintenanceActive")
@@ -248,6 +250,7 @@ function RealisticDamageSystem:onPostLoad(savegame)
 
 			spec.NextKnownDamageOperatingHour = xmlFile:getValue(key.."#NextKnownDamageOperatingHour", spec.NextKnownDamageOperatingHour)
 			spec.NextUnknownDamageOperatingHour = xmlFile:getValue(key.."#NextUnknownDamageOperatingHour", spec.NextUnknownDamageOperatingHour)
+			spec.DamagesMultiplier = xmlFile:getValue(key.."#DamagesMultiplier", spec.DamagesMultiplier)
 
 			spec.FirstLoadNumbersSet = xmlFile:getValue(key.."#FirstLoadNumbersSet", spec.FirstLoadNumbersSet)
 			spec.MaintenanceActive = xmlFile:getValue(key.."#MaintenanceActive", spec.MaintenanceActive)
@@ -280,6 +283,7 @@ function RealisticDamageSystem:saveToXMLFile(xmlFile, key, usedModNames)
 
 		xmlFile:setValue(key.."#NextKnownDamageOperatingHour", spec.NextKnownDamageOperatingHour)
 		xmlFile:setValue(key.."#NextUnknownDamageOperatingHour", spec.NextUnknownDamageOperatingHour)
+		xmlFile:setValue(key.."#DamagesMultiplier", spec.DamagesMultiplier)
 
 		xmlFile:setValue(key.."#FirstLoadNumbersSet", spec.FirstLoadNumbersSet)
 		xmlFile:setValue(key.."#MaintenanceActive", spec.MaintenanceActive)
@@ -311,6 +315,7 @@ function RealisticDamageSystem:onReadStream(streamId, connection)
 		
 		spec.NextKnownDamageOperatingHour = streamReadFloat32(streamId)
 		spec.NextUnknownDamageOperatingHour = streamReadFloat32(streamId)
+		spec.DamagesMultiplier = streamReadFloat32(streamId)
 
 		spec.FirstLoadNumbersSet = streamReadBool(streamId)
 		spec.MaintenanceActive = streamReadBool(streamId)
@@ -343,6 +348,7 @@ function RealisticDamageSystem:onWriteStream(streamId, connection)
 
 		streamWriteFloat32(streamId, spec.NextKnownDamageOperatingHour)
 		streamWriteFloat32(streamId, spec.NextUnknownDamageOperatingHour)
+		streamWriteFloat32(streamId, spec.DamagesMultiplier)
 
 		streamWriteBool(streamId, spec.FirstLoadNumbersSet)
 		streamWriteBool(streamId, spec.MaintenanceActive)
@@ -378,6 +384,7 @@ function RealisticDamageSystem:onReadUpdateStream(streamId, timestamp, connectio
 				
 				spec.NextKnownDamageOperatingHour = streamReadFloat32(streamId)
 				spec.NextUnknownDamageOperatingHour = streamReadFloat32(streamId)
+				spec.DamagesMultiplier = streamReadFloat32(streamId)
 
 				spec.FirstLoadNumbersSet = streamReadBool(streamId)
 				spec.MaintenanceActive = streamReadBool(streamId)
@@ -415,6 +422,7 @@ function RealisticDamageSystem:onWriteUpdateStream(streamId, connection, dirtyMa
 					
 					streamWriteFloat32(streamId, spec.NextKnownDamageOperatingHour)
 					streamWriteFloat32(streamId, spec.NextUnknownDamageOperatingHour)
+					streamWriteFloat32(streamId, spec.DamagesMultiplier)
 
 					streamWriteBool(streamId, spec.FirstLoadNumbersSet)
 					streamWriteBool(streamId, spec.MaintenanceActive)
@@ -437,7 +445,7 @@ end
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 --multiplayer sync event
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
-function RealisticDamageSystem.SyncClientServer(vehicle, NextInspectionAge, DamagesThatAddedWear, FinishDay, FinishHour, FinishMinute, DialogSelectedOptionCallback, NextKnownDamageAge, NextUnknownDamageAge, forDBL_TotalNumberOfDamagesPlayerKnows, TotalNumberOfDamagesPlayerDoesntKnow, NextKnownDamageOperatingHour, NextUnknownDamageOperatingHour, FirstLoadNumbersSet, MaintenanceActive, InspectionActive, CVTRepairActive, EngineDied, LengthForDamages, UsersHadTutorialDialog)
+function RealisticDamageSystem.SyncClientServer(vehicle, NextInspectionAge, DamagesThatAddedWear, FinishDay, FinishHour, FinishMinute, DialogSelectedOptionCallback, NextKnownDamageAge, NextUnknownDamageAge, forDBL_TotalNumberOfDamagesPlayerKnows, TotalNumberOfDamagesPlayerDoesntKnow, NextKnownDamageOperatingHour, NextUnknownDamageOperatingHour, DamagesMultiplier, FirstLoadNumbersSet, MaintenanceActive, InspectionActive, CVTRepairActive, EngineDied, LengthForDamages, UsersHadTutorialDialog)
 	local spec = vehicle.spec_RealisticDamageSystem
 
 	spec.NextInspectionAge = NextInspectionAge
@@ -453,12 +461,13 @@ function RealisticDamageSystem.SyncClientServer(vehicle, NextInspectionAge, Dama
 
 	spec.NextKnownDamageOperatingHour = NextKnownDamageOperatingHour
 	spec.NextUnknownDamageOperatingHour = NextUnknownDamageOperatingHour
+	spec.DamagesMultiplier = DamagesMultiplier
 	
 	spec.FirstLoadNumbersSet = FirstLoadNumbersSet
 	spec.MaintenanceActive = MaintenanceActive
 	spec.InspectionActive = InspectionActive
 	spec.CVTRepairActive = CVTRepairActive
-	self.spec_RealisticDamageSystemEngineDied.EngineDied = EngineDied
+	vehicle.spec_RealisticDamageSystemEngineDied.EngineDied = EngineDied
 
 	spec.LengthForDamages = RealisticDamageSystem:StringToLengthTable(LengthForDamages)
 	RealisticDamageSystem.UsersHadTutorialDialog = RealisticDamageSystem:MPStringToTable(UsersHadTutorialDialog)
@@ -480,10 +489,10 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				spec.forDBL_TotalNumberOfDamagesPlayerKnows = math.floor(self:getDamageAmount() * 12) --set damages according to vehicle damage
 				
 				spec.NextInspectionAge = self.age + 12 --set time until next inspection to 12
-				spec.NextKnownDamageAge = self.age + RealisticDamageSystem:RoundValue(RealisticDamageSystem.DamagesMultiplier * math.random(6, 13), 0); --next age when a known damage occurs
-				spec.NextUnknownDamageAge = self.age + RealisticDamageSystem:RoundValue(RealisticDamageSystem.DamagesMultiplier * math.random(3, 10), 0); --next age when an unknown damage occurs
-				spec.NextKnownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue(RealisticDamageSystem.DamagesMultiplier * (math.random (45, 75) / 10), 1); --next operating hour when a known damage occurs --float --need /10 to get a decimal number
-				spec.NextUnknownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue(RealisticDamageSystem.DamagesMultiplier * (math.random (105, 135) / 10), 1); --next operating hour when an unknown damage occurs --float --need /10 to get a decimal number
+				spec.NextKnownDamageAge = self.age + RealisticDamageSystem:RoundValue(math.random(6, 13) / RealisticDamageSystem.DamagesMultiplier, 0); --next age when a known damage occurs
+				spec.NextUnknownDamageAge = self.age + RealisticDamageSystem:RoundValue(math.random(3, 10) / RealisticDamageSystem.DamagesMultiplier, 0); --next age when an unknown damage occurs
+				spec.NextKnownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue((math.random (45, 75) / 10) / RealisticDamageSystem.DamagesMultiplier, 1); --next operating hour when a known damage occurs --float --need /10 to get a decimal number
+				spec.NextUnknownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue((math.random (105, 135) / 10) / RealisticDamageSystem.DamagesMultiplier, 1); --next operating hour when an unknown damage occurs --float --need /10 to get a decimal number
 
 				self:setDamageAmount(0, true) -- reset damage to set it later in the script to the proper amount
 				
@@ -564,9 +573,9 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 			end
 			
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
-			--motor false start and die function when total damages are > 7
+			--motor false start and die function when total damages are > 8
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
-			if spec.TotalNumberOfDamages >= 8 and spec.MaintenanceActive ~= true and spec.InspectionActive ~= true and spec.CVTRepairActive ~= true then
+			if spec.TotalNumberOfDamages >= 9 and spec.MaintenanceActive ~= true and spec.InspectionActive ~= true and spec.CVTRepairActive ~= true then
 				if g_currentMission.missionInfo.automaticMotorStartEnabled == false then
 					if spec.RandomNumber == 0 then
 						spec.RandomNumber = math.random(1, 3) --motor doens't start when random number is 1
@@ -646,6 +655,10 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 						spec.BlinkingWarningTimer = -1
 					end
 				end
+
+				spec.forDBL_EngineLight = true
+			else
+				spec.forDBL_EngineLight = false
 			end
 			
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -686,7 +699,7 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 			--with operating hours
 			if self:getFormattedOperatingTime() >= spec.NextKnownDamageOperatingHour then --if a new damage should occur then:
 				spec.forDBL_TotalNumberOfDamagesPlayerKnows = spec.forDBL_TotalNumberOfDamagesPlayerKnows + 1 --add damage
-				spec.NextKnownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue(RealisticDamageSystem.DamagesMultiplier * (math.random (45, 75) / 10), 1) --calculate new operating time until the next damage --need /10 to get a decimal number (4.5 - 7.5)
+				spec.NextKnownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue((math.random (45, 75) / 10) / RealisticDamageSystem.DamagesMultiplier, 1) --calculate new operating time until the next damage --need /10 to get a decimal number (4.5 - 7.5)
 
 				changeFlag = true --multiplayer sync
 			end
@@ -697,7 +710,7 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				changeFlag = true --multiplayer sync
 			elseif self.age >= spec.NextKnownDamageAge then
 				spec.forDBL_TotalNumberOfDamagesPlayerKnows = spec.forDBL_TotalNumberOfDamagesPlayerKnows + 1 --add damage
-				spec.NextKnownDamageAge = self.age + RealisticDamageSystem:RoundValue(RealisticDamageSystem.DamagesMultiplier * math.random(6, 13), 0) --calculate new age until the next damage
+				spec.NextKnownDamageAge = self.age + RealisticDamageSystem:RoundValue(math.random(6, 13) / RealisticDamageSystem.DamagesMultiplier, 0) --calculate new age until the next damage
 
 				changeFlag = true --multiplayer sync
 			end
@@ -708,7 +721,7 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 			--with operating hours
 			if self:getFormattedOperatingTime() >= spec.NextUnknownDamageOperatingHour then --if a new damage should occur then:
 				spec.TotalNumberOfDamagesPlayerDoesntKnow = spec.TotalNumberOfDamagesPlayerDoesntKnow + 1 --add damage
-				spec.NextUnknownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue(RealisticDamageSystem.DamagesMultiplier * (math.random (105, 135) / 10), 1) --calculate new operating time until the next damage --need /10 to get a decimal number (10.5 - 13.5)
+				spec.NextUnknownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue((math.random (105, 135) / 10) / RealisticDamageSystem.DamagesMultiplier, 1) --calculate new operating time until the next damage --need /10 to get a decimal number (10.5 - 13.5)
 
 				changeFlag = true --multiplayer sync
 			end
@@ -719,7 +732,7 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				changeFlag = true --multiplayer sync
 			elseif self.age >= spec.NextUnknownDamageAge then
 				spec.TotalNumberOfDamagesPlayerDoesntKnow = spec.TotalNumberOfDamagesPlayerDoesntKnow + 1 --add damage
-				spec.NextUnknownDamageAge = self.age + RealisticDamageSystem:RoundValue(RealisticDamageSystem.DamagesMultiplier * math.random(3, 10), 0) --calculate new age until the next damage
+				spec.NextUnknownDamageAge = self.age + RealisticDamageSystem:RoundValue(math.random(3, 10) / RealisticDamageSystem.DamagesMultiplier, 0) --calculate new age until the next damage
 
 				changeFlag = true --multiplayer sync
 			end
@@ -735,6 +748,10 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 					self:addDamageAmount((spec.TotalNumberOfDamages - spec.DamagesThatAddedWear) * 0.083, true) --add vehicle damage when new damage was created
 					spec.DamagesThatAddedWear = spec.TotalNumberOfDamages
 				end
+			end
+
+			if self:getDamageAmount() - spec.TotalNumberOfDamages * 0.083 >= 0.083 then --if vehicle damage does not represent the rds damage amount -> add rds damages
+				spec.forDBL_TotalNumberOfDamagesPlayerKnows = spec.forDBL_TotalNumberOfDamagesPlayerKnows + math.floor((self:getDamageAmount() - spec.TotalNumberOfDamages * 0.083) / 0.083)
 			end
 
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -885,6 +902,7 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				RealisticDamageSystem.StopActiveRepairCommand = false
 			end
 			if RealisticDamageSystem.DebugCommand then
+				print("Vehicle name: "..tostring(self:getName()))
 				print("Vehicle age: "..tostring(self.age))
 				print("Vehicle operating time: "..tostring(self:getFormattedOperatingTime()))
 				print("Finish day: "..tostring(spec.FinishDay))
@@ -902,14 +920,44 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				print("Next age for new known damage: "..tostring(spec.NextKnownDamageAge))
 				print("Next age for new unknown damage: "..tostring(spec.NextUnknownDamageAge))
 				print("Vehicle age when the next inspection is needed: "..tostring(spec.NextInspectionAge))
+				print("General damage multiplier setting: "..tostring(RealisticDamageSystem.DamagesMultiplier * 100))
+				print("Vehicle damage multiplier (should be same as general): "..tostring(spec.DamagesMultiplier * 100))
 				print("Players who had tutorial question:")
 				DebugUtil.printTableRecursively(RealisticDamageSystem.UsersHadTutorialDialog, "-" , 0, 3)
 			end
+			if RealisticDamageSystem.DebugCommandOnce then
+				print("Vehicle name: "..tostring(self:getName()))
+				print("Vehicle age: "..tostring(self.age))
+				print("Vehicle operating time: "..tostring(self:getFormattedOperatingTime()))
+				print("Finish day: "..tostring(spec.FinishDay))
+				print("Current day: "..tostring(g_currentMission.environment.currentDay))
+				print("Finish hour: "..tostring(spec.FinishHour))
+				print("Current hour: "..tostring(g_currentMission.environment.currentHour))
+				print("Finish minute: "..tostring(spec.FinishMinute))
+				print("Current minute: "..tostring(g_currentMission.environment.currentMinute))
+				print("Number of damages that added base game damage: "..tostring(spec.DamagesThatAddedWear))
+				print("Total number of damages: "..tostring(spec.TotalNumberOfDamages))
+				print("Total number of damages player knows: "..tostring(spec.forDBL_TotalNumberOfDamagesPlayerKnows))
+				print("Total number of damages player doesnt know: "..tostring(spec.TotalNumberOfDamagesPlayerDoesntKnow))
+				print("Next operating time for new known damage: "..tostring(spec.NextKnownDamageOperatingHour))
+				print("Next operating time for new unknown damage: "..tostring(spec.NextUnknownDamageOperatingHour))
+				print("Next age for new known damage: "..tostring(spec.NextKnownDamageAge))
+				print("Next age for new unknown damage: "..tostring(spec.NextUnknownDamageAge))
+				print("Vehicle age when the next inspection is needed: "..tostring(spec.NextInspectionAge))
+				print("General damage multiplier setting: "..tostring(RealisticDamageSystem.DamagesMultiplier * 100))
+				print("Vehicle damage multiplier (should be same as general): "..tostring(spec.DamagesMultiplier * 100))
+				print("Players who had tutorial question:")
+				DebugUtil.printTableRecursively(RealisticDamageSystem.UsersHadTutorialDialog, "-" , 0, 3)
+
+				print("") --separate stop print
+				print("RDS DebugCommandOnce stopped.")
+				RealisticDamageSystem.DebugCommandOnce = false
+			end
 			if RealisticDamageSystem.ResetTimeUntilNextDamageCommand then
-				spec.NextKnownDamageOperatingHour = self:getFormattedOperatingTime() + string.format("%.1f",RealisticDamageSystem.DamagesMultiplier * (math.random (45, 75) / 10)) --calculate new operating time for damage --need /10 to get a decimal number (4.5 - 7.5)
-				spec.NextUnknownDamageOperatingHour = self:getFormattedOperatingTime() + string.format("%.1f",RealisticDamageSystem.DamagesMultiplier * (math.random (105, 135) / 10)) --calculate new operating time for damage --need /10 to get a decimal number (10.5 - 13.5)
-				spec.NextKnownDamageAge = self.age + string.format("%.0f",RealisticDamageSystem.DamagesMultiplier * math.random(6, 13)) --calculate new age until the next damage
-				spec.NextUnknownDamageAge = self.age + string.format("%.0f",RealisticDamageSystem.DamagesMultiplier * math.random(3, 10)) --calculate new age until the next damage
+				spec.NextKnownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue((math.random (45, 75) / 10) / RealisticDamageSystem.DamagesMultiplier, 1) --calculate new operating time for damage --need /10 to get a decimal number (4.5 - 7.5)
+				spec.NextUnknownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue((math.random (105, 135) / 10) / RealisticDamageSystem.DamagesMultiplier, 1) --calculate new operating time for damage --need /10 to get a decimal number (10.5 - 13.5)
+				spec.NextKnownDamageAge = self.age + RealisticDamageSystem:RoundValue(math.random(6, 13) / RealisticDamageSystem.DamagesMultiplier, 0) --calculate new age until the next damage
+				spec.NextUnknownDamageAge = self.age + RealisticDamageSystem:RoundValue(math.random(3, 10) / RealisticDamageSystem.DamagesMultiplier, 0) --calculate new age until the next damage
 
 				RealisticDamageSystem.ResetTimeUntilNextDamageCommand = false
 
@@ -932,6 +980,13 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 
 				changeFlag = true --multiplayer sync
 			end
+
+			if spec.DamagesMultiplier ~= RealisticDamageSystem.DamagesMultiplier then --if damage intervall is changed
+				RealisticDamageSystem.ResetTimeUntilNextDamageCommand = true --calculate new time
+				spec.DamagesMultiplier = RealisticDamageSystem.DamagesMultiplier --set new damage multiplier
+				
+				--multiplayer sync is in ResetTimeUntilNextDamageCommand
+			end
 		end
 
 		--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -951,9 +1006,9 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 			self:raiseDirtyFlags(spec.dirtyFlag)
 
 			if g_server ~= nil then
-				g_server:broadcastEvent(SyncClientServerEvent.new(self, spec.NextInspectionAge, spec.DamagesThatAddedWear, spec.FinishDay, spec.FinishHour, spec.FinishMinute, spec.DialogSelectedOptionCallback, spec.NextKnownDamageAge, spec.NextUnknownDamageAge, spec.forDBL_TotalNumberOfDamagesPlayerKnows, spec.TotalNumberOfDamagesPlayerDoesntKnow, spec.NextKnownDamageOperatingHour, spec.NextUnknownDamageOperatingHour, spec.FirstLoadNumbersSet, spec.MaintenanceActive, spec.InspectionActive, spec.CVTRepairActive, self.spec_RealisticDamageSystemEngineDied.EngineDied, RealisticDamageSystem:LengthTableToString(spec.LengthForDamages), RealisticDamageSystem:MPTableToString(RealisticDamageSystem.UsersHadTutorialDialog)), nil, nil, self)
+				g_server:broadcastEvent(SyncClientServerEvent.new(self, spec.NextInspectionAge, spec.DamagesThatAddedWear, spec.FinishDay, spec.FinishHour, spec.FinishMinute, spec.DialogSelectedOptionCallback, spec.NextKnownDamageAge, spec.NextUnknownDamageAge, spec.forDBL_TotalNumberOfDamagesPlayerKnows, spec.TotalNumberOfDamagesPlayerDoesntKnow, spec.NextKnownDamageOperatingHour, spec.NextUnknownDamageOperatingHour, spec.DamagesMultiplier, spec.FirstLoadNumbersSet, spec.MaintenanceActive, spec.InspectionActive, spec.CVTRepairActive, self.spec_RealisticDamageSystemEngineDied.EngineDied, RealisticDamageSystem:LengthTableToString(spec.LengthForDamages), RealisticDamageSystem:MPTableToString(RealisticDamageSystem.UsersHadTutorialDialog)), nil, nil, self)
 			else
-				g_client:getServerConnection():sendEvent(SyncClientServerEvent.new(self, spec.NextInspectionAge, spec.DamagesThatAddedWear, spec.FinishDay, spec.FinishHour, spec.FinishMinute, spec.DialogSelectedOptionCallback, spec.NextKnownDamageAge, spec.NextUnknownDamageAge, spec.forDBL_TotalNumberOfDamagesPlayerKnows, spec.TotalNumberOfDamagesPlayerDoesntKnow, spec.NextKnownDamageOperatingHour, spec.NextUnknownDamageOperatingHour, spec.FirstLoadNumbersSet, spec.MaintenanceActive, spec.InspectionActive, spec.CVTRepairActive, self.spec_RealisticDamageSystemEngineDied.EngineDied, RealisticDamageSystem:LengthTableToString(spec.LengthForDamages), RealisticDamageSystem:MPTableToString(RealisticDamageSystem.UsersHadTutorialDialog)))
+				g_client:getServerConnection():sendEvent(SyncClientServerEvent.new(self, spec.NextInspectionAge, spec.DamagesThatAddedWear, spec.FinishDay, spec.FinishHour, spec.FinishMinute, spec.DialogSelectedOptionCallback, spec.NextKnownDamageAge, spec.NextUnknownDamageAge, spec.forDBL_TotalNumberOfDamagesPlayerKnows, spec.TotalNumberOfDamagesPlayerDoesntKnow, spec.NextKnownDamageOperatingHour, spec.NextUnknownDamageOperatingHour, spec.DamagesMultiplier, spec.FirstLoadNumbersSet, spec.MaintenanceActive, spec.InspectionActive, spec.CVTRepairActive, self.spec_RealisticDamageSystemEngineDied.EngineDied, RealisticDamageSystem:LengthTableToString(spec.LengthForDamages), RealisticDamageSystem:MPTableToString(RealisticDamageSystem.UsersHadTutorialDialog)))
 			end
 		end
 	end
@@ -1192,7 +1247,7 @@ end
 function RealisticDamageSystem:loadMapDataHelpLineManager(superFunc, ...)
     local ret = superFunc(self, ...)
     if ret then
-		if g_gui.languageSuffix == "_de" or g_gui.languageSuffix == "_en" or g_gui.languageSuffix == "_fr" then
+		if g_gui.languageSuffix == "_de" or g_gui.languageSuffix == "_en" or g_gui.languageSuffix == "_fr" or g_gui.languageSuffix == "_es" or g_gui.languageSuffix == "_ru" or g_gui.languageSuffix == "_pl" then
 			if FS22_CVT_Addon ~= nil and FS22_CVT_Addon.CVTaddon ~= nil then
 				self:loadFromXML(Utils.getFilename("helpMenu/helpMenuCVT"..g_gui.languageSuffix..".xml", RealisticDamageSystem.modDirectory))
 			else
@@ -1243,9 +1298,13 @@ end
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 addConsoleCommand("rdsResetDamages", "Reset all RealisticDamageSystem damages for vehicle", "rdsResetDamages", RealisticDamageSystem)
 function RealisticDamageSystem:rdsResetDamages()
-	RealisticDamageSystem.ResetDamagesCommand = true
+	if g_currentMission.isMasterUser then
+		RealisticDamageSystem.ResetDamagesCommand = true
 
-	print("Damages have been reset for this vehicle.")
+		print("Damages have been reset for this vehicle.")
+	else
+		print("Please log in as admin first.")
+	end
 end
 
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -1253,11 +1312,15 @@ end
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 addConsoleCommand("rdsRemoveDamages", "Remove RealisticDamageSystem damages from vehicle", "rdsRemoveDamages", RealisticDamageSystem)
 function RealisticDamageSystem:rdsRemoveDamages(number)
-	if tonumber(number) ~= nil then
-		RealisticDamageSystem.RemoveDamagesCommand = tonumber(number)
-		print("Damages have been subtracted from the of damages of the vehicle (only known damages).")
+	if g_currentMission.isMasterUser then
+		if tonumber(number) ~= nil then
+			RealisticDamageSystem.RemoveDamagesCommand = tonumber(number)
+			print("Damages have been subtracted from the of damages of the vehicle (only known damages).")
+		else
+			print("Please enter the number of damages you want to remove.")
+		end
 	else
-		print("Please enter the number of damages you want to remove.")
+		print("Please log in as admin first.")
 	end
 end
 
@@ -1266,9 +1329,13 @@ end
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 addConsoleCommand("rdsFindDamages", "Find RealisticDamageSystem damages", "rdsFindDamages", RealisticDamageSystem)
 function RealisticDamageSystem:rdsFindDamages()
-	RealisticDamageSystem.FindDamagesCommand = true
+	if g_currentMission.isMasterUser then
+		RealisticDamageSystem.FindDamagesCommand = true
 
-	print("Added found hidden damages to the vehicle.")
+		print("Added found hidden damages to the vehicle.")
+	else
+		print("Please log in as admin first.")
+	end
 end
 
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -1276,9 +1343,13 @@ end
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 addConsoleCommand("rdsResetTimeUntilInspection", "Reset the time until the next RealisticDamageSystem inspection", "rdsResetTimeUntilInspection", RealisticDamageSystem)
 function RealisticDamageSystem:rdsResetTimeUntilInspection()
-	RealisticDamageSystem.ResetTimeUntilInspectionCommand = true
+	if g_currentMission.isMasterUser then
+		RealisticDamageSystem.ResetTimeUntilInspectionCommand = true
 
-	print("Time until next inspection has been reset for this vehicle.")
+		print("Time until next inspection has been reset for this vehicle.")
+	else
+		print("Please log in as admin first.")
+	end
 end
 
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -1286,15 +1357,19 @@ end
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 addConsoleCommand("rdsStopActiveRepair", "Stop an active repair or inspection", "rdsStopActiveRepair", RealisticDamageSystem)
 function RealisticDamageSystem:rdsStopActiveRepair()
-	RealisticDamageSystem.StopActiveRepairCommand = true
+	if g_currentMission.isMasterUser then
+		RealisticDamageSystem.StopActiveRepairCommand = true
 	
-	print("Active repair or inspection has been stopped for this vehicle.")
+		print("Active repair or inspection has been stopped for this vehicle.")
+	else
+		print("Please log in as admin first.")
+	end
 end
 
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 --console command debug
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
-addConsoleCommand("rdsDebug", "Show DebugCommand", "rdsDebug", RealisticDamageSystem)
+addConsoleCommand("rdsDebug", "Show debug", "rdsDebug", RealisticDamageSystem)
 function RealisticDamageSystem:rdsDebug()
 	RealisticDamageSystem.DebugCommand = not RealisticDamageSystem.DebugCommand
 
@@ -1306,13 +1381,27 @@ function RealisticDamageSystem:rdsDebug()
 end
 
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
+--console command debug once
+--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
+addConsoleCommand("rdsDebugOnce", "Show debug once", "rdsDebugOnce", RealisticDamageSystem)
+function RealisticDamageSystem:rdsDebugOnce()
+	RealisticDamageSystem.DebugCommandOnce = true
+
+	print("RDS DebugCommandOnce started.")
+end
+
+--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 --console command reset time until next damage
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 addConsoleCommand("rdsResetTimeUntilNextDamage", "Reset the time until the next damage occurs", "rdsResetTimeUntilNextDamage", RealisticDamageSystem)
 function RealisticDamageSystem:rdsResetTimeUntilNextDamage()
-	RealisticDamageSystem.ResetTimeUntilNextDamageCommand = true
+	if g_currentMission.isMasterUser then
+		RealisticDamageSystem.ResetTimeUntilNextDamageCommand = true
 
-	print("Time until the next damage occurs has been reset for this vehicle.")
+		print("Time until the next damage occurs has been reset for this vehicle.")
+	else
+		print("Please log in as admin first.")
+	end
 end
 
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -1320,9 +1409,13 @@ end
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 addConsoleCommand("rdsResetEverything", "Reset every damage and time until next inspection", "rdsResetEverything", RealisticDamageSystem)
 function RealisticDamageSystem:rdsResetEverything()
-	RealisticDamageSystem.ResetEverythingCommand = true
+	if g_currentMission.isMasterUser then
+		RealisticDamageSystem.ResetEverythingCommand = true
 
-	print("Time until the next damage occurs has been reset for this vehicle.")
+		print("Time until the next damage occurs has been reset for this vehicle.")
+	else
+		print("Please log in as admin first.")
+	end
 end
 
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -1330,11 +1423,15 @@ end
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 addConsoleCommand("rdsSetTimeUntilInspection", "Manually set the time until the next inspection is needed", "rdsSetTimeUntilInspection", RealisticDamageSystem)
 function RealisticDamageSystem:rdsSetTimeUntilInspection(number)
-	if tonumber(number) ~= nil then
-		RealisticDamageSystem.TimeUntilInspectionCommand = tonumber(number)
-		print("Time until the next inspection has been set.")
+	if g_currentMission.isMasterUser then
+		if tonumber(number) ~= nil then
+			RealisticDamageSystem.TimeUntilInspectionCommand = tonumber(number)
+			print("Time until the next inspection has been set.")
+		else
+			print("Please enter a number the time should be set to.")
+		end
 	else
-		print("Please enter a number the time should be set to.")
+		print("Please log in as admin first.")
 	end
 end
 
@@ -1371,7 +1468,7 @@ end
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 --set multiplier for damages from Configure Maintenance mod
 --^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
-function RealisticDamageSystem:onMaintenanceCostStateChanged()
+function RealisticDamageSystem:run()
 	RealisticDamageSystem.DamagesMultiplier = FS22_Configure_Maintenance.g_r_maintenance.maintenanceDuration
 end
 --overwrite the FS damage system to stop the damage amount and control it over my script
@@ -1379,7 +1476,7 @@ function RealisticDamageSystem.updateDamageAmount(wearable, superFunc, dt)
 	return 0
 end
 if FS22_Configure_Maintenance ~= nil and FS22_Configure_Maintenance.ReduceMaintenanceSettings ~= nil then
-	FS22_Configure_Maintenance.ReduceMaintenanceSettings.onMaintenanceCostStateChanged = Utils.appendedFunction(FS22_Configure_Maintenance.ReduceMaintenanceSettings.onMaintenanceCostStateChanged, RealisticDamageSystem.onMaintenanceCostStateChanged);
+	FS22_Configure_Maintenance.ChangeMaintenanceSettingsEvent.run = Utils.appendedFunction(FS22_Configure_Maintenance.ChangeMaintenanceSettingsEvent.run, RealisticDamageSystem.run);
 	FS22_Configure_Maintenance.ReduceMaintenance.updateDamageAmount = Utils.overwrittenFunction(FS22_Configure_Maintenance.ReduceMaintenance.updateDamageAmount, RealisticDamageSystem.updateDamageAmount);
 else
 	--overwrite the FS damage system to stop the damage amount and control it over my script
