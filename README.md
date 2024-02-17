@@ -302,4 +302,19 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - fixed that console command "rdsRemoveDamages" with a negative number didn't add FS22 normal-damage
 - fixed error with console command "rdsRemoveDamages" and "rdsSetTimeUntilInspection" if something other than a number was entered
 
+### Changelog Version 0.9.1.3:
+- fixed problem with the mod "Repair and paint settings (Configure Maintenance)" where more damages occured when you chose a lower number in the settings
+- fixed a multiplayer problem with the mod "Repair and paint settings (Configure Maintenance)" where the multiplier changed not for every player
+- added variables to debug
+- added console command to show the debug in the log only once (rdsDebugOnce)
+- added so that every console command except "rdsDebug", "rdsDebugOnce" and "rdsResetTutorial" can only be triggered if the player is logged in as admin
+- the engine now only dies from 9 damage and no longer from 8
+- added engine light variable for DashboardLive
+- added Polish translation
+- added Spanish translation
+- adapted German translation
+- adapted Russian translation
+- added more objects to the pallet
+- fixed problem where the vehicle damage does not represent the rds damages (when vehicle damage is added by another mod)
+
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
