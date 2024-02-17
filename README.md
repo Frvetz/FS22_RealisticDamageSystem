@@ -316,5 +316,6 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - adapted Russian translation
 - added more objects to the pallet
 - fixed problem where the vehicle damage did not represent the rds damages (when vehicle damage was added by another mod)
+- fixed multiplayer problem where a new rds damage added vehicle damage multiple times
 
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)

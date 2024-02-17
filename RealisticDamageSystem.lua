@@ -747,11 +747,16 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				if spec.TotalNumberOfDamages ~= spec.DamagesThatAddedWear then
 					self:addDamageAmount((spec.TotalNumberOfDamages - spec.DamagesThatAddedWear) * 0.083, true) --add vehicle damage when new damage was created
 					spec.DamagesThatAddedWear = spec.TotalNumberOfDamages
+					
+					changeFlag = true
 				end
 			end
 
-			if self:getDamageAmount() - spec.TotalNumberOfDamages * 0.083 >= 0.083 then --if vehicle damage does not represent the rds damage amount -> add rds damages
+			if math.abs(self:getDamageAmount() - spec.TotalNumberOfDamages * 0.083) >= 0.083 then --if vehicle damage does not represent the rds damage amount -> add rds damages
 				spec.forDBL_TotalNumberOfDamagesPlayerKnows = spec.forDBL_TotalNumberOfDamagesPlayerKnows + math.floor((self:getDamageAmount() - spec.TotalNumberOfDamages * 0.083) / 0.083)
+				spec.DamagesThatAddedWear = spec.DamagesThatAddedWear + math.floor((self:getDamageAmount() - spec.TotalNumberOfDamages * 0.083) / 0.083)
+				
+				changeFlag = true
 			end
 
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
