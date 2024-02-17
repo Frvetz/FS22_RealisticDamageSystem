@@ -315,6 +315,6 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - adapted German translation
 - adapted Russian translation
 - added more objects to the pallet
-- fixed problem where the vehicle damage does not represent the rds damages (when vehicle damage is added by another mod)
+- fixed problem where the vehicle damage did not represent the rds damages (when vehicle damage was added by another mod)
 
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
