@@ -318,4 +318,17 @@ Falls die Wartung/Inspektion mit der aktuellen Auswahl pausiert werden muss, wir
 - fixed problem where the vehicle damage did not represent the rds damages (when vehicle damage was added by another mod)
 - fixed multiplayer problem where a new rds damage added vehicle damage multiple times
 
+### Changelog Version 0.9.1.4:
+- added Russian translation to pallet
+- fixed problem with the mod "Repair and paint settings (Configure Maintenance)" where the vehicle got FS22-normal-damage from working on a field -> too many RDS-damages
+- fixed problem where implements didn't get any FS22-normal-damage from working on a field
+- fixed problem where the engine sound disappeared when starting the engine with over 8 damages -> repairing -> opening an item in the shop
+- fixed multiplayer sync problem
+- fixed dedicated server problem where the FS22-normal-damage was not changed with a new damage / repair
+- fixed mutliplayer problem with console command "rdsRemoveDamages"
+- added mod version to debug
+- fixed problem where the vehicle died immediately after receiving 9 damages
+- created a new shop icon for the pallet
+- fixed problem where the pallet moved when a helper drove close to it
+
 [⤴️ Go to top / ⤴️ Nach oben springen](#top)
