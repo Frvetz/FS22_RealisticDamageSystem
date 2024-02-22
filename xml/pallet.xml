@@ -7,6 +7,7 @@
             <fr>Palette pour l'entretien</fr>
             <pl>Paleta do konserwacji</pl>
             <es>Palet para mantenimiento</es>
+	        <ru>Сервисный поддон</ru>
 		</name>
         <image>store/store_pallet.dds</image>
         <category>pallets</category>
@@ -35,6 +36,10 @@
             <meshNode node="tensionBeltNode"/>
         </meshNodes>
     </tensionBeltObject>
+
+    <ai>
+        <agentAttachment width="2" height="2" length="2"/>
+    </ai>
 
     <i3dMappings>
         <i3dMapping id="dynamicMountTrigger" node="0>0"/>

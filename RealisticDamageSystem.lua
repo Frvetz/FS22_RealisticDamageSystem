@@ -36,6 +36,12 @@ RealisticDamageSystem.TimeUntilInspectionCommand = 0; --set the time until the n
 RealisticDamageSystem.UsersHadTutorialDialog = {} --users who had the chance to start the tutorial
 RealisticDamageSystem.MaintenancePallets = {};	--create table where every maintenance pallet is stored
 
+--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
+--load moddesc version
+--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
+local modDesc = loadXMLFile("modDesc", g_currentModDirectory .. "modDesc.xml")
+RealisticDamageSystem.modVersion = getXMLString(modDesc, "modDesc.version")
+
 function RealisticDamageSystem.prerequisitesPresent(specializations)
 	return true;
 end;
@@ -137,6 +143,7 @@ function RealisticDamageSystem:onLoad(savegame)
 
 		spec.dirtyFlag = self:getNextDirtyFlag() --multiplayer sync
 		spec.MultiplayerCosts = 0;
+		spec.MultiplayerAddDamage = 0;
 
 		-- maintenance menu
 		
@@ -385,6 +392,7 @@ function RealisticDamageSystem:onReadUpdateStream(streamId, timestamp, connectio
 				spec.NextKnownDamageOperatingHour = streamReadFloat32(streamId)
 				spec.NextUnknownDamageOperatingHour = streamReadFloat32(streamId)
 				spec.DamagesMultiplier = streamReadFloat32(streamId)
+				spec.MultiplayerAddDamage = streamReadFloat32(streamId)
 
 				spec.FirstLoadNumbersSet = streamReadBool(streamId)
 				spec.MaintenanceActive = streamReadBool(streamId)
@@ -423,6 +431,7 @@ function RealisticDamageSystem:onWriteUpdateStream(streamId, connection, dirtyMa
 					streamWriteFloat32(streamId, spec.NextKnownDamageOperatingHour)
 					streamWriteFloat32(streamId, spec.NextUnknownDamageOperatingHour)
 					streamWriteFloat32(streamId, spec.DamagesMultiplier)
+					streamWriteFloat32(streamId, spec.MultiplayerAddDamage)
 
 					streamWriteBool(streamId, spec.FirstLoadNumbersSet)
 					streamWriteBool(streamId, spec.MaintenanceActive)
@@ -434,6 +443,7 @@ function RealisticDamageSystem:onWriteUpdateStream(streamId, connection, dirtyMa
 					streamWriteString(streamId, RealisticDamageSystem:MPTableToString(RealisticDamageSystem.UsersHadTutorialDialog))
 
 					spec.MultiplayerCosts = 0
+					spec.MultiplayerAddDamage = 0
 				end
 			else 
 				streamWriteBool(streamId, false)
@@ -494,12 +504,13 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				spec.NextKnownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue((math.random (45, 75) / 10) / RealisticDamageSystem.DamagesMultiplier, 1); --next operating hour when a known damage occurs --float --need /10 to get a decimal number
 				spec.NextUnknownDamageOperatingHour = self:getFormattedOperatingTime() + RealisticDamageSystem:RoundValue((math.random (105, 135) / 10) / RealisticDamageSystem.DamagesMultiplier, 1); --next operating hour when an unknown damage occurs --float --need /10 to get a decimal number
 
-				self:setDamageAmount(0, true) -- reset damage to set it later in the script to the proper amount
+				spec.MultiplayerAddDamage = -1 -- reset damage to set it later in the script to the proper amount
 				
 				spec.FirstLoadNumbersSet = true
 
 				changeFlag = true --multiplayer sync
 			end;
+
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 			--ask player if he wants to start the tutorial
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -607,23 +618,6 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 					else
 						if spec.LoadTooHigh ~= true then
 							self.spec_RealisticDamageSystemEngineDied.EngineDied = false		--set EngineDied to false when vehicle is started again
-
-							if self:getIsMotorStarted() then
-								--giants bug:
-								--vehicle has been started with the multiple ignition sound effect + any item in the shop has been selected and "opened" -> leads to the motor sound being stopped
-								--everything else works fine, but the motor and gearbox sound is stopped (every other sound is still active as well)
-								local MotorSounds = self.spec_motorized.motorSamples
-								local gearboxSounds = self.spec_motorized.gearboxSamples
-								if not g_soundManager:getIsSamplePlaying(MotorSounds[1]) then
-									g_soundManager:playSamples(MotorSounds)
-								end
-								if not g_soundManager:getIsSamplePlaying(gearboxSounds[1]) then
-									g_soundManager:playSamples(gearboxSounds)
-								end
-								if not g_soundManager:getIsSamplePlaying(self.spec_motorized.samples.retarder) then
-									g_soundManager:playSample(self.spec_motorized.samples.retarder)
-								end
-							end
 						end
 					end;
 
@@ -659,6 +653,24 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				spec.forDBL_EngineLight = true
 			else
 				spec.forDBL_EngineLight = false
+				spec.DontStopMotor = true --set to true when damages < 9 to prevent the vehicle from dying immediately after receiving 9 damages
+			end
+
+			if self:getIsMotorStarted() then
+				--giants bug:
+				--vehicle has been started with the multiple ignition sound effect + any item in the shop has been selected and "opened" -> leads to the motor sound being stopped
+				--everything else works fine, but the motor and gearbox sound is stopped (every other sound is still active as well)
+				local MotorSounds = self.spec_motorized.motorSamples
+				local gearboxSounds = self.spec_motorized.gearboxSamples
+				if not g_soundManager:getIsSamplePlaying(MotorSounds[1]) then
+					g_soundManager:playSamples(MotorSounds)
+				end
+				if not g_soundManager:getIsSamplePlaying(gearboxSounds[1]) then
+					g_soundManager:playSamples(gearboxSounds)
+				end
+				if not g_soundManager:getIsSamplePlaying(self.spec_motorized.samples.retarder) then
+					g_soundManager:playSample(self.spec_motorized.samples.retarder)
+				end
 			end
 			
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
@@ -745,19 +757,18 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 			if not g_currentMission.shopMenu.isOpen then
 				if spec.TotalNumberOfDamages ~= spec.DamagesThatAddedWear then
-					self:addDamageAmount((spec.TotalNumberOfDamages - spec.DamagesThatAddedWear) * 0.083, true) --add vehicle damage when new damage was created
+					spec.MultiplayerAddDamage = (spec.TotalNumberOfDamages - spec.DamagesThatAddedWear) * 0.083 --add vehicle damage when new damage was created
 					spec.DamagesThatAddedWear = spec.TotalNumberOfDamages
-					
 					changeFlag = true
 				end
 			end
 
-			if math.abs(self:getDamageAmount() - spec.TotalNumberOfDamages * 0.083) >= 0.083 then --if vehicle damage does not represent the rds damage amount -> add rds damages
+			--[[if math.abs(self:getDamageAmount() - (spec.TotalNumberOfDamages * 0.083)) >= 0.083 then --if vehicle damage does not represent the rds damage amount -> add rds damages
 				spec.forDBL_TotalNumberOfDamagesPlayerKnows = spec.forDBL_TotalNumberOfDamagesPlayerKnows + math.floor((self:getDamageAmount() - spec.TotalNumberOfDamages * 0.083) / 0.083)
 				spec.DamagesThatAddedWear = spec.DamagesThatAddedWear + math.floor((self:getDamageAmount() - spec.TotalNumberOfDamages * 0.083) / 0.083)
-				
+
 				changeFlag = true
-			end
+			end--]]
 
 			--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 			--everything that happens when maintenance is started
@@ -776,9 +787,9 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^--
 				if RealisticDamageSystem.StopActiveRepairCommand or ((g_currentMission.environment.currentDay > spec.FinishDay) or ((g_currentMission.environment.currentDay == spec.FinishDay and g_currentMission.environment.currentHour > spec.FinishHour)) or (g_currentMission.environment.currentDay == spec.FinishDay and g_currentMission.environment.currentHour >= spec.FinishHour and g_currentMission.environment.currentMinute >= spec.FinishMinute)) then
 					if spec.DialogSelectedOptionCallback ~= 0 then --need this because DialogSelectedOptionCallback was not saved in the xml in a previous version and therefore could be 0 when reloading the savegame during a maintenance
-						self:addDamageAmount(- (self:getDamageAmount() / spec.TotalNumberOfDamages) * spec.DialogSelectedOptionCallback, true) --remove so much vehicle damage, so that when you repair all damages at once, there is 0% damage left
+						spec.MultiplayerAddDamage = - (self:getDamageAmount() / spec.TotalNumberOfDamages) * spec.DialogSelectedOptionCallback --remove so much vehicle damage, so that when you repair all damages at once, there is 0% damage left
 					else
-						self:setDamageAmount(0, true) --set vehicle damage to 0
+						spec.MultiplayerAddDamage = -1 --set vehicle damage to 0
 					end
 					spec.MaintenanceActive = false
 					self.spec_RealisticDamageSystemEngineDied.EngineDied = false
@@ -876,12 +887,12 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				changeFlag = true --multiplayer sync
 			end
 			if RealisticDamageSystem.RemoveDamagesCommand ~= 0 then
-				spec.DamagesThatAddedWear = spec.TotalNumberOfDamages - RealisticDamageSystem.RemoveDamagesCommand
-				spec.forDBL_TotalNumberOfDamagesPlayerKnows = spec.forDBL_TotalNumberOfDamagesPlayerKnows - RealisticDamageSystem.RemoveDamagesCommand
+				spec.DamagesThatAddedWear = math.max(spec.TotalNumberOfDamages - RealisticDamageSystem.RemoveDamagesCommand, 0)
+				spec.forDBL_TotalNumberOfDamagesPlayerKnows = math.max(spec.forDBL_TotalNumberOfDamagesPlayerKnows - RealisticDamageSystem.RemoveDamagesCommand, 0)
 				if RealisticDamageSystem.RemoveDamagesCommand > 0 then
-					self:addDamageAmount(- ((self:getDamageAmount() / spec.TotalNumberOfDamages) * RealisticDamageSystem.RemoveDamagesCommand), true)
+					spec.MultiplayerAddDamage = - ((self:getDamageAmount() / spec.TotalNumberOfDamages) * RealisticDamageSystem.RemoveDamagesCommand)
 				else
-					self:addDamageAmount(-RealisticDamageSystem.RemoveDamagesCommand * 0.083, true)
+					spec.MultiplayerAddDamage = -RealisticDamageSystem.RemoveDamagesCommand * 0.083
 				end
 
 				RealisticDamageSystem.RemoveDamagesCommand = 0
@@ -907,6 +918,7 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				RealisticDamageSystem.StopActiveRepairCommand = false
 			end
 			if RealisticDamageSystem.DebugCommand then
+				print("Mod version: "..tostring(RealisticDamageSystem.modVersion))
 				print("Vehicle name: "..tostring(self:getName()))
 				print("Vehicle age: "..tostring(self.age))
 				print("Vehicle operating time: "..tostring(self:getFormattedOperatingTime()))
@@ -931,6 +943,7 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				DebugUtil.printTableRecursively(RealisticDamageSystem.UsersHadTutorialDialog, "-" , 0, 3)
 			end
 			if RealisticDamageSystem.DebugCommandOnce then
+				print("Mod version: "..tostring(RealisticDamageSystem.modVersion))
 				print("Vehicle name: "..tostring(self:getName()))
 				print("Vehicle age: "..tostring(self.age))
 				print("Vehicle operating time: "..tostring(self:getFormattedOperatingTime()))
@@ -954,7 +967,7 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				print("Players who had tutorial question:")
 				DebugUtil.printTableRecursively(RealisticDamageSystem.UsersHadTutorialDialog, "-" , 0, 3)
 
-				print("") --separate stop print
+				print("") --separate the print
 				print("RDS DebugCommandOnce stopped.")
 				RealisticDamageSystem.DebugCommandOnce = false
 			end
@@ -1007,8 +1020,18 @@ function RealisticDamageSystem:onUpdate(dt, isActiveForInput, isActiveForInputIg
 				changeFlag = true
 			end
 		end
+		if g_server ~= nil and spec.MultiplayerAddDamage ~= nil then
+			if spec.MultiplayerAddDamage ~= 0 then
+				self:addDamageAmount(spec.MultiplayerAddDamage, true)
+				
+				spec.MultiplayerAddDamage = 0
+
+				changeFlag = true
+			end
+		end
 		if changeFlag then
 			self:raiseDirtyFlags(spec.dirtyFlag)
+
 
 			if g_server ~= nil then
 				g_server:broadcastEvent(SyncClientServerEvent.new(self, spec.NextInspectionAge, spec.DamagesThatAddedWear, spec.FinishDay, spec.FinishHour, spec.FinishMinute, spec.DialogSelectedOptionCallback, spec.NextKnownDamageAge, spec.NextUnknownDamageAge, spec.forDBL_TotalNumberOfDamagesPlayerKnows, spec.TotalNumberOfDamagesPlayerDoesntKnow, spec.NextKnownDamageOperatingHour, spec.NextUnknownDamageOperatingHour, spec.DamagesMultiplier, spec.FirstLoadNumbersSet, spec.MaintenanceActive, spec.InspectionActive, spec.CVTRepairActive, self.spec_RealisticDamageSystemEngineDied.EngineDied, RealisticDamageSystem:LengthTableToString(spec.LengthForDamages), RealisticDamageSystem:MPTableToString(RealisticDamageSystem.UsersHadTutorialDialog)), nil, nil, self)
@@ -1478,15 +1501,20 @@ function RealisticDamageSystem:run()
 end
 --overwrite the FS damage system to stop the damage amount and control it over my script
 function RealisticDamageSystem.updateDamageAmount(wearable, superFunc, dt)
-	return 0
+	if wearable.spec_RealisticDamageSystem ~= nil then --if damage is controlled by RDS -> no FS-damage
+		return 0
+	else --if it is an implement -> FS-damage
+		return superFunc(wearable, dt)
+	end
 end
+--overwrite configure maintenance damage system
 if FS22_Configure_Maintenance ~= nil and FS22_Configure_Maintenance.ReduceMaintenanceSettings ~= nil then
 	FS22_Configure_Maintenance.ChangeMaintenanceSettingsEvent.run = Utils.appendedFunction(FS22_Configure_Maintenance.ChangeMaintenanceSettingsEvent.run, RealisticDamageSystem.run);
 	FS22_Configure_Maintenance.ReduceMaintenance.updateDamageAmount = Utils.overwrittenFunction(FS22_Configure_Maintenance.ReduceMaintenance.updateDamageAmount, RealisticDamageSystem.updateDamageAmount);
-else
-	--overwrite the FS damage system to stop the damage amount and control it over my script
-	Wearable.updateDamageAmount = Utils.overwrittenFunction(Wearable.updateDamageAmount, RealisticDamageSystem.updateDamageAmount)
 end
+--overwrite the FS damage system to stop the damage amount and control it over my script
+Wearable.updateDamageAmount = Utils.overwrittenFunction(Wearable.updateDamageAmount, RealisticDamageSystem.updateDamageAmount)
+
 if RealisticDamageSystem.DamagesMultiplier == nil then
 	RealisticDamageSystem.DamagesMultiplier = 1
 end

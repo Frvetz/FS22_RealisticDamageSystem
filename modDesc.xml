@@ -380,7 +380,7 @@ Kontakt:
 	</pl>
     </description>
     <author>Frvetz</author>
-    <version>0.9.1.3</version>
+    <version>0.9.1.4</version>
     <iconFilename>icon_RealisticDamageSystem.dds</iconFilename>
     <multiplayer supported="true"/>
     <extraSourceFiles>
